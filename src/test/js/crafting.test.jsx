@@ -4,7 +4,7 @@ describe( 'getTotalCraftCost', () => {
     it( 'should calculate crafting cost', () => {
         let state = {
             "crafting": {
-                recipes: [
+                "recipes": [
                     {
                         "name": "Premium Kaolin Refiner",
                         "cost": 3,
@@ -13,8 +13,10 @@ describe( 'getTotalCraftCost', () => {
                             {"name": "Kaolin Refiner", "quantity": 1},
                         ]
                     }
-                ],
-                prices: [
+                ]
+            },
+            "prices": {
+                "items": [
                     {"name": "Soulstone", "price": 1},
                     {"name": "Kaolin Refiner", "price": 2},
 
@@ -29,7 +31,7 @@ describe( 'getTotalCraftCost', () => {
     it( 'should calculate unknown ingredients with 0', () => {
         let state = {
             "crafting": {
-                recipes: [
+                "recipes": [
                     {
                         "name": "Premium Kaolin Refiner",
                         "cost": 3,
@@ -39,7 +41,9 @@ describe( 'getTotalCraftCost', () => {
                         ]
                     }
                 ],
-                prices: [
+            },
+            "prices": {
+                "items": [
                     {"name": "Soulstone", "price": 1}
                 ]
             }
