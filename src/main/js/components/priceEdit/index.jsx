@@ -5,7 +5,7 @@ export default class PriceEdit extends React.Component {
 
     static propTypes = {
         name: PropTypes.string.isRequired,
-        changePrice: PropTypes.func.isRequired,
+        mergePrice: PropTypes.func.isRequired,
         price: PropTypes.number,
     };
 
@@ -28,9 +28,7 @@ export default class PriceEdit extends React.Component {
     finishEdit = ( e ) => {
         const value = e.target.value;
         this.setState( {editing: false} );
-        if ( this.props.changePrice ) {
-            this.props.changePrice( this.props.name, value );
-        }
+        this.props.mergePrice( this.props.name, value );
     };
 
     startEdit = () => {

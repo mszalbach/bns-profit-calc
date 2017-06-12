@@ -31,9 +31,29 @@ export default function pricesReducer( state = initialState, action ) {
 
 export const getPrices = ( state ) => state.prices;
 
+export const getPriceForItem = ( state, props ) => {
+    let item = state.prices.find( item => item.name === props.name );
+    return item ? item.price : 0;
+};
 
-export function changePrice( name, price ) {
+
+export function mergePrice( name, price ) {
+    return function ( dispatch, getState ) {
+        if ( getState().prices.findIndex( item => item.name === name ) ) {
+            return dispatch( changePrice( name, price ) );
+        } else {
+            return dispatch( addPrice( name, price ) )
+        }
+    }
+}
+
+
+function changePrice( name, price ) {
     return {type: PRICE_CHANGE, name: name, price: Number( price )}
+}
+
+function addPrice( name, price ) {
+    return {type: PRICE_ADD, name: name, price: Number( price )}
 }
 
 

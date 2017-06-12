@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import PriceEdit from "../priceEdit/index";
+import PriceEdit from "../../container/priceEdit/index";
 
 export default class CraftView extends React.Component {
 
@@ -23,9 +23,8 @@ export default class CraftView extends React.Component {
                         <div>
                             {item.ingredients.map( ingredient =>
                                                            <div key={ingredient.name}>{ingredient.quantity} {ingredient.name}
-                                                               <PriceEdit name={ingredient.name}
-                                                                          price={ingredient.price}
-                                                                          changePrice={changePrice}/></div>
+                                                               <PriceEdit name={ingredient.name}/>
+                                                           </div>
                             )}
                         </div>
                     </div>
