@@ -1,6 +1,7 @@
 import {connect} from "react-redux";
-import {craftSelector, getAhPriceFor, getTotalCraftCost} from "../../reducers/crafting";
+import {craftSelector, getTotalCraftCost} from "../../reducers/crafting";
 import CraftView from "../../components/craftView/index";
+import {getAhPriceFor} from "../../reducers/prices";
 
 
 export default connect(

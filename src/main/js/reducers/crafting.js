@@ -1,3 +1,4 @@
+import {getPriceFor} from "./prices";
 const initialState = {
     recipes: [
         {
@@ -12,16 +13,6 @@ const initialState = {
                 {"name": "Thight Meat", "quantity": 1}
             ]
         }
-    ],
-    prices: [
-        {"name": "Soulstone", "price": 1600},
-        {"name": "Kaolin Refiner", "price": 5700},
-        {"name": "Silverfrost Quartz", "price": 17000},
-        {"name": "Squio Sap", "price": 2200},
-        {"name": "Thight Meat", "price": 0},
-        {"name": "Premium Kaolin Refiner", "price": 35000}
-
-
     ]
 };
 
@@ -47,13 +38,5 @@ export function getTotalCraftCost( state, props ) {
     return craftCost;
 }
 
-export function getAhPriceFor( state, props ) {
-    return getPriceFor( state, props.craft );
-}
-
-function getPriceFor( state, name ) {
-    let item = state.crafting.prices.find( item => item.name === name );
-    return item ? item.price : 0;
-}
 
 
