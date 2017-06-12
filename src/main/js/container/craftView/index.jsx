@@ -1,14 +1,11 @@
 import {connect} from "react-redux";
-import {craftSelector, getTotalCraftCost} from "../../reducers/crafting";
+import {enrichedCraftSelector} from "../../reducers/crafting";
 import CraftView from "../../components/craftView/index";
-import {getAhPriceFor} from "../../reducers/prices";
 
 
 export default connect(
         ( state, props ) => ({
-            item: craftSelector( state, props ),
-            craftingCost: getTotalCraftCost( state, props ),
-            ahPrice: getAhPriceFor( state, props )
+            item: enrichedCraftSelector( state, props )
         }),
         {}
 )( CraftView );

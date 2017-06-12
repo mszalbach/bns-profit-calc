@@ -4,13 +4,11 @@ import PropTypes from "prop-types";
 export default class CraftView extends React.Component {
 
     static propTypes = {
-        item: PropTypes.object.isRequired,
-        craftingCost: PropTypes.number.isRequired,
-        ahPrice: PropTypes.number.isRequired
+        item: PropTypes.object.isRequired
     };
 
     render() {
-        let {item, craftingCost, ahPrice} = this.props;
+        let {item} = this.props;
         return (
                 <div>
                     <div>
@@ -23,16 +21,16 @@ export default class CraftView extends React.Component {
                         <h2>Ingredients</h2>
                         <div>
                             {item.ingredients.map( ingredient =>
-                                                           <div key={ingredient.name}>{ingredient.quantity} {ingredient.name}</div>
+                                                           <div key={ingredient.name}>{ingredient.quantity} {ingredient.name} {ingredient.price}</div>
                             )}
                         </div>
                     </div>
 
                     <div>
                         <h2>Profit</h2>
-                        <div>AH price: {ahPrice}</div>
-                        <div>Crafting Cost: {craftingCost}</div>
-                        <div>Profit: {(ahPrice * item.quantity) - craftingCost}</div>
+                        <div>AH price: {item.ahPrice}</div>
+                        <div>Crafting Cost: {item.craftingCost}</div>
+                        <div>Profit: {(item.ahPrice * item.quantity) - item.craftingCost}</div>
                     </div>
                 </div>
         )

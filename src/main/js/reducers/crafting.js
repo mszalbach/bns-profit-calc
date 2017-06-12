@@ -25,7 +25,15 @@ export default function craftingReducer( state = initialState, action ) {
 
 export const craftSelector = ( state, props ) => state.crafting.recipes.find( recipe => recipe.name === props.craft );
 
-export function getTotalCraftCost( state, props ) {
+export function enrichedCraftSelector( state, props ) {
+    let craft = craftSelector( state, props );
+    craft.craftingCost = getTotalCraftCost( state, props );
+    craft.ahPrice = getPriceFor( state, craft.name );
+    addPricesToIngredients( state, craft );
+    return craft;
+}
+
+function getTotalCraftCost( state, props ) {
     let craftName = props.craft;
     let craft = state.crafting.recipes.find( recipe => recipe.name === craftName );
     let craftCost = craft ? craft.cost : 0;
@@ -36,6 +44,13 @@ export function getTotalCraftCost( state, props ) {
     }
 
     return craftCost;
+}
+
+function addPricesToIngredients( state, craft ) {
+    craft.ingredients.forEach(
+            ingredient => craft.ingredients.find( it => it.name === ingredient.name ).price = getPriceFor( state,
+                                                                                                           ingredient.name ) )
+    return craft;
 }
 
 

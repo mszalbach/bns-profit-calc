@@ -1,6 +1,6 @@
-import {getTotalCraftCost} from "reducers/crafting";
+import {enrichedCraftSelector} from "reducers/crafting";
 
-describe( 'getTotalCraftCost', () => {
+describe( 'enrichedCraftSelector', () => {
     it( 'should calculate crafting cost', () => {
         let state = {
             "crafting": {
@@ -26,7 +26,7 @@ describe( 'getTotalCraftCost', () => {
 
         };
         let props = {"craft": "Premium Kaolin Refiner"};
-        expect( getTotalCraftCost( state, props ) ).toBe( 7 );
+        expect( (enrichedCraftSelector( state, props ) ).craftingCost ).toBe( 7 );
     } );
     it( 'should calculate unknown ingredients with 0', () => {
         let state = {
@@ -50,18 +50,31 @@ describe( 'getTotalCraftCost', () => {
 
         };
         let props = {"craft": "Premium Kaolin Refiner"};
-        expect( getTotalCraftCost( state, props ) ).toBe( 5 );
+        expect( (enrichedCraftSelector( state, props ) ).craftingCost ).toBe( 5 );
     } );
 
-    it( 'should calculate unknown recipe with 0', () => {
+    it( 'should add prices for ingredients', () => {
         let state = {
             "crafting": {
-                recipes: []
+                "recipes": [
+                    {
+                        "name": "Premium Kaolin Refiner",
+                        "cost": 3,
+                        "ingredients": [
+                            {"name": "Soulstone", "quantity": 2},
+                        ]
+                    }
+                ]
+            },
+            "prices": {
+                "items": [
+                    {"name": "Soulstone", "price": 5},
+                ]
             }
 
         };
         let props = {"craft": "Premium Kaolin Refiner"};
-        expect( getTotalCraftCost( state, props ) ).toBe( 0 );
+        expect( (enrichedCraftSelector( state, props ) ).ingredients[0].price ).toBe( 5 );
     } );
 
 } );
