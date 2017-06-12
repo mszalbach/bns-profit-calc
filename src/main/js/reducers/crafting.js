@@ -24,7 +24,7 @@ export default function craftingReducer( state = initialState, action ) {
     }
 }
 
-const craftSelector = ( state, props ) => state.crafting.recipes.find( recipe => recipe.name === props.craft );
+const craftSelector = ( state, props ) => state.crafting.recipes.find( recipe => recipe.name === props.name );
 
 
 export const craftingCostSelector = createSelector( [craftSelector, getPrices], ( craft, prices ) => {

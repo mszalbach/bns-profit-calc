@@ -9,7 +9,7 @@ export default class CraftView extends React.Component {
     };
 
     render() {
-        let {item, changePrice} = this.props;
+        let {item, ahPrice} = this.props;
         return (
                 <div>
                     <div>
@@ -31,9 +31,9 @@ export default class CraftView extends React.Component {
 
                     <div>
                         <h2>Profit</h2>
-                        <div>AH price: {item.ahPrice}</div>
+                        <div>AH price: {ahPrice}</div>
                         <div>Crafting Cost: {item.craftingCost}</div>
-                        <div>Profit: {(item.ahPrice * item.quantity) - item.craftingCost}</div>
+                        <div>Profit: {(ahPrice * item.quantity) - item.craftingCost}</div>
                     </div>
                 </div>
         )

@@ -40,9 +40,9 @@ export const getPriceForItem = ( state, props ) => {
 export function mergePrice( name, price ) {
     return function ( dispatch, getState ) {
         if ( getState().prices.findIndex( item => item.name === name ) ) {
-            return dispatch( changePrice( name, price ) );
+            dispatch( changePrice( name, price ) );
         } else {
-            return dispatch( addPrice( name, price ) )
+            dispatch( addPrice( name, price ) )
         }
     }
 }

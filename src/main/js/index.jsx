@@ -17,7 +17,7 @@ export default class App extends React.Component {
                 <Provider store={store}>
                     <div>
                         <HashRouter>
-                            <CraftView craft="Premium Kaolin Refiner"/>
+                            <CraftView name="Premium Kaolin Refiner"/>
                         </HashRouter>
                     </div>
                 </Provider>
