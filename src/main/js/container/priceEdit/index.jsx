@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
 import PriceEdit from "../../components/priceEdit/index";
-import {getPriceForItem, hasPriceForItem, mergePrice} from "../../reducers/prices";
+import {getPriceForItem, mergePrice} from "../../reducers/prices";
 
 
 export default connect(

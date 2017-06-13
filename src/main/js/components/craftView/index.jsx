@@ -5,11 +5,14 @@ import PriceEdit from "../../container/priceEdit/index";
 export default class CraftView extends React.Component {
 
     static propTypes = {
-        item: PropTypes.object.isRequired
+        item: PropTypes.object.isRequired,
+        ahPrice: PropTypes.number.isRequired,
+        totalCraftingCost: PropTypes.number.isRequired,
+        profit: PropTypes.number.isRequired
     };
 
     render() {
-        let {item, ahPrice} = this.props;
+        let {item, ahPrice, totalCraftingCost, profit} = this.props;
         return (
                 <div>
                     <div>
@@ -32,8 +35,8 @@ export default class CraftView extends React.Component {
                     <div>
                         <h2>Profit</h2>
                         <div>AH price: {ahPrice}</div>
-                        <div>Crafting Cost: {item.craftingCost}</div>
-                        <div>Profit: {(ahPrice * item.quantity) - item.craftingCost}</div>
+                        <div>Crafting Cost: {totalCraftingCost}</div>
+                        <div>Profit: {profit}</div>
                     </div>
                 </div>
         )
