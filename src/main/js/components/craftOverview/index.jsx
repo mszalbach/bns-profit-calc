@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {Link} from "react-router-dom";
 import {Table} from "react-bootstrap";
 
 export default class CraftOverview extends React.Component {
 
     static propTypes = {
-        items: PropTypes.array.isRequired
+        items: PropTypes.array.isRequired,
+        push: PropTypes.func.isRequired
     };
 
     render() {
@@ -16,15 +16,13 @@ export default class CraftOverview extends React.Component {
                     <tr>
                         <th>#</th>
                         <th>Item</th>
-                        <th>Details</th>
                     </tr>
                     </thead>
                     <tbody>
                     {items.map( item =>
-                                        <tr key={item.name}>
+                                        <tr key={item.name} onClick={ () => this.props.push( item.name )}>
                                             <td>#</td>
                                             <td>{item.name}</td>
-                                            <td><Link to={"/" + item.name}>-------></Link></td>
                                         </tr> )}
                     </tbody>
                 </Table>
