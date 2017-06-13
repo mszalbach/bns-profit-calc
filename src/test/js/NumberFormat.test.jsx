@@ -19,5 +19,9 @@ describe( 'formatNumberToBnSCurrency', () => {
         expect( formatNumberToBnSCurrency() ).toEqual( "00g 00s 00c" );
     } );
 
+    it( 'should be able to convert negative numbers', () => {
+        expect( formatNumberToBnSCurrency( -400 ) ).toEqual( "-00g 04s 00c" );
+    } );
+
 } );
 
