@@ -7,7 +7,9 @@ const initialState = [
     {"name": "Silverfrost Quartz", "price": 17000},
     {"name": "Squio Sap", "price": 2200},
     {"name": "Thight Meat", "price": 0},
-    {"name": "Premium Kaolin Refiner", "price": 35000}
+    {"name": "Premium Kaolin Refiner", "price": 35000},
+    {"name": "Moonstone", "price": 22000},
+    {"name": "Silverfrost Mountains Dew", "price": 4700}
 ];
 
 export default function pricesReducer( state = initialState, action ) {

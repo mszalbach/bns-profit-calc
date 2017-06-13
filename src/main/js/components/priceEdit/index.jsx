@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import PriceText from "../priceText/index";
+import {FormControl} from "react-bootstrap";
 
 export default class PriceEdit extends React.Component {
 
@@ -39,11 +40,13 @@ export default class PriceEdit extends React.Component {
     render() {
 
         if ( this.state.editing ) {
-            return <input type="number" autoFocus={true}
-                          onBlur={this.finishEdit}
-                          onKeyPress={this.checkEnter}
-                          value={this.state.shownPrice}
-                          onChange={this.onChange}/>;
+            return <FormControl bsSize="small"
+                                type="number"
+                                autoFocus={true}
+                                onBlur={this.finishEdit}
+                                onKeyPress={this.checkEnter}
+                                value={this.state.shownPrice}
+                                onChange={this.onChange}/>;
         }
 
         return <PriceText onClick={this.startEdit} price={this.props.price}/>;

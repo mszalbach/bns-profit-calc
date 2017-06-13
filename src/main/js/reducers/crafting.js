@@ -13,6 +13,18 @@ const initialState = {
                 {"name": "Squio Sap", "quantity": 1},
                 {"name": "Thight Meat", "quantity": 1}
             ]
+        },
+        {
+            "name": "Silverfrost Transformation Stone",
+            "cost": 432,
+            "quantity": 10,
+            "ingredients": [
+                {"name": "Soulstone", "quantity": 250},
+                {"name": "Silverfrost Quartz", "quantity": 5},
+                {"name": "Premium Kaolin Refiner", "quantity": 5},
+                {"name": "Silverfrost Mountains Dew", "quantity": 10},
+                {"name": "Moonstone", "quantity": 10}
+            ]
         }
     ]
 };
@@ -23,6 +35,8 @@ export default function craftingReducer( state = initialState, action ) {
             return state;
     }
 }
+
+export const allCrafts = ( state, props ) => state.crafting.recipes;
 
 export const craftSelector = ( state, props ) => state.crafting.recipes.find( recipe => recipe.name === props.name );
 

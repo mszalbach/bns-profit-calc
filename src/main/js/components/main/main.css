@@ -1,0 +1,15 @@
+body {
+    margin: 10px;
+}
+
+.craft-overview {
+    width: 49%;
+    float: left;
+    margin-right: 10px;
+}
+
+.craft-details {
+    width: 49%;
+    display: inline-block;
+    white-space: nowrap;
+}

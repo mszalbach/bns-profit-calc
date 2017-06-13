@@ -8,5 +8,5 @@ import {history} from "./history";
 export default compose(
         applyMiddleware( thunk ),
         applyMiddleware( routerMiddleware( history ) ),
-        persistState( ['authentication'] )
+        persistState( ['prices'] )
 );
