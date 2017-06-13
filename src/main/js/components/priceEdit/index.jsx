@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import PriceText from "../priceText/index";
 
 export default class PriceEdit extends React.Component {
 
@@ -45,6 +46,6 @@ export default class PriceEdit extends React.Component {
                           onChange={this.onChange}/>;
         }
 
-        return <span onClick={this.startEdit}>{this.state.shownPrice}</span>;
+        return <PriceText onClick={this.startEdit} price={this.props.price}/>;
     }
 }

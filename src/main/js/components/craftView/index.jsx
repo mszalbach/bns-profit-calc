@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import PriceEdit from "../../container/priceEdit/index";
+import PriceText from "../priceText/index";
 
 export default class CraftView extends React.Component {
 
@@ -18,7 +19,7 @@ export default class CraftView extends React.Component {
                     <div>
                         <h1>{item.name}</h1>
                         <div>Quantity: {item.quantity}</div>
-                        <div>Crafting Fee: {item.cost}</div>
+                        <div>Crafting Fee: <PriceText price={item.cost}/></div>
                     </div>
 
                     <div>
@@ -34,9 +35,9 @@ export default class CraftView extends React.Component {
 
                     <div>
                         <h2>Profit</h2>
-                        <div>AH price: {ahPrice}</div>
-                        <div>Crafting Cost: {totalCraftingCost}</div>
-                        <div>Profit: {profit}</div>
+                        <div>AH price: <PriceText price={ahPrice}/></div>
+                        <div>Crafting Cost: <PriceText price={totalCraftingCost}/></div>
+                        <div>Profit: <PriceText price={profit}/></div>
                     </div>
                 </div>
         )
