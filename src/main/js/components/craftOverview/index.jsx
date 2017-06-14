@@ -13,7 +13,7 @@ export default class CraftOverview extends React.Component {
 
     selectRowProp = {
         mode: 'radio',
-        onSelect: ( row ) => this.props.push( row.name ),
+        onSelect: ( row ) => this.props.push( "/crafting/" + row.name ),
         hideSelectColumn: true,
         clickToSelect: true
     };
