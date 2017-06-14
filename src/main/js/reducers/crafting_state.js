@@ -2,6 +2,7 @@ export const initialCraftingState = {
     "recipes": [
         {
             "name": "Premium Kaolin Refiner",
+            "profession": "Merry Potter",
             "cost": 400,
             "quantity": 5,
             "ingredients": [
@@ -14,6 +15,7 @@ export const initialCraftingState = {
         },
         {
             "name": "Silverfrost Transformation Stone",
+            "profession": "Soul Warden",
             "cost": 432,
             "quantity": 10,
             "ingredients": [

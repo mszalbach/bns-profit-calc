@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {Table} from "react-bootstrap";
+import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
+import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
+
 
 export default class CraftOverview extends React.Component {
 
@@ -9,23 +11,22 @@ export default class CraftOverview extends React.Component {
         push: PropTypes.func.isRequired
     };
 
+    selectRowProp = {
+        mode: 'radio',
+        onSelect: ( row ) => this.props.push( row.name ),
+        hideSelectColumn: true,
+        clickToSelect: true
+    };
+
+
     render() {
         let {items} = this.props;
-        return (<Table striped bordered condensed hover>
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Item</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {items.map( item =>
-                                        <tr key={item.name} onClick={ () => this.props.push( item.name )}>
-                                            <td>#</td>
-                                            <td>{item.name}</td>
-                                        </tr> )}
-                    </tbody>
-                </Table>
+        return (
+                <BootstrapTable data={items} striped={true} hover={true} search={ true } selectRow={this.selectRowProp}>
+                    <TableHeaderColumn dataField="name" isKey={true} dataSort={true}>Name</TableHeaderColumn>
+                    <TableHeaderColumn dataField="profession" dataSort={true}>Profession</TableHeaderColumn>
+                    <TableHeaderColumn dataField="quantity">Quantity</TableHeaderColumn>
+                </BootstrapTable>
         )
     }
 }
