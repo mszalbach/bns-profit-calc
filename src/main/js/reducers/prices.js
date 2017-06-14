@@ -2,16 +2,7 @@ const PRICE_ADD = 'price/ADD';
 const PRICE_CHANGE = 'price/CHANGE';
 const PRICES_CLEAR = 'prices/CLEAR';
 
-const initialState = [
-    {"name": "Soulstone", "price": 1600},
-    {"name": "Kaolin Refiner", "price": 5700},
-    {"name": "Silverfrost Quartz", "price": 17000},
-    {"name": "Squio Sap", "price": 2200},
-    {"name": "Thight Meat", "price": 0},
-    {"name": "Premium Kaolin Refiner", "price": 35000},
-    {"name": "Moonstone", "price": 22000},
-    {"name": "Silverfrost Mountains Dew", "price": 4700}
-];
+const initialState = [];
 
 export default function pricesReducer( state = initialState, action ) {
     switch ( action.type ) {
