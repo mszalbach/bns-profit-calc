@@ -9,7 +9,7 @@
     "build": "webpack",
     "start": "webpack-dev-server --inline --hot",
     "test": "NODE_ENV=test karma start",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d target/build"
   },
   "repository": {
     "type": "git",
