@@ -1,7 +1,7 @@
 import React from "react";
 import {Redirect, Route, Switch} from "react-router-dom";
 import Crafting from "../crafting/index";
-import Prices from "../prices/index";
+import Prices from "../../container/prices/index";
 
 import "./main.css";
 

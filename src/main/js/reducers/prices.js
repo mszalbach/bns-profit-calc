@@ -1,5 +1,6 @@
 const PRICE_ADD = 'price/ADD';
 const PRICE_CHANGE = 'price/CHANGE';
+const PRICES_CLEAR = 'prices/CLEAR';
 
 const initialState = [
     {"name": "Soulstone", "price": 1600},
@@ -26,6 +27,8 @@ export default function pricesReducer( state = initialState, action ) {
             let index = state.findIndex( item => item.name === action.name );
             state[index].price = action.price;
             return state.slice( 0 );
+        case PRICES_CLEAR:
+            return [];
         default:
             return state;
     }
@@ -56,6 +59,10 @@ function changePrice( name, price ) {
 
 function addPrice( name, price ) {
     return {type: PRICE_ADD, name: name, price: Number( price )}
+}
+
+export function clearPrices() {
+    return {type: PRICES_CLEAR}
 }
 
 
