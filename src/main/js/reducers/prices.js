@@ -34,13 +34,6 @@ export default function pricesReducer( state = initialState, action ) {
     }
 }
 
-export const getPrices = ( state ) => state.prices;
-
-export const getPriceForItem = ( state, props ) => {
-    let item = state.prices.find( item => item.name === props.name );
-    return item ? item.price : 0;
-};
-
 
 export function mergePrice( name, price ) {
     return function ( dispatch, getState ) {
