@@ -4202,7 +4202,7 @@ react-addons-update@15.5.2:
   version "15.3.2"
   resolved "https://registry.yarnpkg.com/react-addons-update/-/react-addons-update-15.3.2.tgz#b6385c4db1e5df371825e0615b04360ed94430fe"
 
-react-bootstrap-table@^3.4.0:
+react-bootstrap-table@3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/react-bootstrap-table/-/react-bootstrap-table-3.4.0.tgz#2edb03a6055b0850475b4fe3df3501eca5350c22"
   dependencies:
@@ -4573,7 +4573,7 @@ requires-port@1.0.x, requires-port@1.x.x:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
 
-reselect@^3.0.1:
+reselect@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/reselect/-/reselect-3.0.1.tgz#efdaa98ea7451324d092b2b2163a6a1d7a9a2147"
 

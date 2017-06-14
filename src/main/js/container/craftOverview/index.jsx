@@ -1,12 +1,11 @@
 import {connect} from "react-redux";
-import {allCraftsSelector} from "../../selectors/crafting";
 import CraftOverview from "../../components/craftOverview/index";
-import {push} from "react-router-redux";
+import {getCraftingWithProfitSelector} from "../../selectors/crafting_price";
 
 
 export default connect(
         ( state, props ) => ({
-            items: allCraftsSelector( state, props ),
+            items: getCraftingWithProfitSelector( state, props )
         }),
-        {push}
+        {}
 )( CraftOverview );
