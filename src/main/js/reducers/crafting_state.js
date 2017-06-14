@@ -27,6 +27,55 @@ export const initialCraftingState = {
                 {"name": "Silverfrost Mountains Dew", "quantity": 10},
                 {"name": "Moonstone", "quantity": 10}
             ]
+        },
+		{
+            "name": "Crafted Silverfrost Critcal Soul Shield Primer",
+            "profession": "Soul Wardens",
+            "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/thumb/0/0b/Silverfrost_primer.png/40px-Silverfrost_primer.png",
+            "cost": 473,
+            "quantity": 1,
+            "ingredients": [
+                {"name": "Sequoia Log", "quantity": 10},
+                {"name": "Soulstone", "quantity": 8},
+                {"name": "Skypetal Feather", "quantity": 2}
+            ]
+        },
+		{
+            "name": "Artisanal Silverfrost Critical Soul Shield",
+            "profession": "Soul Wardens",
+            "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/thumb/3/33/Artisanal_Chest.jpg/40px-Artisanal_Chest.jpg",
+            "cost": 473,
+            "quantity": 5,
+            "ingredients": [
+                {"name": "Crafted Silverfrost Critcal Soul Shield Primer", "quantity": 1},
+                {"name": "Soulstone", "quantity": 60},
+                {"name": "Mamosu Bone", "quantity": 5},
+				{"name": "Premium Kaolin Refiner", "quantity": 5}
+            ]
+        },
+		{
+            "name": "Masterwork Silverfrost Critical Soul Shield",
+            "profession": "Soul Wardens",
+            "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/thumb/7/7f/Ssprimermaster.jpg/40px-Ssprimermaster.jpg",
+            "cost": 473,
+            "quantity": 1,
+            "ingredients": [
+                {"name": "Artisanal Silverfrost Critical Soul Shield", "quantity": 1},
+                {"name": "Soulstone", "quantity": 50},
+                {"name": "Masterwork Soul Shield Primer Design", "quantity": 5}
+            ]
+        },
+		{
+            "name": "Silverfrost Soul Warden Critical Soul Shield Primer",
+            "profession": "Soul Wardens",
+            "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/thumb/7/7f/Ssprimermaster.jpg/40px-Ssprimermaster.jpg",
+            "cost": 5000,
+            "quantity": 1,
+            "ingredients": [
+                {"name": "Masterworks Silverfrost Critical Soul Shield", "quantity": 1},
+                {"name": "Premium Kaolin Refiner", "quantity": 8},
+                {"name": "Soul Warden's Emblem", "quantity": 3}
+            ]
         }
     ]
 };
