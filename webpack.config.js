@@ -94,7 +94,7 @@ switch (process.env.npm_lifecycle_event) {
                         warnings: false
                     }
                 }),
-                new webpack.optimize.CommonsChunkPlugin("vendor", "[name].[chunkhash].js"),
+                new webpack.optimize.CommonsChunkPlugin({name: "vendor", filename: "[name].[chunkhash].js"}),
                 new CleanWebpackPlugin(PATHS.build)
             ]
 
