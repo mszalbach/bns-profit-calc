@@ -18,11 +18,16 @@ export default class CraftOverview extends React.Component {
         clickToSelect: true
     };
 
+    imageFormatter( cell, row ) {
+        return cell ? `<img src="${cell}" alt="${row.name}"/>` : cell;
+    }
+
 
     render() {
         let {items} = this.props;
         return (
                 <BootstrapTable data={items} striped={true} hover={true} search={ true } selectRow={this.selectRowProp}>
+                    <TableHeaderColumn dataField="image" dataFormat={this.imageFormatter}>#</TableHeaderColumn>
                     <TableHeaderColumn dataField="name" isKey={true} dataSort={true}>Name</TableHeaderColumn>
                     <TableHeaderColumn dataField="profession" dataSort={true}>Profession</TableHeaderColumn>
                     <TableHeaderColumn dataField="quantity">Quantity</TableHeaderColumn>

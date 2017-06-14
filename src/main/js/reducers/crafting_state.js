@@ -5,6 +5,7 @@ export const initialCraftingState = {
             "profession": "Merry Potter",
             "cost": 400,
             "quantity": 5,
+            "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/b/b0/Premium_kaolin_refiner.png",
             "ingredients": [
                 {"name": "Soulstone", "quantity": 8},
                 {"name": "Kaolin Refiner", "quantity": 5},
@@ -15,7 +16,8 @@ export const initialCraftingState = {
         },
         {
             "name": "Silverfrost Transformation Stone",
-            "profession": "Soul Warden",
+            "profession": "Soul Wardens",
+            "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/thumb/b/b9/Grocery_Element_Steel2.png/40px-Grocery_Element_Steel2.png",
             "cost": 432,
             "quantity": 10,
             "ingredients": [

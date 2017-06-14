@@ -3,13 +3,13 @@ body {
 }
 
 .craft-overview {
-    width: 49%;
+    width: 40%;
     float: left;
     margin-right: 10px;
 }
 
 .craft-details {
-    width: 49%;
+    width: 58%;
     display: inline-block;
     white-space: nowrap;
 }
