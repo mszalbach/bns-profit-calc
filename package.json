@@ -8,7 +8,12 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server --inline --hot",
-    "test": "NODE_ENV=test karma start"
+    "test": "NODE_ENV=test karma start",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mszalbach/bns-profit-calc.git"
   },
   "devDependencies": {
     "babel-core": "6.24.1",
@@ -44,6 +49,7 @@
   },
   "dependencies": {
     "bootstrap": "3.3.7",
+    "gh-pages": "1.0.0",
     "history": "4.6.1",
     "jquery": "3.2.1",
     "prop-types": "15.5.10",
