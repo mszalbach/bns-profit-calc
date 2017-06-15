@@ -1,4 +1,7 @@
 machine:
+  environment:
+    USER_NAME: mszalbach
+    USER_EMAIL: 4-bar-killa@web.de
   java:
     version: oraclejdk8
 
@@ -14,6 +17,6 @@ deployment:
   production:
     branch: master
     commands:
-      - git config --global user.email "4-bar-killa@web.de"
-      - git config --global user.name "mszalbach"
+      - git config --global user.email "$USER_EMAIL"
+      - git config --global user.name "$USER_NAME"
       - ./myarn deploy
