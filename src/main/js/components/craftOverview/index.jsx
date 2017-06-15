@@ -14,7 +14,7 @@ export default class CraftOverview extends React.Component {
     };
 
     imageFormatter( cell, row ) {
-        return cell ? <img src={cell} alt={row.name}/> : cell;
+        return cell ? <img src={cell} alt={row.name} height="40"/> : cell;
     }
 
     priceEditFormatter( cell ) {
