@@ -72,7 +72,7 @@ export const initialCraftingState = {
             "cost": 50000,
             "quantity": 1,
             "ingredients": [
-                {"name": "Masterworks Silverfrost Critical Soul Shield Primer", "quantity": 1},
+                {"name": "Masterwork Silverfrost Critical Soul Shield Primer", "quantity": 1},
                 {"name": "Premium Kaolin Refiner", "quantity": 8},
                 {"name": "Soul Warden's Emblem", "quantity": 3}
             ]
