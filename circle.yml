@@ -1,3 +1,7 @@
+general:
+  branches:
+    only:
+      - master
 machine:
   environment:
     USER_NAME: mszalbach
