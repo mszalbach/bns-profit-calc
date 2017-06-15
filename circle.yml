@@ -14,4 +14,6 @@ deployment:
   production:
     branch: master
     commands:
+      - git config --global user.email "4-bar-killa@web.de"
+      - git config --global user.name "mszalbach"
       - ./myarn deploy
