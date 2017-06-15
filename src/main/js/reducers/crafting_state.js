@@ -28,8 +28,8 @@ export const initialCraftingState = {
                 {"name": "Moonstone", "quantity": 10}
             ]
         },
-		{
-            "name": "Crafted Silverfrost Critcal Soul Shield Primer",
+	{
+            "name": "Crafted Silverfrost Critical Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/thumb/0/0b/Silverfrost_primer.png/40px-Silverfrost_primer.png",
             "cost": 473,
@@ -40,44 +40,44 @@ export const initialCraftingState = {
                 {"name": "Skypetal Feather", "quantity": 2}
             ]
         },
-		{
-            "name": "Artisanal Silverfrost Critical Soul Shield",
+	{
+            "name": "Artisanal Silverfrost Critical Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/thumb/3/33/Artisanal_Chest.jpg/40px-Artisanal_Chest.jpg",
             "cost": 473,
             "quantity": 5,
             "ingredients": [
-                {"name": "Crafted Silverfrost Critcal Soul Shield Primer", "quantity": 1},
+                {"name": "Crafted Silverfrost Critical Soul Shield Primer", "quantity": 1},
                 {"name": "Soulstone", "quantity": 60},
                 {"name": "Mamosu Bone", "quantity": 5},
 				{"name": "Premium Kaolin Refiner", "quantity": 5}
             ]
         },
-		{
-            "name": "Masterwork Silverfrost Critical Soul Shield",
+	{
+            "name": "Masterwork Silverfrost Critical Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/thumb/7/7f/Ssprimermaster.jpg/40px-Ssprimermaster.jpg",
             "cost": 473,
             "quantity": 1,
             "ingredients": [
-                {"name": "Artisanal Silverfrost Critical Soul Shield", "quantity": 1},
+                {"name": "Artisanal Silverfrost Critical Soul Shield Primer", "quantity": 1},
                 {"name": "Soulstone", "quantity": 50},
                 {"name": "Masterwork Soul Shield Primer Design", "quantity": 5}
             ]
         },
-		{
+	{
             "name": "Silverfrost Soul Warden Critical Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/thumb/7/7f/Ssprimermaster.jpg/40px-Ssprimermaster.jpg",
             "cost": 50000,
             "quantity": 1,
             "ingredients": [
-                {"name": "Masterworks Silverfrost Critical Soul Shield", "quantity": 1},
+                {"name": "Masterworks Silverfrost Critical Soul Shield Primer", "quantity": 1},
                 {"name": "Premium Kaolin Refiner", "quantity": 8},
                 {"name": "Soul Warden's Emblem", "quantity": 3}
             ]
         },
-		{
+	{
             "name": "Violet Honey Cookie",
             "profession": "Acquired Tase",
             "cost": 100000,
@@ -88,7 +88,7 @@ export const initialCraftingState = {
                 {"name": "Sacred Orb", "quantity": 3}
             ]
         },
-		{
+	{
             "name": "Royal Dye",
             "profession": "The Silver Cauldron",
             "cost": 100000,
@@ -97,10 +97,10 @@ export const initialCraftingState = {
                 {"name": "Rainbowfish Oil", "quantity": 1},
                 {"name": "Soulstone", "quantity": 5},
                 {"name": "Sacred Orb", "quantity": 5},
-				{"name": "Violet Honey Cookie", "quantity": 5}
+		{"name": "Violet Honey Cookie", "quantity": 5}
             ]
         },
-		{
+	{
             "name": "Empyrean Spirit Charm",
             "profession": "Earthseers",
             "cost": 300000,
@@ -109,10 +109,10 @@ export const initialCraftingState = {
                 {"name": "Jade Magnolia", "quantity": 1},
                 {"name": "Soulstone", "quantity": 100},
                 {"name": "Sacred Orb", "quantity": 100},
-				{"name": "Royal Dye", "quantity": 1}
+		{"name": "Royal Dye", "quantity": 1}
             ]
         },
-		{
+	{
             "name": "Silverfrost Premium Transformation Stone",
             "profession": "Transmute",
             "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/thumb/b/b9/Silverfrost_Premium_Transformation_Stone.png/64px-Silverfrost_Premium_Transformation_Stone.png",
@@ -122,11 +122,11 @@ export const initialCraftingState = {
                 {"name": "Moonstone", "quantity": 8},
                 {"name": "Soulstone", "quantity": 30},
                 {"name": "Sacred Orb", "quantity": 30},
-				{"name": "Elysian Orb", "quantity": 8},
-				{"name": "Silverfrost Transformation Stone", "quantity": 4}
+		{"name": "Elysian Orb", "quantity": 8},
+		{"name": "Silverfrost Transformation Stone", "quantity": 4}
             ]
         },
-		{
+	{
             "name": "Sealed Sacred Oil",
             "profession": "Transmute",
             "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/f/f2/Grocery_Liquor_Bottle.png",
@@ -135,8 +135,8 @@ export const initialCraftingState = {
             "ingredients": [
                 {"name": "Demon Spirit Stone", "quantity": 1},
                 {"name": "Evolved Stone", "quantity": 25},
-				{"name": "Elysian Orb", "quantity": 10},
-				{"name": "Silverfrost Transformation Stone", "quantity": 5}
+		{"name": "Elysian Orb", "quantity": 10},
+		{"name": "Silverfrost Transformation Stone", "quantity": 5}
             ]
         }
     ]
