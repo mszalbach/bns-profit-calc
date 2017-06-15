@@ -3,7 +3,7 @@ export const initialCraftingState = {
         {
             "name": "Premium Kaolin Refiner",
             "profession": "Merry Potter",
-            "cost": 400,
+            "cost": 432,
             "quantity": 5,
             "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/b/b0/Premium_kaolin_refiner.png",
             "ingredients": [
@@ -11,7 +11,7 @@ export const initialCraftingState = {
                 {"name": "Kaolin Refiner", "quantity": 5},
                 {"name": "Silverfrost Quartz", "quantity": 5},
                 {"name": "Squio Sap", "quantity": 1},
-                {"name": "Thight Meat", "quantity": 1}
+                {"name": "Thight Meat", "quantity": 2}
             ]
         },
         {
@@ -69,12 +69,74 @@ export const initialCraftingState = {
             "name": "Silverfrost Soul Warden Critical Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/thumb/7/7f/Ssprimermaster.jpg/40px-Ssprimermaster.jpg",
-            "cost": 5000,
+            "cost": 50000,
             "quantity": 1,
             "ingredients": [
                 {"name": "Masterworks Silverfrost Critical Soul Shield", "quantity": 1},
                 {"name": "Premium Kaolin Refiner", "quantity": 8},
                 {"name": "Soul Warden's Emblem", "quantity": 3}
+            ]
+        },
+		{
+            "name": "Violet Honey Cookie",
+            "profession": "Acquired Tase",
+            "cost": 100000,
+            "quantity": 1,
+            "ingredients": [
+                {"name": "Sweet Potato", "quantity": 1},
+                {"name": "Soulstone", "quantity": 3},
+                {"name": "Sacred Orb", "quantity": 3}
+            ]
+        },
+		{
+            "name": "Royal Dye",
+            "profession": "The Silver Cauldron",
+            "cost": 100000,
+            "quantity": 1,
+            "ingredients": [
+                {"name": "Rainbowfish Oil", "quantity": 1},
+                {"name": "Soulstone", "quantity": 5},
+                {"name": "Sacred Orb", "quantity": 5},
+				{"name": "Violet Honey Cookie", "quantity": 5}
+            ]
+        },
+		{
+            "name": "Empyrean Spirit Charm",
+            "profession": "Earthseers",
+            "cost": 300000,
+            "quantity": 1,
+            "ingredients": [
+                {"name": "Jade Magnolia", "quantity": 1},
+                {"name": "Soulstone", "quantity": 100},
+                {"name": "Sacred Orb", "quantity": 100},
+				{"name": "Royal Dye", "quantity": 1}
+            ]
+        },
+		{
+            "name": "Silverfrost Premium Transformation Stone",
+            "profession": "Transmute",
+            "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/thumb/b/b9/Silverfrost_Premium_Transformation_Stone.png/64px-Silverfrost_Premium_Transformation_Stone.png",
+            "cost": 150000,
+            "quantity": 1,
+            "ingredients": [
+                {"name": "Moonstone", "quantity": 8},
+                {"name": "Soulstone", "quantity": 30},
+                {"name": "Sacred Orb", "quantity": 30},
+				{"name": "Elysian Orb", "quantity": 8},
+				{"name": "Silverfrost Transformation Stone", "quantity": 4}
+            ]
+        },
+		{
+            "name": "Sealed Sacred Oil",
+            "profession": "Transmute",
+            "image": "https://hydra-media.cursecdn.com/bladeandsoul.gamepedia.com/f/f2/Grocery_Liquor_Bottle.png",
+            "cost": 50000,
+            "quantity": 1,
+            "ingredients": [
+                {"name": "Demon Spirit Stone", "quantity": 1},
+                {"name": "Evolved Stone", "quantity": 25},
+				{"name": "Elysian Orb", "quantity": 10},
+				{"name": "Silverfrost Transformation Stone", "quantity": 5}
             ]
         }
     ]
