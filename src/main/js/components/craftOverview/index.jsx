@@ -54,6 +54,8 @@ export default class CraftOverview extends React.Component {
                     <TableHeaderColumn dataField="name" isKey={true} dataSort={true}>Name</TableHeaderColumn>
                     <TableHeaderColumn dataField="profession" dataSort={true}>Profession</TableHeaderColumn>
                     <TableHeaderColumn dataField="quantity">Quantity</TableHeaderColumn>
+                    <TableHeaderColumn dataField="cost" dataFormat={this.priceFormatter}>Crafting
+                        Cost</TableHeaderColumn>
                     <TableHeaderColumn dataField="name" expandable={ false } dataFormat={this.priceEditFormatter}>AH
                         Price</TableHeaderColumn>
                     <TableHeaderColumn dataField="totalCraftingCost" dataFormat={this.priceFormatter}>Total Crafting
