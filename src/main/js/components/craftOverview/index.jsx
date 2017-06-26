@@ -50,10 +50,12 @@ export default class CraftOverview extends React.Component {
                                 expandableRow={ () => true }
                                 expandComponent={ this.expandComponent }
                 >
-                    <TableHeaderColumn dataField="image" dataFormat={this.imageFormatter}>#</TableHeaderColumn>
-                    <TableHeaderColumn dataField="name" isKey={true} dataSort={true}>Name</TableHeaderColumn>
+                    <TableHeaderColumn dataField="image" dataFormat={this.imageFormatter}
+                                       width="60px">#</TableHeaderColumn>
+                    <TableHeaderColumn dataField="name" isKey={true} dataSort={true}
+                                       width="400px">Name</TableHeaderColumn>
                     <TableHeaderColumn dataField="profession" dataSort={true}>Profession</TableHeaderColumn>
-                    <TableHeaderColumn dataField="quantity">Quantity</TableHeaderColumn>
+                    <TableHeaderColumn dataField="quantity" width="100px">Quantity</TableHeaderColumn>
                     <TableHeaderColumn dataField="cost" dataFormat={this.priceFormatter}>Crafting
                         Cost</TableHeaderColumn>
                     <TableHeaderColumn dataField="name" expandable={ false } dataFormat={this.priceEditFormatter}>AH
