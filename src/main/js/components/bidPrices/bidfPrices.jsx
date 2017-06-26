@@ -1,8 +1,7 @@
 import React from "react";
-import {ControlLabel, Form, FormControl} from "react-bootstrap";
-import PriceText from "../priceText/index";
-import FormGroup from "react-bootstrap/es/FormGroup";
-import PriceEdit from "../priceEdit/index";
+import {ControlLabel, Form, FormControl, FormGroup} from "react-bootstrap";
+import PriceText from "../priceText";
+import PriceEdit from "../priceEdit";
 
 
 export default class BidPrices extends React.Component {
