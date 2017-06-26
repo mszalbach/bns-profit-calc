@@ -28,7 +28,7 @@ export default class PriceEdit extends React.Component {
     };
 
     finishEdit = ( e ) => {
-        const value = e.target.value;
+        const value = Number( e.target.value );
         this.setState( {editing: false} );
         this.props.mergePrice( this.props.name, value );
     };
