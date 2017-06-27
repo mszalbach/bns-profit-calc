@@ -49,6 +49,10 @@ export default class PriceEdit extends React.Component {
                                 onChange={this.onChange}/>;
         }
 
-        return <PriceText onClick={this.startEdit} price={this.props.price}/>;
+        return <span>
+            <PriceText price={this.props.price}/>
+            {' '}
+            <span onClick={this.startEdit} className="glyphicon glyphicon-pencil"/>
+        </span>;
     }
 }

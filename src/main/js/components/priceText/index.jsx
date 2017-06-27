@@ -12,11 +12,11 @@ export default class PriceText extends React.Component {
     };
 
     render() {
-        let {price, shouldHighlight, ...props} = this.props;
+        let {price, shouldHighlight} = this.props;
         let classname = "";
         if ( shouldHighlight ) {
             classname = price >= 0 ? "positive" : "negative";
         }
-        return <span className={classname} {...props}>{formatNumberToBnSCurrency( price )}</span>;
+        return <span className={classname}>{formatNumberToBnSCurrency( price )}</span>;
     }
 }

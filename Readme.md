@@ -1,4 +1,5 @@
 # Introduction
+[![CircleCI](https://circleci.com/gh/mszalbach/bns-profit-calc.svg?style=svg)](https://circleci.com/gh/mszalbach/bns-profit-calc)
 
 A hosted version can be found at [github.io](https://mszalbach.github.io/bns-profit-calc).
 
