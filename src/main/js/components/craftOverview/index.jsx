@@ -45,9 +45,9 @@ export default class CraftOverview extends React.Component {
                 <BootstrapTable data={items}
                                 striped={true}
                                 hover={true}
-                                search={ true }
+                                search={true}
                                 options={options}
-                                expandableRow={ () => true }
+                                expandableRow={() => true}
                                 expandComponent={ this.expandComponent }
                 >
                     <TableHeaderColumn dataField="image" dataFormat={this.imageFormatter}
@@ -58,7 +58,7 @@ export default class CraftOverview extends React.Component {
                     <TableHeaderColumn dataField="quantity" width="100px">Quantity</TableHeaderColumn>
                     <TableHeaderColumn dataField="cost" dataFormat={this.priceFormatter}>Crafting
                         Cost</TableHeaderColumn>
-                    <TableHeaderColumn dataField="name" expandable={ false } dataFormat={this.priceEditFormatter}>AH
+                    <TableHeaderColumn dataField="name" expandable={false} dataFormat={this.priceEditFormatter}>AH
                         Price</TableHeaderColumn>
                     <TableHeaderColumn dataField="totalCraftingCost" dataFormat={this.priceFormatter}>Total Crafting
                         Cost</TableHeaderColumn>
