@@ -11,7 +11,7 @@ export const initialCraftingState = {
                 {"name": "Kaolin Refiner", "quantity": 5},
                 {"name": "Silverfrost Quartz", "quantity": 5},
                 {"name": "Squio Sap", "quantity": 1},
-                {"name": "Thight Meat", "quantity": 2}
+                {"name": "Thigh Meat", "quantity": 2}
             ]
         },
         {
