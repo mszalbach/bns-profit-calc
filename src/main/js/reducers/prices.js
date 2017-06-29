@@ -25,6 +25,15 @@ export default function pricesReducer( state = initialState, action ) {
     }
 }
 
+export function updatePrices( prices ) {
+    return function ( dispatch, getState ) {
+        prices.filter( item => item.ItemPrice > 0 ).map( item => {
+            dispatch( mergePrice( item.Name, item.ItemPrice ) );
+        } );
+    }
+
+}
+
 
 export function mergePrice( name, price ) {
     return function ( dispatch, getState ) {
