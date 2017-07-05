@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
 import PriceEdit from "../../container/priceEdit/index";
-import Button from "react-bootstrap/es/Button";
 import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
+import {Button} from "react-bootstrap";
 
 
 export default class Prices extends React.Component {

@@ -402,9 +402,9 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-loader@7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-7.1.0.tgz#3fbf2581f085774bd9642dca9990e6d6c1491144"
+babel-loader@7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-7.1.1.tgz#b87134c8b12e3e4c2a94e0546085bc680a2b8488"
   dependencies:
     find-cache-dir "^1.0.0"
     loader-utils "^1.0.2"
@@ -4359,9 +4359,9 @@ react-addons-update@15.6.0:
   version "15.3.2"
   resolved "https://registry.yarnpkg.com/react-addons-update/-/react-addons-update-15.3.2.tgz#b6385c4db1e5df371825e0615b04360ed94430fe"
 
-react-bootstrap-table@3.4.2:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/react-bootstrap-table/-/react-bootstrap-table-3.4.2.tgz#67dd58abdd5a956c5d296a7bff6ee3a30da69b5b"
+react-bootstrap-table@3.4.3:
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/react-bootstrap-table/-/react-bootstrap-table-3.4.3.tgz#0b1b68ff57d44aa7f41bc2deb5b84e31fcb14443"
   dependencies:
     "@allenfang/react-toastr" "2.8.2"
     classnames "^2.1.2"
@@ -4742,6 +4742,10 @@ resolve-pathname@^2.0.0:
 resolve@1.1.x:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
+
+rest@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/rest/-/rest-2.0.0.tgz#6dfadf66a405c49cfbd5b4bd25b59fd29cd861bc"
 
 right-align@^0.1.1:
   version "0.1.3"

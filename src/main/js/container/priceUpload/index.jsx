@@ -1,9 +1,9 @@
 import {connect} from "react-redux";
-import {updatePrices} from "../../reducers/prices";
+import {clearPrices, loadPrices} from "../../reducers/prices";
 import PriceUpload from "../../components/priceUpload/index";
 
 
 export default connect(
         ( state ) => ({}),
-        {updatePrices}
+        {loadPrices, clearPrices}
 )( PriceUpload );
