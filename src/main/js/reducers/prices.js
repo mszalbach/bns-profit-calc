@@ -10,18 +10,6 @@ const initialState = [];
 
 export default function pricesReducer( state = initialState, action ) {
     switch ( action.type ) {
-        case PRICE_ADD:
-            return [
-                ...state,
-                {
-                    name: action.name,
-                    price: action.price
-                }
-            ];
-        case PRICE_CHANGE:
-            let index = state.findIndex( item => item.name === action.name );
-            state[index].price = action.price;
-            return state.slice( 0 );
         case PRICES_CLEAR:
             return [];
         case PRICES_LOAD:
@@ -48,34 +36,11 @@ export function loadPrices() {
 
 }
 
-export function updatePrices( prices ) {
-    return function ( dispatch ) {
-        prices.filter( item => item.ItemPrice > 0 ).map( item => {
-            dispatch( mergePrice( item.Name, item.ItemPrice ) );
-        } );
-    }
-
-}
-
 
 export function mergePrice( name, price ) {
-    return function ( dispatch, getState ) {
-        if ( getState().prices.find( item => item.name === name ) ) {
-            dispatch( changePrice( name, price ) );
-        } else {
-            dispatch( addPrice( name, price ) )
-        }
-    }
+    return {type: PRICES_LOAD, items: [{name: name, price: price}]};
 }
 
-
-function changePrice( name, price ) {
-    return {type: PRICE_CHANGE, name: name, price: Number( price )}
-}
-
-function addPrice( name, price ) {
-    return {type: PRICE_ADD, name: name, price: Number( price )}
-}
 
 export function clearPrices() {
     return {type: PRICES_CLEAR}
