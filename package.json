@@ -7,7 +7,7 @@
   "main": "App.jsx",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --inline --hot",
+    "start": "webpack-dev-server --inline --hot --https",
     "test": "NODE_ENV=test karma start",
     "deploy": "gh-pages -d target/build"
   },

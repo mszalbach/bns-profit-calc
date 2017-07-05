@@ -49,17 +49,7 @@ const common = {
         ]
     },
 
-    devServer: {
-        proxy: {
-            '/api': {
-                target: 'http://localhost:8081'
-            },
-            '/sockjs': {
-                target: 'http://localhost:8081'
-            }
-
-        }
-    },
+    devServer: {},
 
 
     plugins: [
