@@ -12,18 +12,7 @@ export default class PriceEdit extends React.Component {
     };
 
     state = {
-        shownPrice: this.props.price,
         editing: false
-    };
-
-    //needed to set the internal state or else the input part will still have the old value
-    componentWillReceiveProps( nextProps ) {
-        this.setState( {shownPrice: nextProps.price} );
-    }
-
-
-    onChange = ( e ) => {
-        this.setState( {shownPrice: e.target.value} );
     };
 
     checkEnter = ( e ) => {
@@ -50,8 +39,7 @@ export default class PriceEdit extends React.Component {
                                 autoFocus={true}
                                 onBlur={this.finishEdit}
                                 onKeyPress={this.checkEnter}
-                                value={this.state.shownPrice}
-                                onChange={this.onChange}/>;
+                                defaultValue={this.props.price}/>;
         }
 
         return <span>
