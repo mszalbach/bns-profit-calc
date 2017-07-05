@@ -16,6 +16,11 @@ export default class PriceEdit extends React.Component {
         editing: false
     };
 
+    //needed to set the internal state or else the input part will still have the old value
+    componentWillReceiveProps( nextProps ) {
+        this.setState( {shownPrice: nextProps.price} );
+    }
+
 
     onChange = ( e ) => {
         this.setState( {shownPrice: e.target.value} );

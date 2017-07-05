@@ -3,7 +3,6 @@ import {Redirect, Route, Switch} from "react-router-dom";
 import Prices from "../../container/prices";
 import CraftOverview from "../../container/craftOverview";
 import BidPrices from "../bidPrices/bidfPrices";
-import PriceUpload from "../../container/priceUpload";
 import "./main.css";
 
 
@@ -14,7 +13,6 @@ export default class Main extends React.Component {
                     <Route path="/crafting" component={CraftOverview}/>
                     <Route path="/prices" component={Prices}/>
                     <Route path="/bidprices" component={BidPrices}/>
-                    <Route path="/uploadprices" component={PriceUpload}/>
                     <Redirect from='/' to='/crafting'/>
                 </Switch>
         )

@@ -5,6 +5,8 @@ import {getPriceForItemSelector} from "../../selectors/prices";
 
 
 export default connect(
-        ( state, props ) => ({price: getPriceForItemSelector( state, props )}),
+        ( state, props ) => ({
+            price: getPriceForItemSelector( state, props )
+        }),
         {mergePrice}
 )( PriceEdit );

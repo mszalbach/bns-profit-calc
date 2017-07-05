@@ -1,7 +1,10 @@
 import {createClient} from "../config/client";
+import {merge} from "../utils/Arrays";
+
 const PRICE_ADD = 'price/ADD';
 const PRICE_CHANGE = 'price/CHANGE';
 const PRICES_CLEAR = 'prices/CLEAR';
+const PRICES_LOAD = 'prices/LOAD';
 
 const initialState = [];
 
@@ -21,6 +24,8 @@ export default function pricesReducer( state = initialState, action ) {
             return state.slice( 0 );
         case PRICES_CLEAR:
             return [];
+        case PRICES_LOAD:
+            return merge( state, action.items, "name" );
         default:
             return state;
     }
@@ -32,7 +37,10 @@ export function loadPrices() {
                                    method: 'GET',
                                    path: "http://api.silveress.ie/bns/market/EU.json"
                                } ).then( response => {
-                                             dispatch( updatePrices( response.entity ) );
+            let serverPrices = response.entity.filter( item => item.ItemPrice > 0 ).map( item => {
+                return {name: item.Name, price: item.ItemPrice};
+            } );
+            dispatch( {type: PRICES_LOAD, items: serverPrices} );
                                          }
         );
 

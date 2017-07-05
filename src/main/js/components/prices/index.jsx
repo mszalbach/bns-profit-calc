@@ -26,6 +26,10 @@ export default class Prices extends React.Component {
 
         return (
                 <div>
+                    <div>Prices are loaded from <a href="http://api.silveress.ie/bns/market/EU.json">ap.silveress.ie</a>
+                    </div>
+                    <Button onClick={this.props.loadPrices}>Load prices</Button>
+                    {' '}
                     <Button onClick={this.props.clearPrices}>Clear prices</Button>
 
                     <BootstrapTable data={allPrices} striped={true} hover={true} search={true} options={options}>
