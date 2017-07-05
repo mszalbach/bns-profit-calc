@@ -23,7 +23,7 @@ export function loadPrices() {
     return function ( dispatch ) {
         return createClient()( {
                                    method: 'GET',
-                                   path: "http://api.silveress.ie/bns/market/EU.json"
+                                   path: "https://api.silveress.ie/bns/market/EU.json"
                                } ).then( response => {
             let serverPrices = response.entity.filter( item => item.ItemPrice > 0 ).map( item => {
                 return {name: item.Name, price: item.ItemPrice};
