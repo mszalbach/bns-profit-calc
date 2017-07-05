@@ -16,6 +16,3 @@ export const allItemNamesSelector = createSelector( [allCraftsNameSelector, allI
                                                     ( craftNames, ingredientNames ) =>
                                                             [...new Set( craftNames.concat( ingredientNames ) )]
 );
-
-export const craftSelector = createSelector( [allCraftsSelector, ( _, props ) => props.name],
-                                             ( crafts, name ) => crafts.find( recipe => recipe.name === name ) );
