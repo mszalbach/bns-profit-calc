@@ -5,7 +5,7 @@ export const initialCraftingState = {
             "profession": "Merry Potter",
             "cost": 432,
             "quantity": 5,
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/gather_cheongia_bottle_3_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/gather_cheongia_bottle_3_1.png",
             "ingredients": [
                 {"name": "Soulstone", "quantity": 8},
                 {"name": "Kaolin Refiner", "quantity": 5},
@@ -17,7 +17,7 @@ export const initialCraftingState = {
         {
             "name": "Silverfrost Transformation Stone",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/grocery_element_steel2_4_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/grocery_element_steel2_4_1.png",
             "cost": 432,
             "quantity": 10,
             "ingredients": [
@@ -31,7 +31,7 @@ export const initialCraftingState = {
         {
             "name": "Crafted Silverfrost Critical Soul Shield Primer",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master_pos8_3_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master_pos8_3_1.png",
             "cost": 473,
             "quantity": 1,
             "ingredients": [
@@ -43,7 +43,7 @@ export const initialCraftingState = {
         {
             "name": "Crafted Silverfrost Piercing Soul Shield Primer",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master_pos8_3_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master_pos8_3_1.png",
             "cost": 473,
             "quantity": 1,
             "ingredients": [
@@ -55,7 +55,7 @@ export const initialCraftingState = {
         {
             "name": "Crafted Silverfrost Reflex Soul Shield Primer",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master_pos8_3_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master_pos8_3_1.png",
             "cost": 473,
             "quantity": 1,
             "ingredients": [
@@ -67,7 +67,7 @@ export const initialCraftingState = {
         {
             "name": "Artisanal Silverfrost Critical Soul Shield Primer",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master2_pos8_4_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master2_pos8_4_1.png",
             "cost": 473,
             "quantity": 5,
             "ingredients": [
@@ -80,7 +80,7 @@ export const initialCraftingState = {
         {
             "name": "Artisanal Silverfrost Piercing Soul Shield Primer",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master2_pos8_4_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master2_pos8_4_1.png",
             "cost": 473,
             "quantity": 5,
             "ingredients": [
@@ -93,7 +93,7 @@ export const initialCraftingState = {
         {
             "name": "Artisanal Silverfrost Reflex Soul Shield Primer",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master2_pos8_4_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master2_pos8_4_1.png",
             "cost": 473,
             "quantity": 5,
             "ingredients": [
@@ -106,7 +106,7 @@ export const initialCraftingState = {
         {
             "name": "Masterwork Silverfrost Critical Soul Shield Primer",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/gem/equipgem_master2_pos8_5_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/gem/equipgem_master2_pos8_5_1.png",
             "cost": 473,
             "quantity": 1,
             "ingredients": [
@@ -118,7 +118,7 @@ export const initialCraftingState = {
         {
             "name": "Masterwork Silverfrost Piercing Soul Shield Primer",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/gem/equipgem_master2_pos8_5_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/gem/equipgem_master2_pos8_5_1.png",
             "cost": 473,
             "quantity": 1,
             "ingredients": [
@@ -130,7 +130,7 @@ export const initialCraftingState = {
         {
             "name": "Masterwork Silverfrost Reflex Soul Shield Primer",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/gem/equipgem_master2_pos8_5_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/gem/equipgem_master2_pos8_5_1.png",
             "cost": 473,
             "quantity": 1,
             "ingredients": [
@@ -142,7 +142,7 @@ export const initialCraftingState = {
         {
             "name": "Silverfrost Soul Warden Critical Soul Shield Primer",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_honcheonfight5_pos8_7_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_honcheonfight5_pos8_7_1.png",
             "cost": 50000,
             "quantity": 1,
             "ingredients": [
@@ -154,7 +154,7 @@ export const initialCraftingState = {
         {
             "name": "Silverfrost Soul Warden Piercing Soul Shield Primer",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_honcheonfight5_pos8_7_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_honcheonfight5_pos8_7_1.png",
             "cost": 50000,
             "quantity": 1,
             "ingredients": [
@@ -166,7 +166,7 @@ export const initialCraftingState = {
         {
             "name": "Silverfrost Soul Warden Reflex Soul Shield Primer",
             "profession": "Soul Wardens",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_honcheonfight5_pos8_7_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_honcheonfight5_pos8_7_1.png",
             "cost": 50000,
             "quantity": 1,
             "ingredients": [
@@ -178,7 +178,7 @@ export const initialCraftingState = {
         {
             "name": "Violet Honey Cookie",
             "profession": "Acquired Tase",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/food_dumpling_grade_10_5_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/food_dumpling_grade_10_5_1.png",
             "cost": 100000,
             "quantity": 1,
             "ingredients": [
@@ -190,7 +190,7 @@ export const initialCraftingState = {
         {
             "name": "Royal Dye",
             "profession": "The Silver Cauldron",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/gather_sap_ginkgo_refine_5_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/gather_sap_ginkgo_refine_5_1.png",
             "cost": 100000,
             "quantity": 1,
             "ingredients": [
@@ -203,7 +203,7 @@ export const initialCraftingState = {
         {
             "name": "Empyrean Spirit Charm",
             "profession": "Earthseers",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/talisman_13phase_unseal_7_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/talisman_13phase_unseal_7_1.png",
             "cost": 300000,
             "quantity": 1,
             "ingredients": [
@@ -216,7 +216,7 @@ export const initialCraftingState = {
         {
             "name": "Silverfrost Premium Transformation Stone",
             "profession": "Transmute",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/grocery_element_steel3_4_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/grocery_element_steel3_4_1.png",
             "cost": 150000,
             "quantity": 1,
             "ingredients": [
@@ -230,7 +230,7 @@ export const initialCraftingState = {
         {
             "name": "Sealed Sacred Oil",
             "profession": "Transmute",
-            "image": "http://static.ncsoft.com/bns_resource/ui_resource/grocery/grocery_liquor_bottle_5_1.png",
+            "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/grocery_liquor_bottle_5_1.png",
             "cost": 50000,
             "quantity": 1,
             "ingredients": [
