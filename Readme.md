@@ -20,6 +20,5 @@ And you can visit the app at <http://localhost:8080>.
 
 ## Simple Browser
 Or simple start the target/build/index.html file in any browser.
-```
 
 
