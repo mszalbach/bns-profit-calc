@@ -42,28 +42,31 @@ export default class CraftOverview extends React.Component {
         };
         let {items} = this.props;
         return (
-                <BootstrapTable data={items}
-                                striped={true}
-                                hover={true}
-                                search={true}
-                                options={options}
-                                expandableRow={() => true}
-                                expandComponent={ this.expandComponent }
-                >
-                    <TableHeaderColumn dataField="image" dataFormat={this.imageFormatter}
-                                       width="60px">#</TableHeaderColumn>
-                    <TableHeaderColumn dataField="name" isKey={true} dataSort={true}
-                                       width="400px">Name</TableHeaderColumn>
-                    <TableHeaderColumn dataField="profession" dataSort={true}>Profession</TableHeaderColumn>
-                    <TableHeaderColumn dataField="quantity" width="100px">Quantity</TableHeaderColumn>
-                    <TableHeaderColumn dataField="cost" dataFormat={this.priceFormatter}>Crafting
-                        Cost</TableHeaderColumn>
-                    <TableHeaderColumn dataField="name" expandable={false} dataFormat={this.priceEditFormatter}>AH
-                        Price</TableHeaderColumn>
-                    <TableHeaderColumn dataField="totalCraftingCost" dataFormat={this.priceFormatter}>Total Crafting
-                        Cost</TableHeaderColumn>
-                    <TableHeaderColumn dataField="profit" dataFormat={this.highlightedPriceFormatter} dataSort={true}>Profit</TableHeaderColumn>
-                </BootstrapTable>
+            <BootstrapTable data={items}
+                            striped={true}
+                            hover={true}
+                            search={true}
+                            options={options}
+                            expandableRow={() => true}
+                            expandComponent={ this.expandComponent }
+            >
+                <TableHeaderColumn dataField="image" dataFormat={this.imageFormatter}
+                                   width="60px">#</TableHeaderColumn>
+                <TableHeaderColumn dataField="name" isKey={true} dataSort={true}
+                                   width="400px">Name</TableHeaderColumn>
+                <TableHeaderColumn dataField="profession" dataSort={true}>Profession</TableHeaderColumn>
+                <TableHeaderColumn dataField="quantity" dataAlign="right" width="100px">Quantity</TableHeaderColumn>
+                <TableHeaderColumn dataField="cost" dataAlign="right" dataFormat={this.priceFormatter}>Crafting
+                    Cost</TableHeaderColumn>
+                <TableHeaderColumn dataField="name" expandable={false} dataFormat={this.priceEditFormatter}
+                                   dataAlign="right">AH
+                    Price</TableHeaderColumn>
+                <TableHeaderColumn dataField="totalCraftingCost" dataAlign="right" dataFormat={this.priceFormatter}>Total
+                    Crafting
+                    Cost</TableHeaderColumn>
+                <TableHeaderColumn dataField="profit" dataAlign="right" dataFormat={this.highlightedPriceFormatter}
+                                   dataSort={true}>Profit</TableHeaderColumn>
+            </BootstrapTable>
         )
     }
 }

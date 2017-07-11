@@ -29,8 +29,9 @@ export default class IngredientsTable extends React.Component {
                                options={options}
         >
             <TableHeaderColumn dataField="name" isKey={true} dataSort={true}>Name</TableHeaderColumn>
-            <TableHeaderColumn dataField="quantity">Quantity</TableHeaderColumn>
-            <TableHeaderColumn dataField="name" dataFormat={this.priceFormatter}>Price</TableHeaderColumn>
+            <TableHeaderColumn dataField="quantity" dataAlign="right">Quantity</TableHeaderColumn>
+            <TableHeaderColumn dataField="name" dataAlign="right"
+                               dataFormat={this.priceFormatter}>Price</TableHeaderColumn>
         </BootstrapTable>
     }
 }
