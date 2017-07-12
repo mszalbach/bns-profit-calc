@@ -47,7 +47,7 @@ export default class BidPrices extends React.Component {
                              componentClass="select"
                              value={this.state.itemCount}
                              onChange={this.onChangeCount}>
-                    {this.countOptions( 1, 10 )}
+                    {this.countOptions( 1, 20 )}
                 </FormControl>
             </FormGroup>
             {' '}
