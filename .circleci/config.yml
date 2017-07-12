@@ -12,7 +12,7 @@ jobs:
       - checkout
 
       - restore_cache:
-          key: profit-calc-{{ checksum "pom.xml" }}-{{ checksum "package.json" }}
+          key: profit-calc-{{ checksum "package.json" }}-{{ checksum "pom.xml" }}
 
       - run: mvn package
 
@@ -20,7 +20,7 @@ jobs:
           paths:
             - ~/.m2
             - ~/.cache/yarn
-          key: profit-calc-{{ checksum "pom.xml" }}-{{ checksum "package.json" }}
+          key: profit-calc-{{ checksum "package.json" }}-{{ checksum "pom.xml" }}
 
       - add_ssh_keys:
           fingerprints:
