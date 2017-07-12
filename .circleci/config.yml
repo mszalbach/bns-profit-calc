@@ -21,6 +21,11 @@ jobs:
             - ~/.m2
           key: profit-calc-{{ checksum "pom.xml" }}
 
-      - run: git config --global user.email "4-bar-killa@web.de"
-      - run: git config --global user.name "mszalbach"
-      - run: ./myarn deploy
+      - deploy:
+            name: Deploy Website to gh-pages
+            command: |
+              if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                git config --global user.email "4-bar-killa@web.de"
+                git config --global user.name "mszalbach"
+                ./myarn deploy
+              fi
