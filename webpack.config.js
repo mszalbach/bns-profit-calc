@@ -87,7 +87,8 @@ switch ( process.env.npm_lifecycle_event ) {
                                                                }
                                                            } ),
                       new webpack.optimize.CommonsChunkPlugin( {name: "vendor", filename: "[name].[chunkhash].js"} ),
-                      new CleanWebpackPlugin( PATHS.build )
+                      new CleanWebpackPlugin( PATHS.build ),
+                      new webpack.optimize.ModuleConcatenationPlugin()
             ]
 
         } );
