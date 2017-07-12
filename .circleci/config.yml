@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+
+    working_directory: ~/profit-calc
+
+    docker:
+      - image: circleci/openjdk:8-jdk
+
+    steps:
+
+      - checkout
+
+      - restore_cache:
+          key: profit-calc-{{ checksum "pom.xml" }}
+
+      - run: mvn package
+
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: profit-calc-{{ checksum "pom.xml" }}
+
+      - run: git config --global user.email "4-bar-killa@web.de"
+      - run: git config --global user.name "mszalbach"
+      - run: ./myarn deploy
