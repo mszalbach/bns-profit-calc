@@ -1,10 +1,8 @@
 import {createClient} from "../config/client";
 import {merge} from "../utils/Arrays";
 
-const PRICE_ADD = 'price/ADD';
-const PRICE_CHANGE = 'price/CHANGE';
-const PRICES_CLEAR = 'prices/CLEAR';
-const PRICES_LOAD = 'prices/LOAD';
+export const PRICES_CLEAR = 'prices/CLEAR';
+export const PRICES_LOAD = 'prices/LOAD';
 
 const initialState = [];
 
