@@ -2,10 +2,10 @@ import {createSelector} from "reselect";
 
 export const allCraftsSelector = ( state, props ) => state.crafting.recipes;
 
-const allCraftsNameSelector = createSelector( [allCraftsSelector],
-                                              ( crafts ) => crafts.map( craft => craft.name ) );
+export const allCraftsNameSelector = createSelector( [allCraftsSelector],
+                                                     ( crafts ) => crafts.map( craft => craft.name ) );
 
-const allIngredientNamesSelector = createSelector( [allCraftsSelector], ( crafts ) => {
+export const allIngredientNamesSelector = createSelector( [allCraftsSelector], ( crafts ) => {
     let ingredientsNames = crafts.map(
             craft => craft.ingredients.map( ingredient => ingredient.name ) );
     let flattenIngredientsNames = [].concat.apply( [], ingredientsNames );

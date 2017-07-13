@@ -1,6 +1,6 @@
-import pricesReducer, {PRICES_CLEAR, PRICES_LOAD} from "../../main/js/reducers/prices";
+import pricesReducer, {PRICES_CLEAR, PRICES_LOAD} from "../../../main/js/reducers/prices";
 
-describe( 'Prices', () => {
+describe( 'Price Reducer', () => {
     it( 'should load single item to empty state', () => {
         expect( pricesReducer( [], {type: PRICES_LOAD, items: [{name: "item1", price: 5}]} ) ).toEqual(
             [{name: 'item1', price: 5}] )
