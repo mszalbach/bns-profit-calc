@@ -29,7 +29,7 @@ export const initialCraftingState = {
             ]
         },
         {
-            "name": "Crafted Silverfrost Critical Soul Shield Primer",
+            "name": "Sealed Crafted Silverfrost Critical Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master_pos8_3_1.png",
             "cost": 473,
@@ -41,7 +41,7 @@ export const initialCraftingState = {
             ]
         },
         {
-            "name": "Crafted Silverfrost Piercing Soul Shield Primer",
+            "name": "Sealed Crafted Silverfrost Piercing Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master_pos8_3_1.png",
             "cost": 473,
@@ -53,7 +53,7 @@ export const initialCraftingState = {
             ]
         },
         {
-            "name": "Crafted Silverfrost Reflex Soul Shield Primer",
+            "name": "Sealed Crafted Silverfrost Reflex Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master_pos8_3_1.png",
             "cost": 473,
@@ -65,39 +65,39 @@ export const initialCraftingState = {
             ]
         },
         {
-            "name": "Artisanal Silverfrost Critical Soul Shield Primer",
+            "name": "Sealed Artisanal Silverfrost Critical Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master2_pos8_4_1.png",
             "cost": 473,
             "quantity": 5,
             "ingredients": [
-                {"name": "Crafted Silverfrost Critical Soul Shield Primer", "quantity": 1},
+                {"name": "Sealed Crafted Silverfrost Critical Soul Shield Primer", "quantity": 1},
                 {"name": "Soulstone", "quantity": 60},
                 {"name": "Mamosu Bone", "quantity": 5},
                 {"name": "Premium Kaolin Refiner", "quantity": 5}
             ]
         },
         {
-            "name": "Artisanal Silverfrost Piercing Soul Shield Primer",
+            "name": "Sealed Artisanal Silverfrost Piercing Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master2_pos8_4_1.png",
             "cost": 473,
             "quantity": 5,
             "ingredients": [
-                {"name": "Crafted Silverfrost Piercing Soul Shield Primer", "quantity": 1},
+                {"name": "Sealed Crafted Silverfrost Piercing Soul Shield Primer", "quantity": 1},
                 {"name": "Soulstone", "quantity": 60},
                 {"name": "Mamosu Bone", "quantity": 5},
                 {"name": "Premium Kaolin Refiner", "quantity": 5}
             ]
         },
         {
-            "name": "Artisanal Silverfrost Reflex Soul Shield Primer",
+            "name": "Sealed Artisanal Silverfrost Reflex Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_master2_pos8_4_1.png",
             "cost": 473,
             "quantity": 5,
             "ingredients": [
-                {"name": "Crafted Silverfrost Reflex Soul Shield Primer", "quantity": 1},
+                {"name": "Sealed Crafted Silverfrost Reflex Soul Shield Primer", "quantity": 1},
                 {"name": "Soulstone", "quantity": 60},
                 {"name": "Mamosu Bone", "quantity": 5},
                 {"name": "Premium Kaolin Refiner", "quantity": 5}
@@ -110,7 +110,7 @@ export const initialCraftingState = {
             "cost": 473,
             "quantity": 1,
             "ingredients": [
-                {"name": "Artisanal Silverfrost Critical Soul Shield Primer", "quantity": 1},
+                {"name": "Sealed Artisanal Silverfrost Critical Soul Shield Primer", "quantity": 1},
                 {"name": "Soulstone", "quantity": 50},
                 {"name": "Masterwork Soul Shield Primer Design", "quantity": 5}
             ]
@@ -122,7 +122,7 @@ export const initialCraftingState = {
             "cost": 473,
             "quantity": 1,
             "ingredients": [
-                {"name": "Artisanal Silverfrost Piercing Soul Shield Primer", "quantity": 1},
+                {"name": "Sealed Artisanal Silverfrost Piercing Soul Shield Primer", "quantity": 1},
                 {"name": "Soulstone", "quantity": 50},
                 {"name": "Masterwork Soul Shield Primer Design", "quantity": 5}
             ]
@@ -134,13 +134,13 @@ export const initialCraftingState = {
             "cost": 473,
             "quantity": 1,
             "ingredients": [
-                {"name": "Artisanal Silverfrost Reflex Soul Shield Primer", "quantity": 1},
+                {"name": "Sealed Artisanal Silverfrost Reflex Soul Shield Primer", "quantity": 1},
                 {"name": "Soulstone", "quantity": 50},
                 {"name": "Masterwork Soul Shield Primer Design", "quantity": 5}
             ]
         },
         {
-            "name": "Silverfrost Soul Warden Critical Soul Shield Primer",
+            "name": "Sealed Silverfrost Soul Warden Critical Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_honcheonfight5_pos8_7_1.png",
             "cost": 50000,
@@ -152,7 +152,7 @@ export const initialCraftingState = {
             ]
         },
         {
-            "name": "Silverfrost Soul Warden Piercing Soul Shield Primer",
+            "name": "Sealed Silverfrost Soul Warden Piercing Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_honcheonfight5_pos8_7_1.png",
             "cost": 50000,
@@ -164,7 +164,7 @@ export const initialCraftingState = {
             ]
         },
         {
-            "name": "Silverfrost Soul Warden Reflex Soul Shield Primer",
+            "name": "Sealed Silverfrost Soul Warden Reflex Soul Shield Primer",
             "profession": "Soul Wardens",
             "image": "https://static.ncsoft.com/bns_resource/ui_resource/grocery/equipgem_honcheonfight5_pos8_7_1.png",
             "cost": 50000,
