@@ -5,6 +5,7 @@ const pkg = require( "./package.json" );
 const CleanWebpackPlugin = require( 'clean-webpack-plugin' );
 const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
 const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
+const FaviconsWebpackPlugin = require( 'favicons-webpack-plugin' );
 
 
 const PATHS = {
@@ -62,7 +63,8 @@ const common = {
         new webpack.ProvidePlugin( {
                                        $: "jquery",
                                        jQuery: "jquery"
-                                   } )
+                                   } ),
+        new FaviconsWebpackPlugin( './favicon.png' )
     ]
 };
 
