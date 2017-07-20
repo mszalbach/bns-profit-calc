@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import PriceText from "../priceText/index";
+import PriceText from "../priceText";
 import {FormControl} from "react-bootstrap";
 
 export default class PriceEdit extends React.Component {

@@ -5,13 +5,13 @@ import initStore from "config/store";
 import {HashRouter} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
-import Main from "./components/main/index";
-import Menu from "./components/menu/index";
+import Main from "./components/main";
+import Menu from "./components/menu";
 
 
 const store = initStore();
 
-export default class App extends React.Component {
+class App extends React.Component {
 
     render() {
         return (

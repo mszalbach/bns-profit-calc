@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
-import IngredientsTable from "../ingredientsTable/index";
-import PriceEdit from "../../container/priceEdit/index";
-import PriceText from "../priceText/index";
+import IngredientsTable from "../ingredientsTable";
+import PriceEdit from "../../container/priceEdit";
+import PriceText from "../priceText";
 
 
 export default class CraftOverview extends React.Component {
@@ -30,7 +30,7 @@ export default class CraftOverview extends React.Component {
     }
 
     expandComponent( row ) {
-        return <IngredientsTable item={row} ingredients={row.ingredients}/>
+        return <IngredientsTable ingredients={row.ingredients}/>
     }
 
     render() {

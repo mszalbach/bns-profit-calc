@@ -2,13 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
-import PriceEdit from "../../container/priceEdit/index";
+import PriceEdit from "../../container/priceEdit";
 
 
 export default class IngredientsTable extends React.Component {
 
     static propTypes = {
-        item: PropTypes.object.isRequired,
         ingredients: PropTypes.array.isRequired
     };
 
