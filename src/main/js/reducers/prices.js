@@ -1,4 +1,4 @@
-import {createClient} from "../config/client";
+import * as axios from "axios";
 import {merge} from "../utils/Arrays";
 
 export const PRICES_CLEAR = 'prices/CLEAR';
@@ -19,17 +19,22 @@ export default function pricesReducer( state = initialState, action ) {
 
 export function loadPrices() {
     return function ( dispatch ) {
-        return createClient()( {
-                                   method: 'GET',
-                                   path: "https://api.silveress.ie/bns/market/EU.json"
-                               } ).then( response => {
-            let serverPrices = response.entity.filter( item => item.ItemPrice > 0 ).map( item => {
-                return {name: item.Name, price: item.ItemPrice};
-            } );
-            dispatch( {type: PRICES_LOAD, items: serverPrices} );
-                                         }
-        );
 
+
+        axios.get( 'https://api.silveress.ie/bns/market' ).then( response => {
+                                                                     return response.data;
+                                                                 }
+        ).then( itemNames => {
+            axios.get( "https://api.silveress.ie/bns/market/current/eu" ).then( response => {
+                                                                                    let serverPrices = response.data;
+                                                                                    let prices = itemNames.map( item => {
+                                                                                        return {name: item.Name, price: serverPrices.find( price => price.ID === item.ID ).ItemPrice}
+                                                                                    } ).filter( item => item.price > 0 );
+
+                                                                                    dispatch( {type: PRICES_LOAD, items: prices} );
+                                                                                }
+            )
+        } );
     }
 
 }
