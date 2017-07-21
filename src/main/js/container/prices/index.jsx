@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
 import {clearPrices, loadPrices} from "../../reducers/prices";
-import Prices from "../../components/prices/index";
+import Prices from "../../components/prices";
 import {getAllPricesSelector} from "../../selectors/crafting_price";
 
 

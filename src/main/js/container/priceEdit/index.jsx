@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import PriceEdit from "../../components/priceEdit/index";
+import PriceEdit from "../../components/priceEdit";
 import {mergePrice} from "../../reducers/prices";
 import {getPriceForItemSelector} from "../../selectors/prices";
 
