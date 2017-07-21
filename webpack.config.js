@@ -19,7 +19,7 @@ const common = {
         app: PATHS.app,
         vendor: Object.keys( pkg.dependencies )
     },
-    devtool: 'source-map',
+    devtool: 'eval-cheap-module-source-map',
     output: {
         path: PATHS.build,
         filename: '[name].js'
@@ -63,8 +63,7 @@ const common = {
         new webpack.ProvidePlugin( {
                                        $: "jquery",
                                        jQuery: "jquery"
-                                   } ),
-        new FaviconsWebpackPlugin( './favicon.png' )
+                                   } )
     ]
 };
 
@@ -78,7 +77,7 @@ switch ( process.env.npm_lifecycle_event ) {
             output: {
                 filename: '[name].[chunkhash].js'
             },
-            devtool: 'cheap-source-map',
+            devtool: 'cheap-module-source-map',
             plugins: [new webpack.DefinePlugin( {
                                                     'process.env.NODE_ENV': JSON.stringify( 'production' )
 
@@ -90,16 +89,14 @@ switch ( process.env.npm_lifecycle_event ) {
                                                            } ),
                       new webpack.optimize.CommonsChunkPlugin( {name: "vendor", filename: "[name].[chunkhash].js"} ),
                       new CleanWebpackPlugin( PATHS.build ),
-                      new webpack.optimize.ModuleConcatenationPlugin()
+                      new webpack.optimize.ModuleConcatenationPlugin(),
+                      new FaviconsWebpackPlugin( './favicon.png' )
             ]
 
         } );
         break;
     default:
-        config = merge( common, {
-                            devtool: 'eval-source-map'
-                        }
-        );
+        config = common;
 
 }
 
