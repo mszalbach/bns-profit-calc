@@ -16,7 +16,7 @@ After that you can use the myarn command as wrapper to use the maven installed y
 ./myarn start
 ```
 
-And you can visit the app at <http://localhost:8080>.
+And you can visit the app at <https://localhost:8080>.
 
 ## Simple Browser
 Or simple start the target/build/index.html file in any browser.
