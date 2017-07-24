@@ -12,7 +12,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <encoding>UTF-8</encoding>
-        <node.version>v6.10.3</node.version>
+        <node.version>v6.11.1</node.version>
         <yarn.version>v0.27.5</yarn.version>
     </properties>
 
@@ -22,7 +22,7 @@
             <plugin>
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
-                <version>1.4</version>
+                <version>1.5</version>
                 <executions>
                     <execution>
                         <id>install node and npm</id>
