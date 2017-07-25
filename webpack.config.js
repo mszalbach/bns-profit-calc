@@ -72,6 +72,7 @@ let config;
 
 // Detect how npm is run and branch based on that
 switch ( process.env.npm_lifecycle_event ) {
+    //prod
     case 'build':
         config = merge( common, {
             output: {

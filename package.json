@@ -65,7 +65,6 @@
     "react-router-dom": "4.1.2",
     "react-router-redux": "4.0.8",
     "redux": "3.7.2",
-    "redux-localstorage": "0.4.1",
     "redux-thunk": "2.2.0",
     "reselect": "3.0.1",
     "validator": "8.0.0"
