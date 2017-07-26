@@ -1,4 +1,4 @@
-import {merge} from "../../main/js/utils/Arrays";
+import {merge} from "../../../main/js/utils/Arrays";
 
 describe( 'merge', () => {
     it( 'should merge arrays with no equal key', () => {
