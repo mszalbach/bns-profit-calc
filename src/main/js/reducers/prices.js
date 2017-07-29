@@ -25,7 +25,7 @@ export function loadPrices() {
                 let prices = itemNames.data.map( item => {
                     let priceObj = serverPrices.data.find( price => price.ID === item.ID );
                     let price = 0;
-                    if( priceObj.ItemPrice ) {
+                    if( priceObj && priceObj.ItemPrice ) {
                         price = priceObj.ItemPrice;
                     }
                     return {name: item.Name, price: price}
