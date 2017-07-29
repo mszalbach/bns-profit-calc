@@ -33,11 +33,11 @@ export function loadPrices() {
 }
 
 function getServerItemNames() {
-    return axios.get( 'https://api.silveress.ie/bns/market' );
+    return axios.get( '//api.silveress.ie/bns/market' );
 }
 
 function getServerPrices() {
-    return axios.get( "https://api.silveress.ie/bns/market/current/eu" );
+    return axios.get( "//api.silveress.ie/bns/market/current/eu" );
 }
 
 
