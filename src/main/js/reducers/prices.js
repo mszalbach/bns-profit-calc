@@ -23,7 +23,12 @@ export function loadPrices() {
         axios.all( [getServerItemNames(), getServerPrices()] )
             .then( axios.spread( ( itemNames, serverPrices ) => {
                 let prices = itemNames.data.map( item => {
-                    return {name: item.Name, price: serverPrices.data.find( price => price.ID === item.ID ).ItemPrice}
+                    let priceObj = serverPrices.data.find( price => price.ID === item.ID );
+                    let price = 0;
+                    if( priceObj.ItemPrice ) {
+                        price = priceObj.ItemPrice;
+                    }
+                    return {name: item.Name, price: price}
                 } ).filter( item => item.price > 0 );
 
                 dispatch( {type: PRICES_LOAD, items: prices} );
