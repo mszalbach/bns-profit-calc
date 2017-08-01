@@ -22,11 +22,11 @@ export default class Menu extends React.Component {
                         <LinkContainer to="/market">
                             <NavItem>Market</NavItem>
                         </LinkContainer>
-                        <LinkContainer to="/prices">
-                            <NavItem>Prices</NavItem>
-                        </LinkContainer>
                         <LinkContainer to="/bidprices">
                             <NavItem>Bid Prices</NavItem>
+                        </LinkContainer>
+                        <LinkContainer to="/prices">
+                            <NavItem>Prices</NavItem>
                         </LinkContainer>
                     </Nav>
                 </Navbar>
