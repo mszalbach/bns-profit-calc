@@ -20,31 +20,18 @@ export default function pricesReducer( state = initialState, action ) {
 export function loadPrices() {
     return function ( dispatch ) {
 
-        axios.all( [getServerItemNames(), getServerPrices()] )
-            .then( axios.spread( ( itemNames, serverPrices ) => {
-                let prices = itemNames.data.map( item => {
-                    let priceObj = serverPrices.data.find( price => price.ID === item.ID );
-                    let price = 0;
-                    if( priceObj && priceObj.ItemPrice ) {
-                        price = priceObj.ItemPrice;
-                    }
-                    return {name: item.Name, price: price}
+        axios.get( "https://api.silveress.ie/bns/v3/market/eu/current/all" )
+            .then( ( serverPrices ) => {
+                let prices = serverPrices.data.map( item => {
+                    let firstPriceObj = item.listings[0];
+                    return {name: item.name, price: firstPriceObj.price / firstPriceObj.count}
                 } ).filter( item => item.price > 0 );
 
                 dispatch( {type: PRICES_LOAD, items: prices} );
-            } ) );
+            } );
     }
 
 }
-
-function getServerItemNames() {
-    return axios.get( 'https://api.silveress.ie/bns/v2/market' );
-}
-
-function getServerPrices() {
-    return axios.get( "https://api.silveress.ie/bns/v2/market/current/eu" );
-}
-
 
 export function mergePrice( name, price ) {
     return {type: PRICES_LOAD, items: [{name: name, price: price}]};

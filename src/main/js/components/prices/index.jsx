@@ -28,7 +28,7 @@ export default class Prices extends React.Component {
 
         return (
             <div>
-                <div>Prices are loaded from <a href="https://bns.silveress.ie/api">bns.silveress.ie</a>
+                <div>Prices are loaded from <a href="http://bns.silveress.ie/home">bns.silveress.ie</a>
                 </div>
                 <Button onClick={this.props.loadPrices}>Load prices</Button>
                 {' '}
