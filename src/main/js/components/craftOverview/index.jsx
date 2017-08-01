@@ -5,6 +5,7 @@ import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
 import IngredientsTable from "../ingredientsTable";
 import PriceEdit from "../../container/priceEdit";
 import PriceText from "../priceText";
+import ItemImage from "../../container/itemImage";
 
 
 export default class CraftOverview extends React.Component {
@@ -14,7 +15,7 @@ export default class CraftOverview extends React.Component {
     };
 
     imageFormatter( cell, row ) {
-        return cell ? <img src={cell} alt={row.name} height="40"/> : cell;
+        return <ItemImage name={cell}/>;
     }
 
     priceEditFormatter( cell ) {
@@ -48,9 +49,9 @@ export default class CraftOverview extends React.Component {
                             search={true}
                             options={options}
                             expandableRow={() => true}
-                            expandComponent={ this.expandComponent }
+                            expandComponent={this.expandComponent}
             >
-                <TableHeaderColumn dataField="image" dataFormat={this.imageFormatter}
+                <TableHeaderColumn dataField="name" dataFormat={this.imageFormatter}
                                    width="60px">#</TableHeaderColumn>
                 <TableHeaderColumn dataField="name" isKey={true} dataSort={true}
                                    width="400px">Name</TableHeaderColumn>

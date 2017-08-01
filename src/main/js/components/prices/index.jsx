@@ -5,6 +5,7 @@ import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
 import PriceEdit from "../../container/priceEdit";
 import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
 import {Button} from "react-bootstrap";
+import ItemImage from "../../container/itemImage";
 
 
 export default class Prices extends React.Component {
@@ -16,6 +17,10 @@ export default class Prices extends React.Component {
 
     priceFormatter( cell, row ) {
         return <PriceEdit name={row.name}/>;
+    }
+
+    imageFormatter( cell, row ) {
+        return <ItemImage name={cell}/>;
     }
 
     render() {
@@ -35,6 +40,8 @@ export default class Prices extends React.Component {
                 <Button onClick={this.props.clearPrices}>Clear prices</Button>
 
                 <BootstrapTable data={allPrices} striped={true} hover={true} search={true} options={options}>
+                    <TableHeaderColumn dataField="name" dataFormat={this.imageFormatter}
+                                       width="60px">#</TableHeaderColumn>
                     <TableHeaderColumn dataField="name" isKey={true} dataSort={true}>Name</TableHeaderColumn>
                     <TableHeaderColumn dataField="price" dataSort={true}
                                        dataFormat={this.priceFormatter}>Price</TableHeaderColumn>
