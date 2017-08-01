@@ -19,6 +19,9 @@ export default class Menu extends React.Component {
                         <LinkContainer to="/crafting">
                             <NavItem>Crafting</NavItem>
                         </LinkContainer>
+                        <LinkContainer to="/market">
+                            <NavItem>Market</NavItem>
+                        </LinkContainer>
                         <LinkContainer to="/prices">
                             <NavItem>Prices</NavItem>
                         </LinkContainer>

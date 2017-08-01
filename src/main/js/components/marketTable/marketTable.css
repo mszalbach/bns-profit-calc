@@ -1,0 +1,20 @@
+.iconCell {
+    display: block;
+    position: relative;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 11px;
+}
+
+.num {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    text-align: right;
+    color: #fff;
+    font-size: 12px;
+    text-shadow: rgba(0, 0, 0, 0.6) 0 0 3px, rgba(0, 0, 0, 0.6) 1px 1px 1px;
+}

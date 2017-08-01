@@ -1,8 +1,25 @@
 import React from "react";
+import MarketTable from "../../container/marketTable";
+import ItemSelector from "../../container/itemSelector";
+
+import 'react-select/dist/react-select.css';
+
 
 export default class MarketOverview extends React.Component {
 
+    state = {item: ''};
+
+
+    onChange = ( value ) => {
+        this.setState( {item: value} )
+    };
+
     render() {
-        return <div></div>
+
+        return <div>
+            <ItemSelector onChange={this.onChange}/>
+            <br/><br/>
+            <MarketTable name={this.state.item}/>
+        </div>
     }
 }
