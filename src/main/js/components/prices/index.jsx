@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
-import PriceEdit from "../../container/priceEdit";
+import PriceText from "../../container/priceText";
 import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
 import {Button} from "react-bootstrap";
 import ItemImage from "../../container/itemImage";
@@ -16,7 +16,7 @@ export default class Prices extends React.Component {
     };
 
     priceFormatter( cell, row ) {
-        return <PriceEdit name={row.name}/>;
+        return <PriceText name={row.name}/>;
     }
 
     imageFormatter( cell, row ) {

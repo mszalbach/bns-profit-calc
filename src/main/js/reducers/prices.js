@@ -1,5 +1,4 @@
 import * as axios from "axios";
-import {merge} from "../utils/Arrays";
 
 export const PRICES_CLEAR = 'prices/CLEAR';
 export const PRICES_LOAD = 'prices/LOAD';
@@ -11,7 +10,7 @@ export default function pricesReducer( state = initialState, action ) {
         case PRICES_CLEAR:
             return [];
         case PRICES_LOAD:
-            return merge( state, action.items, "name" );
+            return action.items;
         default:
             return state;
     }
@@ -19,24 +18,17 @@ export default function pricesReducer( state = initialState, action ) {
 
 export function loadPrices() {
     return function ( dispatch ) {
-
         axios.get( "https://api.silveress.ie/bns/v3/market/eu/current/all" )
             .then( ( serverPrices ) => {
                 let prices = serverPrices.data.map( item => {
-                    let firstPriceObj = item.listings[0];
-                    return {name: item.name, price: firstPriceObj.price / firstPriceObj.count}
-                } ).filter( item => item.price > 0 );
+                    return {name: item.name, listings: item.listings}
+                } );
 
                 dispatch( {type: PRICES_LOAD, items: prices} );
             } );
     }
 
 }
-
-export function mergePrice( name, price ) {
-    return {type: PRICES_LOAD, items: [{name: name, price: price}]};
-}
-
 
 export function clearPrices() {
     return {type: PRICES_CLEAR}

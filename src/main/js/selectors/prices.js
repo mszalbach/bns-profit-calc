@@ -1,4 +1,5 @@
 import {createSelector} from "reselect";
+
 export const getPricesSelector = ( state ) => state.prices;
 
 export const getPriceForItemSelector = createSelector( [getPricesSelector, ( _, props ) => props.name],
@@ -9,5 +10,6 @@ export const getPriceForItemSelector = createSelector( [getPricesSelector, ( _, 
 
 export function getPriceForItem( name, prices ) {
     let priceObj = prices.find( it => it.name === name );
-    return priceObj ? priceObj.price : 0;
+    let firstPriceObj = priceObj ? priceObj.listings[0] : {price: 0, count: 1};
+    return firstPriceObj.price / firstPriceObj.count;
 }

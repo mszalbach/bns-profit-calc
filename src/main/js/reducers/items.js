@@ -1,5 +1,4 @@
 import * as axios from "axios";
-import {merge} from "../utils/Arrays";
 
 export const ITEMS_LOAD = 'items/LOAD';
 
@@ -8,7 +7,7 @@ const initialState = [];
 export default function itemsReducer( state = initialState, action ) {
     switch ( action.type ) {
         case ITEMS_LOAD:
-            return merge( state, action.items, "name" );
+            return action.items;
         default:
             return state;
     }

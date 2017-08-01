@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
 import IngredientsTable from "../ingredientsTable";
-import PriceEdit from "../../container/priceEdit";
 import PriceText from "../priceText";
+import PriceTextContainer from "../../container/priceText";
 import ItemImage from "../../container/itemImage";
 
 
@@ -19,7 +19,7 @@ export default class CraftOverview extends React.Component {
     }
 
     priceEditFormatter( cell ) {
-        return <PriceEdit name={cell}/>
+        return <PriceTextContainer name={cell}/>
     }
 
     priceFormatter( cell ) {

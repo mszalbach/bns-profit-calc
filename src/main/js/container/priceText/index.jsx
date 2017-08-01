@@ -1,12 +1,11 @@
 import {connect} from "react-redux";
-import PriceEdit from "../../components/priceEdit";
-import {mergePrice} from "../../reducers/prices";
+import PriceText from "../../components/priceText";
 import {getPriceForItemSelector} from "../../selectors/prices";
 
 
 export default connect(
-        ( state, props ) => ({
+    ( state, props ) => ({
             price: getPriceForItemSelector( state, props )
         }),
-        {mergePrice}
-)( PriceEdit );
+    {}
+)( PriceText );
