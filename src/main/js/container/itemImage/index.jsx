@@ -8,5 +8,5 @@ export default connect(
     ( state, props ) => ({
         image: getImageForItemSelector( state, props )
     }),
-    {mergePrice}
+    {}
 )( ItemImage );
