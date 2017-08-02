@@ -21,7 +21,10 @@ describe( 'Crafting_Price Selector', () => {
     it( 'should return list with names and prices', () => {
         expect(
             getAllPricesSelector.resultFunc( ['Premium Kaolin Refiner', 'Silverfrost Transformation Stone'],
-                                             [{name: 'Premium Kaolin Refiner', price: 5}] ) ).toEqual(
+                                             [{
+                                                 name: 'Premium Kaolin Refiner',
+                                                 "listings": [{"price": 5, "count": 1}]
+                                             }] ) ).toEqual(
             [{name: 'Premium Kaolin Refiner', price: 5}, {name: 'Silverfrost Transformation Stone', price: 0}] )
     } );
 
@@ -30,10 +33,10 @@ describe( 'Crafting_Price Selector', () => {
             getCraftingWithTotalCraftingCostSelector.resultFunc( testState.recipes,
                                                                  [{
                                                                      name: 'Soulstone',
-                                                                     price: 5
+                                                                     "listings": [{"price": 5, "count": 1}]
                                                                  }, {
                                                                      name: "Kaolin Refiner",
-                                                                     price: 2
+                                                                     "listings": [{"price": 2, "count": 1}]
                                                                  }] )[0].totalCraftingCost ).toEqual( 409
         )
     } );
