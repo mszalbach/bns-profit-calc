@@ -12,9 +12,17 @@
 .num {
     position: absolute;
     bottom: 2px;
-    right: 2px;
+    right: 6px;
     text-align: right;
     color: #fff;
     font-size: 12px;
     text-shadow: rgba(0, 0, 0, 0.6) 0 0 3px, rgba(0, 0, 0, 0.6) 1px 1px 1px;
+}
+
+.iconImage {
+    height: 40px;
+}
+
+.noImage {
+    min-height: 40px;
 }

@@ -13,7 +13,7 @@ export default class IngredientsTable extends React.Component {
     };
 
     imageFormatter( cell, row ) {
-        return <ItemImage name={cell}/>;
+        return <ItemImage name={row.name} count={cell}/>;
     }
 
     priceFormatter( cell ) {
@@ -32,9 +32,8 @@ export default class IngredientsTable extends React.Component {
                                hover={true}
                                options={options}
         >
-            <TableHeaderColumn dataField="name" dataFormat={this.imageFormatter} width="60px">#</TableHeaderColumn>
+            <TableHeaderColumn dataField="quantity" dataFormat={this.imageFormatter} width="60px">#</TableHeaderColumn>
             <TableHeaderColumn dataField="name" isKey={true} dataSort={true}>Name</TableHeaderColumn>
-            <TableHeaderColumn dataField="quantity" dataAlign="right">Quantity</TableHeaderColumn>
             <TableHeaderColumn dataField="name" dataAlign="right"
                                dataFormat={this.priceFormatter}>Price</TableHeaderColumn>
         </BootstrapTable>

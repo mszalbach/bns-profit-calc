@@ -15,7 +15,7 @@ export default class CraftOverview extends React.Component {
     };
 
     imageFormatter( cell, row ) {
-        return <ItemImage name={cell}/>;
+        return <ItemImage name={row.name} count={cell}/>;
     }
 
     priceEditFormatter( cell ) {
@@ -51,17 +51,15 @@ export default class CraftOverview extends React.Component {
                             expandableRow={() => true}
                             expandComponent={this.expandComponent}
             >
-                <TableHeaderColumn dataField="name" dataFormat={this.imageFormatter}
+                <TableHeaderColumn dataField="quantity" dataFormat={this.imageFormatter}
                                    width="60px">#</TableHeaderColumn>
                 <TableHeaderColumn dataField="name" isKey={true} dataSort={true}
                                    width="400px">Name</TableHeaderColumn>
                 <TableHeaderColumn dataField="profession" dataSort={true}>Profession</TableHeaderColumn>
-                <TableHeaderColumn dataField="quantity" dataAlign="right" width="100px">Quantity</TableHeaderColumn>
                 <TableHeaderColumn dataField="cost" dataAlign="right" dataFormat={this.priceFormatter}>Crafting
                     Cost</TableHeaderColumn>
-                <TableHeaderColumn dataField="name" expandable={false} dataFormat={this.priceEditFormatter}
-                                   dataAlign="right">AH
-                    Price</TableHeaderColumn>
+                <TableHeaderColumn dataField="name" dataFormat={this.priceEditFormatter}
+                                   dataAlign="right">AH Price</TableHeaderColumn>
                 <TableHeaderColumn dataField="totalCraftingCost" dataAlign="right" dataFormat={this.priceFormatter}>Total
                     Crafting
                     Cost</TableHeaderColumn>

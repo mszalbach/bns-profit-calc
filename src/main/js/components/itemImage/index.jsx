@@ -1,17 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import "./itemImage.css";
+
 
 export default class ItemImage extends React.Component {
 
     static propTypes = {
         name: PropTypes.string.isRequired,
-        image: PropTypes.string
+        image: PropTypes.string,
+        count: PropTypes.number
     };
 
 
     render() {
-        let {name, image} = this.props;
-        return image ? <img src={image} alt={name} height="40"/> : <div style={{minHeight: '40px'}}/>
+        let {name, image, count} = this.props;
+
+        let shownCount = count > 1 ? count : '';
+
+        return image ? <div className="iconCell">
+            <img src={image} alt={name} className="iconImage"/>
+            <span className="num">{shownCount}</span>
+        </div> : <div className="noImage">{shownCount}</div>
     }
 }

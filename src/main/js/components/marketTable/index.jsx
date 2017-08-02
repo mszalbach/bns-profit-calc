@@ -5,8 +5,6 @@ import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
 import PriceText from "../priceText";
 import ItemImage from "../../container/itemImage";
 
-import "./marketTable.css";
-
 
 export default class MarketTable extends React.Component {
 
@@ -17,7 +15,7 @@ export default class MarketTable extends React.Component {
 
 
     imageFormatter( cell, row ) {
-        return <div className="iconCell"><ItemImage name={row.name}/><span className="num">{cell}</span></div>;
+        return <ItemImage name={row.name} count={cell}/>;
     }
 
     priceFormatter( cell, row ) {
@@ -32,8 +30,8 @@ export default class MarketTable extends React.Component {
                                hover={true}
         >
 
-            <TableHeaderColumn width="60px" dataField="count" dataAlign="right"
-                               dataFormat={this.imageFormatter}>Count</TableHeaderColumn>
+            <TableHeaderColumn width="60px" dataField="count"
+                               dataFormat={this.imageFormatter}>#</TableHeaderColumn>
             <TableHeaderColumn dataField="name" isKey={true}>Name</TableHeaderColumn>
             <TableHeaderColumn dataField="itemPrice" dataAlign="right"
                                dataFormat={this.priceFormatter}>Price</TableHeaderColumn>
