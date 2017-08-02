@@ -51,7 +51,8 @@ const common = {
     },
 
     devServer: {
-        https: true
+        https: true,
+        port: 3000
     },
 
 

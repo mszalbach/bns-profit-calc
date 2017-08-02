@@ -24,7 +24,7 @@ export default class ItemSelector extends React.Component {
     render() {
         let itemsAsOptions = this.props.items.map( item => {
             return {value: item.name, label: item.name}
-        } ).sort( ( a, b ) => a.value.localeCompare( b.value ) );
+        } );
 
         return <Select
             value={this.state.item}

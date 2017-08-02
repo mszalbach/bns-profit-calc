@@ -11,12 +11,30 @@ export default class PriceText extends React.Component {
         shouldHighlight: PropTypes.bool
     };
 
+    gold = <img alt="g" src="https://bladeandsoul.gamepedia.com/media/bladeandsoul.gamepedia.com/1/10/Gold.png"/>;
+    silver = <img alt="s"
+                  src="https://bladeandsoul.gamepedia.com/media/bladeandsoul.gamepedia.com/0/0b/Silver.png"/>;
+    copper = <img alt="c"
+                  src="https://bladeandsoul.gamepedia.com/media/bladeandsoul.gamepedia.com/1/12/Copper.png"/>;
+
     render() {
         let {price, shouldHighlight} = this.props;
         let classname = "";
         if ( shouldHighlight ) {
             classname = price >= 0 ? "positive" : "negative";
         }
-        return <span className={classname}>{formatNumberToBnSCurrency( price )}</span>;
+
+        let priceString = formatNumberToBnSCurrency( price );
+
+
+        //(-)09g 88s 00c
+        let myRegexp = /(-*\d+)g (\d+)s (\d+)c/g;
+        let match = myRegexp.exec( priceString );
+        let gold = match[1];
+        let silver = match[2];
+        let copper = match[3];
+
+
+        return <span className={classname}>{gold}{this.gold} {silver}{this.silver} {copper}{this.copper}</span>;
     }
 }
