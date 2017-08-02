@@ -1,7 +1,17 @@
 import * as axios from "axios";
+import {
+    ERROR_FROM_SERVER,
+    ERROR_PRICES_FROM_SERVER,
+    LOADED_FROM_SERVER,
+    LOADED_PRICES_FROM_SERVER,
+    LOADING_FROM_SERVER,
+    LOADING_PRICES_FROM_SERVER
+} from "./server_status";
 
 export const PRICES_CLEAR = 'prices/CLEAR';
 export const PRICES_LOAD = 'prices/LOAD';
+
+export const PRICES_URL = 'https://api.silveress.ie/bns/v3/market/eu/current/all';
 
 const initialState = [];
 
@@ -18,14 +28,18 @@ export default function pricesReducer( state = initialState, action ) {
 
 export function loadPrices() {
     return function ( dispatch ) {
-        axios.get( "https://api.silveress.ie/bns/v3/market/eu/current/all" )
+        dispatch( {type: LOADING_PRICES_FROM_SERVER} );
+        axios.get( PRICES_URL )
             .then( ( serverPrices ) => {
                 let prices = serverPrices.data.map( item => {
                     return {name: item.name, listings: item.listings}
                 } );
 
                 dispatch( {type: PRICES_LOAD, items: prices} );
-            } );
+                dispatch( {type: LOADED_PRICES_FROM_SERVER} );
+            } ).catch( error => {
+            dispatch( {type: ERROR_PRICES_FROM_SERVER} )
+        } );
     }
 
 }

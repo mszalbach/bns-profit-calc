@@ -27,6 +27,7 @@ export default class ItemSelector extends React.Component {
         } );
 
         return <Select
+            matchPos="start"
             value={this.state.item}
             options={itemsAsOptions}
             onChange={this.onChange}
