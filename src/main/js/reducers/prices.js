@@ -7,11 +7,12 @@ import {
     LOADING_FROM_SERVER,
     LOADING_PRICES_FROM_SERVER
 } from "./server_status";
+import {getPricesUrlSelector} from "../selectors/region";
 
 export const PRICES_CLEAR = 'prices/CLEAR';
 export const PRICES_LOAD = 'prices/LOAD';
 
-export const PRICES_URL = 'https://api.silveress.ie/bns/v3/market/eu/current/all';
+export const PRICES_URL = 'https://api.silveress.ie/bns/v3/market/{region}/current/all';
 
 const initialState = [];
 
@@ -27,9 +28,10 @@ export default function pricesReducer( state = initialState, action ) {
 }
 
 export function loadPrices() {
-    return function ( dispatch ) {
+    return function ( dispatch, getState ) {
         dispatch( {type: LOADING_PRICES_FROM_SERVER} );
-        axios.get( PRICES_URL )
+        let url = getPricesUrlSelector( getState() );
+        axios.get( url )
             .then( ( serverPrices ) => {
                 let prices = serverPrices.data.map( item => {
                     return {name: item.name, listings: item.listings}

@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import {Nav, Navbar, NavItem} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import ServerStatus from "../../container/serverStatus";
+import RegionSwitcher from "../../container/regionSwitcher";
 
 export default class Menu extends React.Component {
 
@@ -29,6 +30,9 @@ export default class Menu extends React.Component {
                 </Nav>
                 <Nav pullRight>
                     <ServerStatus/>
+                </Nav>
+                <Nav pullRight>
+                    <RegionSwitcher/>
                 </Nav>
             </Navbar>
         )
