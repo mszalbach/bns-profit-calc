@@ -5,7 +5,7 @@ import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
 import IngredientsTable from "./ingredientsTable";
 import PriceText from "../../components/priceText/priceText";
 import PriceTextContainer from "../../components/priceText/priceTextContainer";
-import ItemImage from "../../components/itemImage/itemImage";
+import ItemImage from "../../components/itemImage/itemImageContainer";
 
 
 export default class CraftOverview extends React.Component {
