@@ -1,5 +1,5 @@
 import React from "react";
-import MarketTable from "../../container/marketTable";
+import MarketTable from "./marketTableContainer";
 import ItemSelector from "../../container/itemSelector";
 
 import 'react-select/dist/react-select.css';

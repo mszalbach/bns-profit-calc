@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import MarketTable from "../../components/marketTable/index";
+import MarketTable from "./marketTable";
 import {getListingsForItemSelector} from "../../reducers/prices/pricesSelector";
 
 
