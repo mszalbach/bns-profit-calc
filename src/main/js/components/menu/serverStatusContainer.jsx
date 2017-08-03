@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import ServerStatus from "../../components/serverStatus/index";
+import ServerStatus from "./serverStatus";
 import {getServerStatusSelector} from "../../reducers/serverStatus/serverStatusSelector";
 import {loadPrices} from "../../reducers/prices/pricesReducer";
 import {loadItems} from "../../reducers/items/itemsReducer";

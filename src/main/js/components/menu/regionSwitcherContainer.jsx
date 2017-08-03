@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
 import {getRegionSelector} from "../../reducers/region/regionSelector";
-import RegionSwitcher from "../../components/regionSwitcher";
+import RegionSwitcher from "./regionSwitcher";
 import {switchRegion} from "../../reducers/region/regionReducer";
 import {loadPrices} from "../../reducers/prices/pricesReducer";
 

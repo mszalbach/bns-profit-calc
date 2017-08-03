@@ -1,6 +1,6 @@
 import React from "react";
 import MarketTable from "./marketTableContainer";
-import ItemSelector from "../../container/itemSelector";
+import ItemSelector from "../shared/itemSelectorContainer";
 
 import 'react-select/dist/react-select.css';
 

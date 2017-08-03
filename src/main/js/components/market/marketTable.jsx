@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
+import PriceText from "../shared/priceText";
+import ItemImage from "../shared/itemImageContainer";
+
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
-import PriceText from "../priceText";
-import ItemImage from "../../container/itemImage";
 
 
 export default class MarketTable extends React.Component {

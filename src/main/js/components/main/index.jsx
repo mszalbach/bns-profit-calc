@@ -1,7 +1,7 @@
 import React from "react";
 import {Redirect, Route, Switch} from "react-router-dom";
 import CraftOverview from "../crafting/craftOverviewContainer";
-import BidPrices from "../bidPrices";
+import BidPrices from "../bidprices/bidPrices";
 import MarketOverview from "../market/marketOverview";
 import "./main.css";
 

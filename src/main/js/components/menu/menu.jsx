@@ -2,8 +2,8 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {Nav, Navbar, NavItem} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
-import ServerStatus from "../../container/serverStatus";
-import RegionSwitcher from "../../container/regionSwitcher";
+import ServerStatus from "./serverStatusContainer";
+import RegionSwitcher from "./regionSwitcherContainer";
 
 export default class Menu extends React.Component {
 

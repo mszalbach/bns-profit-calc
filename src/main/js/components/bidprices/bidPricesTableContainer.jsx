@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
-import PriceText from "../../components/priceText";
 import {getPriceForItemSelector} from "../../reducers/prices/pricesSelector";
+import BidPricesTable from "./bidPricesTable";
 
 
 export default connect(
@@ -8,4 +8,4 @@ export default connect(
         price: getPriceForItemSelector( state, props )
     }),
     {}
-)( PriceText );
+)( BidPricesTable );

@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import ItemImage from "../../components/itemImage/index";
+import ItemImage from "./itemImage";
 import {getImageForItemSelector} from "../../reducers/items/itemsSelector";
 
 

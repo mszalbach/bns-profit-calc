@@ -1,6 +1,6 @@
 import React from "react";
-import BidPricesTable from "../../container/bidPricesTable";
-import ItemSelector from "../../container/itemSelector";
+import BidPricesTable from "./bidPricesTable";
+import ItemSelector from "../shared/itemSelectorContainer";
 
 
 export default class BidPrices extends React.Component {

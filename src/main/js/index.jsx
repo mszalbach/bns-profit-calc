@@ -6,7 +6,7 @@ import {HashRouter} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
 import Main from "./components/main";
-import Menu from "./components/menu";
+import Menu from "./components/menu/menu";
 
 
 const store = initStore();

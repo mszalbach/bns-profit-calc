@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
+import PriceText from "../shared/priceTextContainer";
+import ItemImage from "../shared/itemImageContainer";
+
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
-import PriceText from "../../container/priceText";
-import ItemImage from "../../container/itemImage";
 
 
 export default class IngredientsTable extends React.Component {

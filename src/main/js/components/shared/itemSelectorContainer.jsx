@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import ItemSelector from "../../components/itemSelector";
+import ItemSelector from "./itemSelector";
 import {getSortedItemsSelector} from "../../reducers/items/itemsSelector";
 
 
