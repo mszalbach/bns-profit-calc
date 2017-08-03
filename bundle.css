@@ -7346,6 +7346,10 @@ fieldset[disabled] .btn-danger.active {
 
 .negative {
     color: red;
+}
+
+.currency {
+    vertical-align: bottom;
 }.iconCell {
     display: block;
     position: relative;
