@@ -5,3 +5,7 @@
 .negative {
     color: red;
 }
+
+.currency {
+    vertical-align: bottom;
+}

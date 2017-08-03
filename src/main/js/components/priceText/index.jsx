@@ -11,11 +11,14 @@ export default class PriceText extends React.Component {
         shouldHighlight: PropTypes.bool
     };
 
-    gold = <img alt="g" src="https://bladeandsoul.gamepedia.com/media/bladeandsoul.gamepedia.com/1/10/Gold.png"/>;
-    silver = <img alt="s"
-                  src="https://bladeandsoul.gamepedia.com/media/bladeandsoul.gamepedia.com/0/0b/Silver.png"/>;
-    copper = <img alt="c"
-                  src="https://bladeandsoul.gamepedia.com/media/bladeandsoul.gamepedia.com/1/12/Copper.png"/>;
+    currencyImages = {
+        'gold': 'https://bladeandsoul.gamepedia.com/media/bladeandsoul.gamepedia.com/1/10/Gold.png',
+        'silver': 'https://bladeandsoul.gamepedia.com/media/bladeandsoul.gamepedia.com/0/0b/Silver.png',
+        'copper': 'https://bladeandsoul.gamepedia.com/media/bladeandsoul.gamepedia.com/1/12/Copper.png'
+    };
+
+    currency = ( type ) => <img alt="g" className="currency" src={this.currencyImages[type]}/>;
+
 
     render() {
         let {price, shouldHighlight} = this.props;
@@ -35,6 +38,7 @@ export default class PriceText extends React.Component {
         let copper = match[3];
 
 
-        return <span className={classname}>{gold}{this.gold} {silver}{this.silver} {copper}{this.copper}</span>;
+        return <span className={classname}>{gold}{this.currency( 'gold' )} {silver}{this.currency(
+            'silver' )} {copper}{this.currency( 'copper' )}</span>;
     }
 }
