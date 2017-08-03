@@ -1,4 +1,4 @@
-import pricesReducer, {PRICES_CLEAR, PRICES_LOAD} from "../../../main/js/modules/prices/pricesReducer";
+import pricesReducer, {PRICES_CLEAR, PRICES_LOAD} from "../../../../main/js/modules/prices/pricesReducer";
 
 describe( 'Price Reducer', () => {
     it( 'should load single item to empty state', () => {
