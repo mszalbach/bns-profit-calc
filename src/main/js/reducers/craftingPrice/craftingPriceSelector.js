@@ -1,6 +1,6 @@
 import {createSelector} from "reselect";
-import {allCraftsSelector, allItemNamesSelector} from "./crafting";
-import {getPriceForItem, getPricesSelector} from "./prices";
+import {allCraftsSelector, allItemNamesSelector} from "../crafting/craftingSelector";
+import {getPriceForItem, getPricesSelector} from "../prices/pricesSelector";
 
 export const getAllPricesSelector = createSelector( [allItemNamesSelector, getPricesSelector], ( items, prices ) =>
     items.map( item => {

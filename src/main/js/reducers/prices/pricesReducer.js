@@ -6,8 +6,8 @@ import {
     LOADED_PRICES_FROM_SERVER,
     LOADING_FROM_SERVER,
     LOADING_PRICES_FROM_SERVER
-} from "./server_status";
-import {getPricesUrlSelector} from "../selectors/region";
+} from "../serverStatus/serverStatusReducer";
+import {getPricesUrlSelector} from "../region/regionSelector";
 
 export const PRICES_CLEAR = 'prices/CLEAR';
 export const PRICES_LOAD = 'prices/LOAD';

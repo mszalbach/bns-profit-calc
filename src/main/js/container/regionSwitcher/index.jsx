@@ -1,8 +1,8 @@
 import {connect} from "react-redux";
-import {getRegionSelector} from "../../selectors/region";
-import RegionSwitcher from "../../components/regionSwitcher/index";
-import {switchRegion} from "../../reducers/region";
-import {loadPrices} from "../../reducers/prices";
+import {getRegionSelector} from "../../reducers/region/regionSelector";
+import RegionSwitcher from "../../components/regionSwitcher";
+import {switchRegion} from "../../reducers/region/regionReducer";
+import {loadPrices} from "../../reducers/prices/pricesReducer";
 
 
 export default connect(

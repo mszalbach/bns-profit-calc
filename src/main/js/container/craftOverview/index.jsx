@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
 import CraftOverview from "../../components/craftOverview";
-import {getCraftingWithProfitSelector} from "../../selectors/crafting_price";
+import {getCraftingWithProfitSelector} from "../../reducers/craftingPrice/craftingPriceSelector";
 
 
 export default connect(

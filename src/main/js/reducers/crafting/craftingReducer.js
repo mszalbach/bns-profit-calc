@@ -1,5 +1,5 @@
 import {createSelector} from "reselect";
-import {initialCraftingState} from "./crafting_state";
+import {initialCraftingState} from "./craftingState";
 
 const initialState = initialCraftingState;
 

@@ -1,5 +1,5 @@
 import {createSelector} from "reselect";
-import {PRICES_URL} from "../reducers/prices";
+import {PRICES_URL} from "../prices/pricesReducer";
 
 export const getRegionSelector = ( state ) => state.region;
 

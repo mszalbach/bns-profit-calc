@@ -1,7 +1,7 @@
 import {
     getAllPricesSelector,
     getCraftingWithTotalCraftingCostSelector
-} from "../../../main/js/selectors/crafting_price";
+} from "../../../main/js/reducers/craftingPrice/craftingPriceSelector";
 
 const testState = {
     "recipes": [

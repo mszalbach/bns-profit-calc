@@ -6,7 +6,7 @@ import {
     LOADED_ITEMS_FROM_SERVER,
     LOADING_FROM_SERVER,
     LOADING_ITEMS_FROM_SERVER
-} from "./server_status";
+} from "../serverStatus/serverStatusReducer";
 
 export const ITEMS_LOAD = 'items/LOAD';
 
