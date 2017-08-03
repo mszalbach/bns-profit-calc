@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
-import IngredientsTable from "../ingredientsTable";
+import IngredientsTable from "./ingredientsTable";
 import PriceText from "../priceText";
 import PriceTextContainer from "../../container/priceText";
 import ItemImage from "../../container/itemImage";

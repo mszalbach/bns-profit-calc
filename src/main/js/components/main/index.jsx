@@ -1,6 +1,6 @@
 import React from "react";
 import {Redirect, Route, Switch} from "react-router-dom";
-import CraftOverview from "../../container/craftOverview";
+import CraftOverview from "../../components/crafting/craftOverviewContainer";
 import BidPrices from "../bidPrices";
 import MarketOverview from "../marketOverview";
 import "./main.css";
