@@ -1,4 +1,4 @@
-import reducer from "../reducers";
+import reducer from "../modules";
 import middleware from "./middlewares";
 import {createStore} from "redux";
 import {syncHistoryWithStore} from "react-router-redux";
@@ -9,8 +9,8 @@ let initialize = ( initialState = {} ) => {
 
     if ( module.hot ) {
         // Enable Webpack hot module replacement for reducers
-        module.hot.accept( '../reducers', () => {
-            const nextReducer = require( '../reducers' );
+        module.hot.accept( '../modules', () => {
+            const nextReducer = require( '../modules' );
             store.replaceReducer( nextReducer );
         } );
     }

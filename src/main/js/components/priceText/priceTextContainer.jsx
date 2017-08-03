@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
 import PriceText from "./priceText";
-import {getPriceForItemSelector} from "../../reducers/prices/pricesSelector";
+import {getPriceForItemSelector} from "../../modules/prices/pricesSelector";
 
 
 export default connect(

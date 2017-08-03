@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import {getPriceForItemSelector} from "../../reducers/prices/pricesSelector";
+import {getPriceForItemSelector} from "../../modules/prices/pricesSelector";
 import BidPricesTable from "./bidPricesTable";
 
 

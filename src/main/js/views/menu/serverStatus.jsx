@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import {Button, Label, OverlayTrigger, Popover} from "react-bootstrap";
-import {ITEMS_URL} from "../../reducers/items/itemsReducer";
+import {ITEMS_URL} from "../../modules/items/itemsReducer";
 
 
 export default class ServerStatus extends React.Component {

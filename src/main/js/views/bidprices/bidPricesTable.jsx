@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import PriceText from "../shared/priceText";
+import PriceText from "../../components/priceText/priceText";
 import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
 
 

@@ -1,4 +1,4 @@
-import {getPriceForItemSelector} from "../../../main/js/reducers/prices/pricesSelector";
+import {getPriceForItemSelector} from "../../../main/js/modules/prices/pricesSelector";
 
 
 describe( 'Prices Selector', () => {

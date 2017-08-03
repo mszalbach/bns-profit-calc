@@ -2,7 +2,7 @@ import {
     allCraftsNameSelector,
     allIngredientNamesSelector,
     allItemNamesSelector
-} from "../../../main/js/reducers/crafting/craftingSelector";
+} from "../../../main/js/modules/crafting/craftingSelector";
 
 const testState = {
     "recipes": [

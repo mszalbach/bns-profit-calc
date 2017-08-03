@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
 import IngredientsTable from "./ingredientsTable";
-import PriceText from "../shared/priceText";
-import PriceTextContainer from "../shared/priceTextContainer";
-import ItemImage from "../shared/itemImage";
+import PriceText from "../../components/priceText/priceText";
+import PriceTextContainer from "../../components/priceText/priceTextContainer";
+import ItemImage from "../../components/itemImage/itemImage";
 
 
 export default class CraftOverview extends React.Component {

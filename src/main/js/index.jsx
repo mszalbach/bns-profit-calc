@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import {Provider} from "react-redux";
 import initStore from "config/store";
 import {HashRouter} from "react-router-dom";
+import Main from "./views/main";
+import Menu from "./views/menu/menu";
+
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
-import Main from "./components/main";
-import Menu from "./components/menu/menu";
-
 
 const store = initStore();
 
