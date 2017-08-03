@@ -3,7 +3,7 @@ import BidPricesTable from "./bidPricesTableContainer";
 import ItemSelector from "../../components/itemSelector/itemSelectorContainer";
 
 
-export default class BidPrices extends React.Component {
+export default class BidPrices extends React.PureComponent {
 
     state = {
         item: ''

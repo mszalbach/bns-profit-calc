@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import 'react-select/dist/react-select.css';
 
-export default class ItemSelector extends React.Component {
+export default class ItemSelector extends React.PureComponent {
 
     static propTypes = {
         items: PropTypes.array.isRequired,

@@ -7,7 +7,7 @@ import ItemImage from "../../components/itemImage/itemImageContainer";
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
 
 
-export default class MarketTable extends React.Component {
+export default class MarketTable extends React.PureComponent {
 
     static propTypes = {
         name: PropTypes.string.isRequired,

@@ -7,7 +7,7 @@ import ItemImage from "../../components/itemImage/itemImageContainer";
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
 
 
-export default class IngredientsTable extends React.Component {
+export default class IngredientsTable extends React.PureComponent {
 
     static propTypes = {
         ingredients: PropTypes.array.isRequired

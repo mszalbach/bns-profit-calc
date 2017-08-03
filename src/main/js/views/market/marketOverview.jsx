@@ -5,7 +5,7 @@ import ItemSelector from "../../components/itemSelector/itemSelectorContainer";
 import 'react-select/dist/react-select.css';
 
 
-export default class MarketOverview extends React.Component {
+export default class MarketOverview extends React.PureComponent {
 
     state = {item: ''};
 

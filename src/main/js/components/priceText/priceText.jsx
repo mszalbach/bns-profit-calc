@@ -4,7 +4,7 @@ import {formatNumberToBnSCurrency} from "../../utils/NumberFormat";
 
 import "./priceText.css";
 
-export default class PriceText extends React.Component {
+export default class PriceText extends React.PureComponent {
 
     static propTypes = {
         price: PropTypes.number.isRequired,
