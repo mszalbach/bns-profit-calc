@@ -8,7 +8,8 @@ export default class BidPricesTable extends React.Component {
 
 
     static propTypes = {
-        name: PropTypes.string.isRequired
+        name: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired
     };
 
     priceFormatter( cell ) {
