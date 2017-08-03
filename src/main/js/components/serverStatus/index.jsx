@@ -8,8 +8,30 @@ import {ITEMS_URL} from "../../reducers/items";
 
 export default class ServerStatus extends React.Component {
     static propTypes = {
-        status: PropTypes.object.isRequired
+        status: PropTypes.object.isRequired,
+        loadPrices: PropTypes.func.isRequired,
+        loadItems: PropTypes.func.isRequired
     };
+
+    state = {
+        timer: null,
+    };
+
+    loadDataFromServer = () => {
+        this.props.loadItems();
+        this.props.loadPrices();
+    };
+
+    componentDidMount() {
+        this.loadDataFromServer();
+        let timer = setInterval( this.loadDataFromServer, 60 * 1000 );
+
+        this.setState( {timer: timer} );
+    }
+
+    componentWillUnmount() {
+        this.clearInterval( this.state.timer );
+    }
 
 
     render() {
@@ -25,6 +47,9 @@ export default class ServerStatus extends React.Component {
                     bsStyle={statusCss[status.prices.status]}>
                     {PRICES_URL}
                 </Label>
+                <br/>
+                <br/>
+                <Button bsSize="small" onClick={this.loadDataFromServer}>Load</Button>
             </Popover>
         );
 

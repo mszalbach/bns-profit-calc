@@ -7,7 +7,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
 import Main from "./components/main";
 import Menu from "./components/menu";
-import LoadData from "./container/loadData";
 
 
 const store = initStore();
@@ -18,7 +17,6 @@ class App extends React.Component {
         return (
                 <Provider store={store}>
                     <div>
-                        <LoadData/>
                         <HashRouter>
                             <div>
                                 <Menu />
