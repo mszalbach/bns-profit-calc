@@ -24,8 +24,6 @@ export default class MarketTable extends React.Component {
     }
 
     render() {
-
-        console.log( "muhu" );
         let {listings} = this.props;
         return <BootstrapTable data={listings}
                                striped={true}

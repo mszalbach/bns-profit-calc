@@ -1,10 +1,5 @@
-export const LOADING_ITEMS_FROM_SERVER = 'server/items/LOADING';
-export const LOADED_ITEMS_FROM_SERVER = 'server/items/LOADED';
-export const ERROR_ITEMS_FROM_SERVER = 'server/items/ERROR';
-
-export const LOADING_PRICES_FROM_SERVER = 'server/prices/LOADING';
-export const LOADED_PRICES_FROM_SERVER = 'server/prices/LOADED';
-export const ERROR_PRICES_FROM_SERVER = 'server/prices/ERROR';
+import {ERROR_PRICES_FROM_SERVER, LOADED_PRICES_FROM_SERVER, LOADING_PRICES_FROM_SERVER} from "../prices/pricesReducer";
+import {ERROR_ITEMS_FROM_SERVER, LOADED_ITEMS_FROM_SERVER, LOADING_ITEMS_FROM_SERVER} from "../items/itemsReducer";
 
 const LOADED = 0;
 const LOADING = 1;

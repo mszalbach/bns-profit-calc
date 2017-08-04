@@ -19,7 +19,7 @@ export default class ItemImage extends React.Component {
         let shownCount = count > 1 ? count : '';
 
         return image ? <div className="iconCell">
-            <img src={image} alt={name} className="iconImage"/>
+            <img src={image.replace( 'http:', 'https:' )} alt={name} className="iconImage"/>
             <span className="num">{shownCount}</span>
         </div> : <div className="noImage">{shownCount}</div>
     }
