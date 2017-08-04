@@ -21,7 +21,7 @@ export function loadItems() {
         types: [LOADING_ITEMS_FROM_SERVER, LOADED_ITEMS_FROM_SERVER, ERROR_ITEMS_FROM_SERVER],
         payload: {
             request: {
-                url: ITEMS_URL
+                url: 'https://api.silveress.ie/bns/v3' + ITEMS_URL
             }
         }
     }

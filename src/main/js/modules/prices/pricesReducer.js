@@ -4,7 +4,7 @@ export const LOADING_PRICES_FROM_SERVER = 'prices/LOADING';
 export const LOADED_PRICES_FROM_SERVER = 'prices/LOADED';
 export const ERROR_PRICES_FROM_SERVER = 'prices/ERROR';
 
-export const PRICES_URL = '/market/{region}/current/all';
+export const PRICES_URL = 'https://api.silveress.ie/bns/v3/market/{region}/current/all';
 
 const initialState = [];
 

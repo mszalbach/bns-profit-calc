@@ -37,24 +37,19 @@ export default class ServerStatus extends React.Component {
     render() {
         let {status} = this.props;
         let statusCss = {2: 'danger', 1: 'warning', 0: 'success'};
+
+
         const serverStatusDetails = (
             <Popover title='http://bns.silveress.ie/home' id="Detailed Server Status" style={{maxWidth: '600px'}}>
-                <Label bsStyle={statusCss[status.items.status]}>
-                    {this.props.itemsUrl}
-                </Label>
-                <br/>
-                <Label
-                    bsStyle={statusCss[status.prices.status]}>
-                    {this.props.pricesUrl}
-                </Label>
-                <br/>
-                <br/>
+                {Object.values( status ).map( s => <div key={s.item}><Label bsStyle={statusCss[s.status]}>
+                    {s.url}
+                </Label></div> )}
+
                 <Button bsSize="small" onClick={this.loadDataFromServer}>Load</Button>
             </Popover>
         );
 
-
-        let maxCode = Math.max( status.items.status, status.prices.status );
+        let maxCode = Math.max( ...Object.values( status ).map( s => s.status ) );
         let statusColor = statusCss[maxCode];
 
         return <OverlayTrigger trigger="click" placement="left" overlay={serverStatusDetails}>
