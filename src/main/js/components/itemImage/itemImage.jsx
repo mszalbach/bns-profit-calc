@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import "./itemImage.css";
 
 
-export default class ItemImage extends React.PureComponent {
+export default class ItemImage extends React.Component {
 
     static propTypes = {
         name: PropTypes.string.isRequired,

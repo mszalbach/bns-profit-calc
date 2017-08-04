@@ -8,7 +8,7 @@ import PriceTextContainer from "../../components/priceText/priceTextContainer";
 import ItemImage from "../../components/itemImage/itemImageContainer";
 
 
-export default class CraftOverview extends React.PureComponent {
+export default class CraftOverview extends React.Component {
 
     static propTypes = {
         items: PropTypes.array.isRequired

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import {FormControl} from "react-bootstrap";
 
-export default class RegionSwitcher extends React.PureComponent {
+export default class RegionSwitcher extends React.Component {
 
     static propTypes = {
         region: PropTypes.string.isRequired,

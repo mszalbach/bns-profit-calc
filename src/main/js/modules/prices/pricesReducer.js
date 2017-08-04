@@ -21,7 +21,7 @@ export default function pricesReducer( state = initialState, action ) {
         case PRICES_CLEAR:
             return [];
         case PRICES_LOAD:
-            return action.items;
+            return JSON.stringify( action.items ) === JSON.stringify( state ) ? state : action.items;
         default:
             return state;
     }

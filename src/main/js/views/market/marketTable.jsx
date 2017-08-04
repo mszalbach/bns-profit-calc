@@ -7,7 +7,7 @@ import ItemImage from "../../components/itemImage/itemImageContainer";
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
 
 
-export default class MarketTable extends React.PureComponent {
+export default class MarketTable extends React.Component {
 
     static propTypes = {
         name: PropTypes.string.isRequired,
@@ -25,6 +25,7 @@ export default class MarketTable extends React.PureComponent {
 
     render() {
 
+        console.log( "muhu" );
         let {listings} = this.props;
         return <BootstrapTable data={listings}
                                striped={true}

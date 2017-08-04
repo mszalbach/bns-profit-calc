@@ -5,7 +5,7 @@ import {Button, Label, OverlayTrigger, Popover} from "react-bootstrap";
 import {ITEMS_URL} from "../../modules/items/itemsReducer";
 
 
-export default class ServerStatus extends React.PureComponent {
+export default class ServerStatus extends React.Component {
     static propTypes = {
         status: PropTypes.object.isRequired,
         loadPrices: PropTypes.func.isRequired,

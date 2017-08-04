@@ -17,7 +17,7 @@ const initialState = [];
 export default function itemsReducer( state = initialState, action ) {
     switch ( action.type ) {
         case ITEMS_LOAD:
-            return action.items;
+            return JSON.stringify( action.items ) === JSON.stringify( state ) ? state : action.items;
         default:
             return state;
     }

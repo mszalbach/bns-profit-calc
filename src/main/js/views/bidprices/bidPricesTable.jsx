@@ -4,7 +4,7 @@ import PriceText from "../../components/priceText/priceText";
 import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
 
 
-export default class BidPricesTable extends React.PureComponent {
+export default class BidPricesTable extends React.Component {
 
 
     static propTypes = {
