@@ -2,8 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import {Button, Label, OverlayTrigger, Popover} from "react-bootstrap";
-import {ITEMS_URL} from "../../modules/items/itemsReducer";
-import {BASEURL} from "../../config/axios";
 
 
 export default class ServerStatus extends React.Component {
@@ -11,7 +9,8 @@ export default class ServerStatus extends React.Component {
         status: PropTypes.object.isRequired,
         loadPrices: PropTypes.func.isRequired,
         loadItems: PropTypes.func.isRequired,
-        pricesUrl: PropTypes.string.isRequired
+        pricesUrl: PropTypes.string.isRequired,
+        itemsUrl: PropTypes.string.isRequired
     };
 
     state = {
@@ -39,9 +38,9 @@ export default class ServerStatus extends React.Component {
         let {status} = this.props;
         let statusCss = {2: 'danger', 1: 'warning', 0: 'success'};
         const serverStatusDetails = (
-            <Popover title={BASEURL} id="Detailed Server Status" style={{maxWidth: '600px'}}>
+            <Popover title='http://bns.silveress.ie/home' id="Detailed Server Status" style={{maxWidth: '600px'}}>
                 <Label bsStyle={statusCss[status.items.status]}>
-                    {ITEMS_URL}
+                    {this.props.itemsUrl}
                 </Label>
                 <br/>
                 <Label
