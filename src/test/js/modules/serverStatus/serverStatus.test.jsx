@@ -20,8 +20,7 @@ describe( 'Server Status Reducer', () => {
     } );
     it( 'should overwrite item in existing state', () => {
         expect( serverStatusReducer( {item: {item: 'item', url: "http://test.org", status: 1}}, {
-            type: 'item/ERROR',
-            error: {request: {responseURL: "http://test.org"}}
+            type: 'item/ERROR'
         } ) ).toEqual(
             {item: {item: 'item', url: "http://test.org", status: 2}} )
     } );
