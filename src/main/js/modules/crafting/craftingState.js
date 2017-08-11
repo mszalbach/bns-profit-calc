@@ -212,13 +212,16 @@ export const initialCraftingState = {
         {
             "name": "Sealed Sacred Oil",
             "profession": "Transmute",
-            "cost": 50000,
+            "cost": 150000,
             "quantity": 1,
             "ingredients": [
                 {"name": "Demon Spirit Stone", "quantity": 1},
-                {"name": "Evolved Stone", "quantity": 25},
-                {"name": "Elysian Orb", "quantity": 10},
-                {"name": "Silverfrost Transformation Stone", "quantity": 5}
+                {"name": "Evolved Stone", "quantity": 10},
+                {"name": "Silverfrost Transformation Stone", "quantity": 10},
+                {"name": "Soulstone", "quantity": 45},
+                {"name": "Moonstone", "quantity": 10},
+                {"name": "Sacred Orb", "quantity": 45},
+                {"name": "Elysian Orb", "quantity": 10}
             ]
         }
     ]
