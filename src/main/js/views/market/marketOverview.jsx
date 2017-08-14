@@ -3,6 +3,7 @@ import MarketTable from "./marketTableContainer";
 import ItemSelector from "../../components/itemSelector/itemSelectorContainer";
 
 import 'react-select/dist/react-select.css';
+import SmartBid from "./smartBidContainer";
 
 
 export default class MarketOverview extends React.Component {
@@ -18,6 +19,8 @@ export default class MarketOverview extends React.Component {
 
         return <div>
             <ItemSelector onChange={this.onChange}/>
+            <br/><br/>
+            <SmartBid name={this.state.item}/>
             <br/><br/>
             <MarketTable name={this.state.item}/>
         </div>

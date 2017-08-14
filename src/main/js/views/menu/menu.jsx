@@ -24,9 +24,6 @@ export default class Menu extends React.Component {
                     <LinkContainer to="/market">
                         <NavItem>Market</NavItem>
                     </LinkContainer>
-                    <LinkContainer to="/bidprices">
-                        <NavItem>Bid Prices</NavItem>
-                    </LinkContainer>
                 </Nav>
                 <Nav pullRight>
                     <ServerStatus/>
