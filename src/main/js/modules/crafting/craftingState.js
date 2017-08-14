@@ -14,6 +14,16 @@ export const initialCraftingState = {
             ]
         },
         {
+            "name": "Silverfrost Pickaxe",
+            "profession": "Merry Potter",
+            "cost": 432,
+            "quantity": 1,
+            "ingredients": [
+                {"name": "Sequoia Sap", "quantity": 1},
+                {"name": "Soulstone", "quantity": 5}
+            ]
+        },
+        {
             "name": "Silverfrost Transformation Stone",
             "profession": "Soul Wardens",
             "cost": 432,
