@@ -2,8 +2,6 @@ export const LOADING_ITEMS_FROM_SERVER = 'items/LOADING';
 export const LOADED_ITEMS_FROM_SERVER = 'items/LOADED';
 export const ERROR_ITEMS_FROM_SERVER = 'items/ERROR';
 
-export const ITEMS_URL = "/items";
-
 const initialState = [];
 
 export default function itemsReducer( state = initialState, action ) {
@@ -21,7 +19,7 @@ export function loadItems() {
         types: [LOADING_ITEMS_FROM_SERVER, LOADED_ITEMS_FROM_SERVER, ERROR_ITEMS_FROM_SERVER],
         payload: {
             request: {
-                url: 'https://api.silveress.ie/bns/v3' + ITEMS_URL
+                url: 'https://api.silveress.ie/bns/v3/items'
             }
         }
     }

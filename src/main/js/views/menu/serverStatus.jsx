@@ -8,9 +8,7 @@ export default class ServerStatus extends React.Component {
     static propTypes = {
         status: PropTypes.object.isRequired,
         loadPrices: PropTypes.func.isRequired,
-        loadItems: PropTypes.func.isRequired,
-        pricesUrl: PropTypes.string.isRequired,
-        itemsUrl: PropTypes.string.isRequired
+        loadItems: PropTypes.func.isRequired
     };
 
     state = {
