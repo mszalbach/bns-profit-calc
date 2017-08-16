@@ -1,7 +1,4 @@
-import {
-    getAllPricesSelector,
-    getCraftingWithTotalCraftingCostSelector
-} from "../../../../main/js/modules/craftingPrice/craftingPriceSelector";
+import {getCraftingWithTotalCraftingCostSelector} from "../../../../main/js/modules/craftingPrice/craftingPriceSelector";
 
 const testState = {
     "recipes": [
@@ -18,15 +15,6 @@ const testState = {
 };
 
 describe( 'Crafting_Price Selector', () => {
-    it( 'should return list with names and prices', () => {
-        expect(
-            getAllPricesSelector.resultFunc( ['Premium Kaolin Refiner', 'Silverfrost Transformation Stone'],
-                                             [{
-                                                 name: 'Premium Kaolin Refiner',
-                                                 "listings": [{"price": 5, "count": 1}]
-                                             }] ) ).toEqual(
-            [{name: 'Premium Kaolin Refiner', price: 5}, {name: 'Silverfrost Transformation Stone', price: 0}] )
-    } );
 
     it( 'should calculate total crafting cost', () => {
         expect(
