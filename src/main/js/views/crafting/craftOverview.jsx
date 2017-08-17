@@ -15,7 +15,7 @@ export default class CraftOverview extends React.Component {
     };
 
     imageFormatter( cell, row ) {
-        return <ItemImage name={row.name} count={cell}/>;
+        return <ItemImage name={row.item} count={cell}/>;
     }
 
     priceEditFormatter( cell ) {
@@ -36,7 +36,7 @@ export default class CraftOverview extends React.Component {
 
     render() {
         const options = {
-            sortName: "name",
+            sortName: "item",
             sortOrder: "asc",
             expandRowBgColor: 'rgb(242, 255, 163)',
             expandBy: 'column'
@@ -51,14 +51,14 @@ export default class CraftOverview extends React.Component {
                             expandableRow={() => true}
                             expandComponent={this.expandComponent}
             >
-                <TableHeaderColumn dataField="quantity" dataFormat={this.imageFormatter}
+                <TableHeaderColumn dataField="output" dataFormat={this.imageFormatter}
                                    width="60px">#</TableHeaderColumn>
-                <TableHeaderColumn dataField="name" isKey={true} dataSort={true}
+                <TableHeaderColumn dataField="item" isKey={true} dataSort={true}
                                    width="400px">Name</TableHeaderColumn>
-                <TableHeaderColumn dataField="profession" dataSort={true}>Profession</TableHeaderColumn>
+                <TableHeaderColumn dataField="createdBy" dataSort={true}>Profession</TableHeaderColumn>
                 <TableHeaderColumn dataField="cost" dataAlign="right" dataFormat={this.priceFormatter}>Crafting
                     Cost</TableHeaderColumn>
-                <TableHeaderColumn dataField="name" dataFormat={this.priceEditFormatter}
+                <TableHeaderColumn dataField="item" dataFormat={this.priceEditFormatter}
                                    dataAlign="right">AH Price</TableHeaderColumn>
                 <TableHeaderColumn dataField="totalCraftingCost" dataAlign="right" dataFormat={this.priceFormatter}>Total
                     Crafting

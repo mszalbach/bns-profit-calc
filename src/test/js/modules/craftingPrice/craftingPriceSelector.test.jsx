@@ -4,9 +4,9 @@ const testState = {
     "recipes": [
         {
             "name": "Premium Kaolin Refiner",
-            "profession": "Merry Potter",
+            "createdBy": "Merry Potter",
             "cost": 400,
-            "quantity": 5,
+            "output": 5,
             "ingredients": [
                 {"name": "Soulstone", "quantity": 1},
                 {"name": "Kaolin Refiner", "quantity": 2}
