@@ -37,7 +37,7 @@ export const initialCraftingState = {
             ]
         },
         {
-            "item": "Crafted Silverfrost Critical Soul Shield Primer",
+            "item": "Sealed Crafted Silverfrost Critical Soul Shield Primer",
             "createdBy": "Soul Wardens",
             "cost": 473,
             "output": 1,
@@ -48,7 +48,7 @@ export const initialCraftingState = {
             ]
         },
         {
-            "item": "Crafted Silverfrost Piercing Soul Shield Primer",
+            "item": "Sealed Crafted Silverfrost Piercing Soul Shield Primer",
             "createdBy": "Soul Wardens",
             "cost": 473,
             "output": 1,
@@ -59,7 +59,7 @@ export const initialCraftingState = {
             ]
         },
         {
-            "item": "Crafted Silverfrost Reflex Soul Shield Primer",
+            "item": "Sealed Crafted Silverfrost Reflex Soul Shield Primer",
             "createdBy": "Soul Wardens",
             "cost": 473,
             "output": 1,
@@ -70,36 +70,36 @@ export const initialCraftingState = {
             ]
         },
         {
-            "item": "Artisanal Silverfrost Critical Soul Shield Primer",
+            "item": "Sealed Artisanal Silverfrost Critical Soul Shield Primer",
             "createdBy": "Soul Wardens",
             "cost": 473,
             "output": 5,
             "ingredients": [
-                {"name": "Crafted Silverfrost Critical Soul Shield Primer", "output": 1},
+                {"name": "Sealed Crafted Silverfrost Critical Soul Shield Primer", "output": 1},
                 {"name": "Soulstone", "output": 60},
                 {"name": "Mamosu Bone", "output": 5},
                 {"name": "Premium Kaolin Refiner", "output": 5}
             ]
         },
         {
-            "item": "Artisanal Silverfrost Piercing Soul Shield Primer",
+            "item": "Sealed Artisanal Silverfrost Piercing Soul Shield Primer",
             "createdBy": "Soul Wardens",
             "cost": 473,
             "output": 5,
             "ingredients": [
-                {"name": "Crafted Silverfrost Piercing Soul Shield Primer", "output": 1},
+                {"name": "Sealed Crafted Silverfrost Piercing Soul Shield Primer", "output": 1},
                 {"name": "Soulstone", "output": 60},
                 {"name": "Mamosu Bone", "output": 5},
                 {"name": "Premium Kaolin Refiner", "output": 5}
             ]
         },
         {
-            "item": "Artisanal Silverfrost Reflex Soul Shield Primer",
+            "item": "Sealed Artisanal Silverfrost Reflex Soul Shield Primer",
             "createdBy": "Soul Wardens",
             "cost": 473,
             "output": 5,
             "ingredients": [
-                {"name": "Crafted Silverfrost Reflex Soul Shield Primer", "output": 1},
+                {"name": "Sealed Crafted Silverfrost Reflex Soul Shield Primer", "output": 1},
                 {"name": "Soulstone", "output": 60},
                 {"name": "Mamosu Bone", "output": 5},
                 {"name": "Premium Kaolin Refiner", "output": 5}
@@ -111,7 +111,7 @@ export const initialCraftingState = {
             "cost": 473,
             "output": 1,
             "ingredients": [
-                {"name": "Artisanal Silverfrost Critical Soul Shield Primer", "output": 1},
+                {"name": "Sealed Artisanal Silverfrost Critical Soul Shield Primer", "output": 1},
                 {"name": "Soulstone", "output": 50},
                 {"name": "Masterwork Soul Shield Primer Design", "output": 5}
             ]
@@ -122,7 +122,7 @@ export const initialCraftingState = {
             "cost": 473,
             "output": 1,
             "ingredients": [
-                {"name": "Artisanal Silverfrost Piercing Soul Shield Primer", "output": 1},
+                {"name": "Sealed Artisanal Silverfrost Piercing Soul Shield Primer", "output": 1},
                 {"name": "Soulstone", "output": 50},
                 {"name": "Masterwork Soul Shield Primer Design", "output": 5}
             ]
@@ -133,40 +133,40 @@ export const initialCraftingState = {
             "cost": 473,
             "output": 1,
             "ingredients": [
-                {"name": "Artisanal Silverfrost Reflex Soul Shield Primer", "output": 1},
+                {"name": "Sealed Artisanal Silverfrost Reflex Soul Shield Primer", "output": 1},
                 {"name": "Soulstone", "output": 50},
                 {"name": "Masterwork Soul Shield Primer Design", "output": 5}
             ]
         },
         {
-            "item": "Silverfrost Soul Warden Critical Soul Shield Primer",
+            "item": "Sealed Silverfrost Soul Warden Critical Soul Shield Primer",
             "createdBy": "Soul Wardens",
             "cost": 50000,
             "output": 1,
             "ingredients": [
-                {"name": "Masterwork Silverfrost Critical Soul Shield Primer", "output": 1},
+                {"name": "Sealed Masterwork Silverfrost Critical Soul Shield Primer", "output": 1},
                 {"name": "Premium Kaolin Refiner", "output": 8},
                 {"name": "Soul Warden's Emblem", "output": 3}
             ]
         },
         {
-            "item": "Silverfrost Soul Warden Piercing Soul Shield Primer",
+            "item": "Sealed Silverfrost Soul Warden Piercing Soul Shield Primer",
             "createdBy": "Soul Wardens",
             "cost": 50000,
             "output": 1,
             "ingredients": [
-                {"name": "Masterwork Silverfrost Piercing Soul Shield Primer", "output": 1},
+                {"name": "Sealed Masterwork Silverfrost Piercing Soul Shield Primer", "output": 1},
                 {"name": "Premium Kaolin Refiner", "output": 8},
                 {"name": "Soul Warden's Emblem", "output": 3}
             ]
         },
         {
-            "item": "Silverfrost Soul Warden Reflex Soul Shield Primer",
+            "item": "Sealed Silverfrost Soul Warden Reflex Soul Shield Primer",
             "createdBy": "Soul Wardens",
             "cost": 50000,
             "output": 1,
             "ingredients": [
-                {"name": "Masterwork Silverfrost Reflex Soul Shield Primer", "output": 1},
+                {"name": "Sealed Masterwork Silverfrost Reflex Soul Shield Primer", "output": 1},
                 {"name": "Premium Kaolin Refiner", "output": 8},
                 {"name": "Soul Warden's Emblem", "output": 3}
             ]
