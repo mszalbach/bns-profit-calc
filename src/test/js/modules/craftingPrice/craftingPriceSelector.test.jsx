@@ -1,7 +1,6 @@
 import {getCraftingWithTotalCraftingCostSelector} from "../../../../main/js/modules/craftingPrice/craftingPriceSelector";
 
-const testState = {
-    "recipes": [
+const testState = [
         {
             "name": "Premium Kaolin Refiner",
             "createdBy": "Merry Potter",
@@ -11,14 +10,13 @@ const testState = {
                 {"name": "Soulstone", "quantity": 1},
                 {"name": "Kaolin Refiner", "quantity": 2}
             ]
-        }]
-};
+        }];
 
 describe( 'Crafting_Price Selector', () => {
 
     it( 'should calculate total crafting cost', () => {
         expect(
-            getCraftingWithTotalCraftingCostSelector.resultFunc( testState.recipes,
+            getCraftingWithTotalCraftingCostSelector.resultFunc( testState,
                                                                  [{
                                                                      name: 'Soulstone',
                                                                      "listings": [{"price": 5, "count": 1}]
