@@ -22,6 +22,6 @@ function getTotalCraftingCosts( craft, prices ) {
     let craftingCost = craft.cost ? craft.cost : 0;
 
     return craft.ingredients.reduce( ( acc, ingredient ) => {
-        return acc + (getPriceForItem( ingredient.name, prices ) * ingredient.output);
+        return acc + (getPriceForItem( ingredient.name, prices ) * ingredient.quantity);
     }, craftingCost );
 }
