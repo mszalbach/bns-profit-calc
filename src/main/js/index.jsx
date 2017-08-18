@@ -4,10 +4,8 @@ import {Provider} from "react-redux";
 import initStore from "config/store";
 import {HashRouter} from "react-router-dom";
 import Main from "./views/main";
-import Menu from "./views/menu/menu";
+import Menu from "./views/menu/menuContainer";
 
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/css/bootstrap-theme.css";
 
 const store = initStore();
 

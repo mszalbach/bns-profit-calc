@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import {Button, Label, OverlayTrigger, Popover} from "react-bootstrap";
+import {OverlayTrigger, Popover} from "react-bootstrap";
+import {Button, Label, Popup} from "semantic-ui-react";
 
 
 export default class ServerStatus extends React.Component {
@@ -34,7 +35,7 @@ export default class ServerStatus extends React.Component {
 
     render() {
         let {status} = this.props;
-        let statusCss = {2: 'danger', 1: 'warning', 0: 'success'};
+        let statusCss = {2: 'red', 1: 'yellow', 0: 'green'};
 
 
         const serverStatusDetails = (
@@ -50,9 +51,20 @@ export default class ServerStatus extends React.Component {
         let maxCode = Math.max( ...Object.values( status ).map( s => s.status ) );
         let statusColor = statusCss[maxCode];
 
-        return <OverlayTrigger trigger="click" placement="left" overlay={serverStatusDetails}>
-            <Button className="navbar-btn" bsStyle={statusColor}>Server Status</Button>
-        </OverlayTrigger>
+        return <Popup
+            trigger={<Button color={statusColor}>Server Status</Button>}
+            on="click"
+            flowing
+        >
+            {Object.values( status ).map( s => <div key={s.item}>
+                <Label circular color={statusCss[s.status]}>
+                    {s.url}
+                </Label>
+            </div> )}
+            <div>
+                <Button size='small' onClick={this.loadDataFromServer}>Load</Button>
+            </div>
+        </Popup>
 
     }
 }
