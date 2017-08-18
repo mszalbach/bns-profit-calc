@@ -52,6 +52,7 @@ export default class ItemSelector extends React.Component {
 
         return (
             <Search fluid
+                    selectFirstResult
                     loading={isLoading}
                     onResultSelect={this.handleResultSelect}
                     onSearchChange={this.handleSearchChange}

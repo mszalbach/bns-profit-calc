@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import PriceText from "../../components/priceText/priceText";
 import {ControlLabel, Form, FormControl, FormGroup} from "react-bootstrap";
+import {Input, Label} from "semantic-ui-react";
 
 
 export default class SmartBid extends React.Component {
@@ -32,24 +33,14 @@ export default class SmartBid extends React.Component {
         let maxBidPrice = Math.floor( this.state.itemCount * this.props.price * ((this.state.playersCount - 1)
                                                                                  / this.state.playersCount) );
         return <div>
-            <Form inline>
-                <FormGroup controlId="formInlineName">
-                    <ControlLabel>Players in Party:</ControlLabel>
-                    {' '}
-                    <FormControl type="number" min={2} max={24} value={this.state.playersCount}
-                                 onChange={this.playersCountChange}/>
-                </FormGroup>
-                <FormGroup controlId="formInlineName">
-                    <ControlLabel>Item quantity:</ControlLabel>
-                    {' '}
-                    <FormControl type="number" min={1} value={this.state.itemCount} onChange={this.itemCountChange}/>
-                </FormGroup>
-                <FormGroup controlId="formInlineName">
-                    <ControlLabel>Max bid price:</ControlLabel>
-                    {' '}
-                    <PriceText price={maxBidPrice}/>
-                </FormGroup>
-            </Form>
+
+            <Input label='Players:' icon='users' type="number" value={this.state.playersCount}
+                   min={2} max={24}
+                   onChange={this.playersCountChange}/>
+            <Input label='Items:' icon='shopping basket' type="number" value={this.state.itemCount}
+                   min={1}
+                   onChange={this.itemCountChange}/>
+            <Label>Max Bid Price:</Label><PriceText price={maxBidPrice}/>
         </div>
     }
 }

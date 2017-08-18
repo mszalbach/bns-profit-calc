@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import {formatNumberToBnSCurrency} from "../../utils/NumberFormat";
 
 import "./priceText.css";
+import {Image} from "semantic-ui-react";
 
 export default class PriceText extends React.Component {
 
@@ -17,7 +18,7 @@ export default class PriceText extends React.Component {
         'copper': 'https://bladeandsoul.gamepedia.com/media/bladeandsoul.gamepedia.com/1/12/Copper.png'
     };
 
-    currency = ( type ) => <img alt="g" className="currency" src={this.currencyImages[type]}/>;
+    currency = ( type ) => <Image inline verticalAlign='middle' alt="g" src={this.currencyImages[type]}/>;
 
 
     render() {
