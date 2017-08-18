@@ -38,15 +38,9 @@ const common = {
         loaders: [
             {test: /\.js[x]?$/, exclude: /node_modules/, loader: 'babel-loader'},
             {test: /\.css$/, loader: ExtractTextPlugin.extract( {fallback: 'style-loader', use: 'css-loader'} )},
-            //needed for bootstrap
-            {
-                test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-                loader: 'url-loader?limit=10000&mimetype=application/font-woff'
-            },
             {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader'},
             {test: /\.json(\?v=\d+\.\d+\.\d+)?$/, loader: 'json-loader'},
-            {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url-loader?limit=10000&mimetype=image/svg+xml'},
-            {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url-loader?limit=10000&mimetype=application/octet-stream'},
+            {test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000'}
         ]
     },
 

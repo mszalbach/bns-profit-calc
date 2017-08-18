@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {FormControl} from "react-bootstrap";
+import {Dropdown} from "semantic-ui-react";
 
 export default class RegionSwitcher extends React.Component {
 
@@ -10,20 +10,18 @@ export default class RegionSwitcher extends React.Component {
         loadPrices: PropTypes.func.isRequired
     };
 
-    switchRegion = ( event ) => {
-        this.props.switchRegion( event.target.value );
+    switchRegion = ( event, data ) => {
+        this.props.switchRegion( data.value );
         this.props.loadPrices();
     };
 
+    regionOptions = [
+        {text: 'EU', value: 'eu'},
+        {text: 'NA', value: 'na'}
+    ];
+
 
     render() {
-        return <FormControl componentClass="select"
-                            className="navbar-btn"
-                            placeholder="select"
-                            defaultValue={this.props.region}
-                            onChange={this.switchRegion}>
-            <option value="eu">EU</option>
-            <option value="na">NA</option>
-        </FormControl>
+        return <Dropdown defaultValue={this.props.region} options={this.regionOptions} onChange={this.switchRegion}/>
     }
 }

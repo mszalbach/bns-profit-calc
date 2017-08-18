@@ -1,37 +1,35 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {Nav, Navbar, NavItem} from "react-bootstrap";
-import {LinkContainer} from "react-router-bootstrap";
-import ServerStatus from "./serverStatusContainer";
+import {Menu as SMenu} from 'semantic-ui-react'
+
+import 'semantic-ui-css/semantic.min.css';
 import RegionSwitcher from "./regionSwitcherContainer";
+import ServerStatus from "./serverStatusContainer";
+
 
 export default class Menu extends React.Component {
 
     render() {
         return (
-            <Navbar fluid>
-                <Navbar.Header>
-                    <Navbar.Brand>
-                        <Link to="/">
-                            BnS Profit Calculator
-                        </Link>
-                    </Navbar.Brand>
-                </Navbar.Header>
-                <Nav>
-                    <LinkContainer to="/crafting">
-                        <NavItem>Crafting</NavItem>
-                    </LinkContainer>
-                    <LinkContainer to="/market">
-                        <NavItem>Market</NavItem>
-                    </LinkContainer>
-                </Nav>
-                <Nav pullRight>
-                    <ServerStatus/>
-                </Nav>
-                <Nav pullRight>
-                    <RegionSwitcher/>
-                </Nav>
-            </Navbar>
+            <SMenu>
+                <SMenu.Item header as={Link} to='/'>
+                    BnS Profit Calculator
+                </SMenu.Item>
+                <SMenu.Item as={Link} to='/crafting'>
+                    Crafting
+                </SMenu.Item>
+                <SMenu.Item as={Link} to='/market'>
+                    Market
+                </SMenu.Item>
+                <SMenu.Menu position='right'>
+                    <SMenu.Item>
+                        <RegionSwitcher/>
+                    </SMenu.Item>
+                    <SMenu.Item>
+                        <ServerStatus/>
+                    </SMenu.Item>
+                </SMenu.Menu>
+            </SMenu>
         )
     }
 }
