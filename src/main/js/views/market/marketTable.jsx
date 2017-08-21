@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {BootstrapTable, TableHeaderColumn} from "react-bootstrap-table";
 import PriceText from "../../components/priceText/priceText";
 import ItemImage from "../../components/itemImage/itemImageContainer";
 
 import "react-bootstrap-table/dist/react-bootstrap-table.min.css";
+import {Table, TableCell, TableRow} from "semantic-ui-react";
 
 
 export default class MarketTable extends React.Component {
@@ -15,28 +15,31 @@ export default class MarketTable extends React.Component {
     };
 
 
-    imageFormatter( cell, row ) {
-        return <ItemImage name={row.name} count={cell}/>;
-    }
-
-    priceFormatter( cell, row ) {
-        return <PriceText name={row.name} price={cell}/>
-    }
 
     render() {
         let {listings} = this.props;
-        return <BootstrapTable data={listings}
-                               striped={true}
-                               hover={true}
-        >
 
-            <TableHeaderColumn width="60px" dataField="count"
-                               dataFormat={this.imageFormatter}>#</TableHeaderColumn>
-            <TableHeaderColumn dataField="name" isKey={true}>Name</TableHeaderColumn>
-            <TableHeaderColumn dataField="itemPrice" dataAlign="right"
-                               dataFormat={this.priceFormatter}>Price</TableHeaderColumn>
-            <TableHeaderColumn dataField="price" dataAlign="right" dataFormat={this.priceFormatter}>Total
-                Price</TableHeaderColumn>
-        </BootstrapTable>
+        return <Table celled>
+            <Table.Header>
+                <Table.Row>
+                    <Table.HeaderCell>#</Table.HeaderCell>
+                    <Table.HeaderCell>Name</Table.HeaderCell>
+                    <Table.HeaderCell>Price</Table.HeaderCell>
+                    <Table.HeaderCell>Total Price</Table.HeaderCell>
+                </Table.Row>
+            </Table.Header>
+            <Table.Body>
+                {listings.map( ( row, index ) =>
+                                   <TableRow key={index}>
+                                       <TableCell width="1"><ItemImage name={row.name} count={row.count}/></TableCell>
+                                       <TableCell>{row.name}</TableCell>
+                                       <TableCell textAlign="right"><PriceText name={row.name}
+                                                                               price={row.itemPrice}/></TableCell>
+                                       <TableCell textAlign="right"><PriceText name={row.name}
+                                                                               price={row.price}/></TableCell>
+                                   </TableRow>
+                )}
+            </Table.Body>
+        </Table>
     }
 }
