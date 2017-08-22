@@ -1,5 +1,5 @@
 import React from "react";
-import {Dropdown, Grid, Header, Search} from "semantic-ui-react";
+import {Search} from "semantic-ui-react";
 import PropTypes from "prop-types";
 
 export default class ItemSelector extends React.Component {

@@ -1,8 +1,6 @@
 import React from "react";
 import MarketTable from "./marketTableContainer";
 import ItemSelector from "../../components/itemSelector/itemSelectorContainer";
-
-import 'react-select/dist/react-select.css';
 import SmartBid from "./smartBidContainer";
 
 
