@@ -17,6 +17,10 @@ export const getCraftingWithProfitSelector = createSelector(
         return craft;
     } ) );
 
+export const getOneCraftingWithProfitSelector = createSelector(
+    [getCraftingWithTotalCraftingCostSelector, ( _, props ) => props.name],
+    ( crafts, name ) => crafts.find( craft => craft.item === name ) );
+
 
 function getTotalCraftingCosts( craft, prices ) {
     let craftingCost = craft.cost ? craft.cost : 0;
