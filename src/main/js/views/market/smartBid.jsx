@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import PriceText from "../../components/priceText/priceText";
-import {ControlLabel, Form, FormControl, FormGroup} from "react-bootstrap";
 import {Input, Label} from "semantic-ui-react";
 
 
