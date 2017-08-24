@@ -11,7 +11,7 @@ export default class Menu extends React.Component {
 
     render() {
         return (
-            <SMenu>
+            <SMenu stackable>
                 <SMenu.Item header as={Link} to='/'>BnS Profit Calculator</SMenu.Item>
                 <SMenu.Item as={Link} active={this.props.location.pathname === '/crafting'}
                             to='/crafting'>Crafting</SMenu.Item>
