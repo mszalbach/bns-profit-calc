@@ -6,6 +6,8 @@ import {HashRouter} from "react-router-dom";
 import Main from "./views/main";
 import Menu from "./views/menu/menuContainer";
 
+import 'semantic-ui-css/semantic.min.css';
+
 
 const store = initStore();
 

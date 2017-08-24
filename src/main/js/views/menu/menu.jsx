@@ -2,7 +2,6 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {Menu as SMenu} from 'semantic-ui-react'
 
-import 'semantic-ui-css/semantic.min.css';
 import RegionSwitcher from "./regionSwitcherContainer";
 import ServerStatus from "./serverStatusContainer";
 
