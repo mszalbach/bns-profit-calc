@@ -37,7 +37,7 @@ export default class CraftOverview extends React.Component {
                     <Table.Body>
                         {items.map( ( row, index ) =>
                                         <TableRow key={row.item}>
-                                            <TableCell width="1">
+                                            <TableCell>
                                                 <ItemImage name={row.item}
                                                            count={row.output}/>
                                             </TableCell>

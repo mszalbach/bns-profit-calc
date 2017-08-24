@@ -50,7 +50,7 @@ export default class CraftDetails extends React.Component {
                                 </Table.Header>
                                 <Table.Body>
                                     {item.ingredients.map( ingredient => <TableRow key={ingredient.name}>
-                                        <TableCell width="1">
+                                        <TableCell>
                                             <ItemImage name={ingredient.name}
                                                        count={ingredient.quantity}/>
                                         </TableCell>

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "./itemImage.css";
+import {Image} from "semantic-ui-react";
 
 
 export default class ItemImage extends React.Component {
@@ -19,7 +20,7 @@ export default class ItemImage extends React.Component {
         let shownCount = count > 1 ? count : '';
 
         return image ? <div className="iconCell">
-            <img src={image.replace( 'http:', 'https:' )} alt={name} className="iconImage"/>
+            <Image src={image.replace( 'http:', 'https:' )} alt={name}/>
             <span className="num">{shownCount}</span>
         </div> : <div className="noImage">{shownCount}</div>
     }
