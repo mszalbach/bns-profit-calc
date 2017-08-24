@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import {Provider} from "react-redux";
 import initStore from "config/store";
 import {HashRouter} from "react-router-dom";
-import Main from "./views/main";
+import Main from "./views/main/main";
 import Menu from "./views/menu/menuContainer";
 
 import 'semantic-ui-css/semantic.min.css';

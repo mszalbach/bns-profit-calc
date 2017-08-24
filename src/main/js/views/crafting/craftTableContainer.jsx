@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import CraftOverview from "./craftOverview";
+import CraftTable from "./craftTable";
 import {getCraftingWithProfitSelector} from "../../modules/craftingPrice/craftingPriceSelector";
 
 
@@ -8,4 +8,4 @@ export default connect(
             items: getCraftingWithProfitSelector( state, props )
         }),
         {}
-)( CraftOverview );
+)( CraftTable );
