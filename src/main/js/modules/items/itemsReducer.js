@@ -7,7 +7,7 @@ const initialState = [];
 export default function itemsReducer( state = initialState, action ) {
     switch ( action.type ) {
         case LOADED_ITEMS_FROM_SERVER:
-            return JSON.stringify( action.items ) === JSON.stringify( state ) ? state : action.payload.data;
+            return JSON.stringify( action.payload.data ) === JSON.stringify( state ) ? state : action.payload.data;
         default:
             return state;
     }

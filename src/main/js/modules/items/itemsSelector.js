@@ -2,8 +2,9 @@ import {createSelector} from "reselect";
 
 export const getItemsSelector = ( state ) => state.items;
 
-export const getSortedItemsSelector = createSelector( [getItemsSelector], ( items ) => items.sort(
-    ( a, b ) => a.name.localeCompare( b.name, undefined, {numeric: true} ) ) );
+export const getSortedItemsNamesSelector = createSelector( [getItemsSelector], ( items ) => [...new Set(
+    (items.map( item => item.name )) )].sort(
+    ( a, b ) => a.localeCompare( b, undefined, {numeric: true} ) ) );
 
 export const getImageForItemSelector = createSelector( [getItemsSelector, ( _, props ) => props.name],
                                                        ( items, name ) => {

@@ -2,13 +2,12 @@ import React from "react";
 import {Search} from "semantic-ui-react";
 import PropTypes from "prop-types";
 
-export default class ItemSelector extends React.Component {
+export default class ItemSelector extends React.PureComponent {
 
     static propTypes = {
         items: PropTypes.array.isRequired,
         onChange: PropTypes.func.isRequired
     };
-
 
     componentWillMount() {
         this.resetComponent()
@@ -33,8 +32,9 @@ export default class ItemSelector extends React.Component {
                 return this.resetComponent()
             }
 
-            let itemsAsOptions = this.props.items.map( item => {
-                return {title: item.name}
+
+            let itemsAsOptions = this.props.items.map( name => {
+                return {title: name}
             } );
 
             const isMatch = ( result ) => result.title.toLowerCase().startsWith( this.state.value.toLowerCase() );
