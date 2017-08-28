@@ -23,7 +23,7 @@ export default class HandyLayout extends React.Component {
                     <Sidebar
                         as={Menu}
                         animation='push' width='thin' visible={this.state.visible} vertical>
-                        <MenuItems/>
+                        <MenuItems onClick={this.toggleVisibility}/>
                     </Sidebar>
                     <Sidebar.Pusher>
                         <Segment basic>
