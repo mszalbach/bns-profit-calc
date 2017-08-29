@@ -8,22 +8,11 @@ export default class ItemSelector extends React.PureComponent {
         items: PropTypes.array.isRequired,
         onChange: PropTypes.func.isRequired
     };
-
-    componentWillMount() {
-        this.resetComponent()
-    }
-
-    resetComponent() {
-        this.setState( {isLoading: false, results: [], value: ''} )
-    };
-
     handleResultSelect = ( e, {result} ) => {
         this.setState( {value: result.title} );
         this.props.onChange( result.title );
 
     };
-
-
     handleSearchChange = ( e, {value} ) => {
         this.setState( {isLoading: true, value} );
 
@@ -45,6 +34,14 @@ export default class ItemSelector extends React.PureComponent {
                                results: itemsAsOptions.filter( item => isMatch( item ) ),
                            } )
         }, 500 )
+    };
+
+    componentWillMount() {
+        this.resetComponent()
+    }
+
+    resetComponent() {
+        this.setState( {isLoading: false, results: [], value: ''} )
     };
 
     render() {

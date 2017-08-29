@@ -4,8 +4,8 @@ import {getCraftingWithProfitSelector} from "../../modules/craftingPrice/craftin
 
 
 export default connect(
-        ( state, props ) => ({
-            items: getCraftingWithProfitSelector( state, props )
-        }),
-        {}
+    ( state, props ) => ({
+        items: getCraftingWithProfitSelector( state, props )
+    }),
+    {}
 )( CraftTable );

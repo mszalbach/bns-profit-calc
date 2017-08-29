@@ -1,9 +1,5 @@
 import merge from "deepmerge";
 
-const LOADED = 0;
-const LOADING = 1;
-const ERROR = 2;
-
 const serverStatusMap = {
     'LOADED': 0,
     'LOADING': 1,

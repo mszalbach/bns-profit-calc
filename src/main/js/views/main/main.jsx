@@ -1,7 +1,7 @@
 import React from "react";
 import {Redirect, Route, Switch} from "react-router-dom";
-import "./main.css";
 import {routing} from "./routing";
+import "./main.css";
 
 export default class Main extends React.Component {
     render() {

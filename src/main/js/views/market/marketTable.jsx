@@ -13,7 +13,6 @@ export default class MarketTable extends React.Component {
     };
 
 
-
     render() {
         let {listings} = this.props;
 

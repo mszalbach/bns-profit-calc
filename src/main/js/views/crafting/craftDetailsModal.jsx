@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CraftDetails from "./craftDetailsContainer";
 import {Button, Modal} from "semantic-ui-react";
+import CraftDetails from "./craftDetailsContainer";
 
 export default class CraftDetailsModal extends React.Component {
 

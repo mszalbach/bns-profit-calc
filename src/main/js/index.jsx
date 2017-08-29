@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import {Provider} from "react-redux";
 import initStore from "config/store";
 import {HashRouter} from "react-router-dom";
-
-import 'semantic-ui-css/semantic.min.css';
 import {Grid} from "semantic-ui-react";
 import ComputerLayout from "./views/layout/computerLayout";
 import HandyLayout from "./views/layout/handyLayout";
+
+import 'semantic-ui-css/semantic.min.css';
 
 
 const store = initStore();

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import PriceText from "../../components/priceText/priceText";
-import {Container, Form, Grid, Input, Label} from "semantic-ui-react";
+import {Form, Input} from "semantic-ui-react";
 
 
 export default class SmartBid extends React.Component {

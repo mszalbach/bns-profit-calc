@@ -12,5 +12,4 @@ export default compose(
     applyMiddleware( axiosMiddleware( axiosClient ) ),
     applyMiddleware( routerMiddleware( history ) ),
     persistState( ['region'] )
-)
-;
+);

@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import {Icon, Table, TableCell, TableRow} from "semantic-ui-react";
 import PriceText from "../../components/priceText/priceText";
 import PriceTextContainer from "../../components/priceText/priceTextContainer";
 import ItemImage from "../../components/itemImage/itemImageContainer";
-import {Icon, Table, TableCell, TableRow} from "semantic-ui-react";
 
 
 export default class CraftTable extends React.Component {

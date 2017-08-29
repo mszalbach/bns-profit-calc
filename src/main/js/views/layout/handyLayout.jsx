@@ -1,8 +1,8 @@
 import React from "react";
 import {Button, Menu, Segment, Sidebar} from "semantic-ui-react";
+import {Link} from "react-router-dom";
 import Main from "../main/main";
 import MenuItems from "../menu/menuItemsContainer";
-import {Link} from "react-router-dom";
 
 export default class HandyLayout extends React.Component {
 
