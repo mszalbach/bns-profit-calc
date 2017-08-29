@@ -1,7 +1,7 @@
 import React from "react";
 import MarketTable from "./marketTableContainer";
-import ItemSelector from "../../components/itemSelector/itemSelectorContainer";
 import SmartBid from "./smartBidContainer";
+import ItemSelector from "./itemSelectorContainer";
 
 
 export default class MarketOverview extends React.Component {
