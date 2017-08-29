@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import CraftDetails from "./craftDetailsContainer";
-import {Modal} from "semantic-ui-react";
+import {Button, Modal} from "semantic-ui-react";
 
 export default class CraftDetailsModal extends React.Component {
 
@@ -18,6 +18,9 @@ export default class CraftDetailsModal extends React.Component {
                 <Modal.Content image>
                     <CraftDetails name={this.props.item}/>
                 </Modal.Content>
+                <Modal.Actions>
+                    <Button color='red' onClick={this.props.onClose}>Close</Button>
+                </Modal.Actions>
             </Modal>
         )
     }
