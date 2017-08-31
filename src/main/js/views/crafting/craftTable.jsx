@@ -46,9 +46,9 @@ export default class CraftTable extends React.Component {
                                                 name={row.item}/></TableCell>
                                             <TableCell textAlign="right"><PriceText shouldHighlight={true}
                                                                                     price={row.profit}/></TableCell>
-                                            <TableCell selectable><Icon name='chevron right' size="big"
-                                                                        onClick={() => this.selectItem(
-                                                                            row.item )}/></TableCell>
+                                            <TableCell selectable onClick={() => this.selectItem( row.item )}><Icon
+                                                name='chevron right' size="big"
+                                            /></TableCell>
                                         </TableRow>
                         )}
                     </Table.Body>
