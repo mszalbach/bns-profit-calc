@@ -29,7 +29,7 @@ export default class CraftTable extends React.Component {
                             <Table.HeaderCell>Name</Table.HeaderCell>
                             <Table.HeaderCell>Profession</Table.HeaderCell>
                             <Table.HeaderCell>AH Price</Table.HeaderCell>
-                            <Table.HeaderCell>Profit</Table.HeaderCell>
+                            <Table.HeaderCell>Best Profit</Table.HeaderCell>
                             <Table.HeaderCell></Table.HeaderCell>
                         </Table.Row>
                     </Table.Header>
@@ -45,7 +45,7 @@ export default class CraftTable extends React.Component {
                                             <TableCell textAlign="right"><PriceTextContainer
                                                 name={row.item}/></TableCell>
                                             <TableCell textAlign="right"><PriceText shouldHighlight={true}
-                                                                                    price={row.profit}/></TableCell>
+                                                                                    price={row.bestProfit}/></TableCell>
                                             <TableCell selectable onClick={() => this.selectItem( row.item )}><Icon
                                                 name='chevron right' size="big"
                                             /></TableCell>

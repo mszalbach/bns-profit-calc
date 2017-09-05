@@ -9,8 +9,8 @@ import region from "./region/regionReducer";
 export default combineReducers( {
                                     region,
                                     serverStatus,
-                                    crafting,
                                     prices,
+                                    crafting,
                                     items,
                                     routing: routerReducer
                                 } );
