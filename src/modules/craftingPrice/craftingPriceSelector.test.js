@@ -1,4 +1,4 @@
-import {getCraftingWithTotalCraftingCostSelector} from "../../../../main/js/modules/craftingPrice/craftingPriceSelector";
+import {getCraftingWithTotalCraftingCostSelector} from "./craftingPriceSelector";
 
 const testState = [
         {

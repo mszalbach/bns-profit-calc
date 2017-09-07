@@ -7,8 +7,8 @@
     <artifactId>profit-calc</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    
-    
+
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <encoding>UTF-8</encoding>
@@ -41,16 +41,22 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>javascript tests</id>
+                        <id>yarn test</id>
                         <goals>
-                            <goal>karma</goal>
+                            <goal>yarn</goal>
                         </goals>
+                        <configuration>
+                            <arguments>test-ci</arguments>
+                        </configuration>
                     </execution>
                     <execution>
-                        <id>webpack build</id>
+                        <id>yarn build</id>
                         <goals>
-                            <goal>webpack</goal>
+                            <goal>yarn</goal>
                         </goals>
+                        <configuration>
+                            <arguments>build</arguments>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

@@ -1,7 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import {Provider} from "react-redux";
-import initStore from "config/store";
+import initStore from "./config/store";
 import {HashRouter} from "react-router-dom";
 import {Grid} from "semantic-ui-react";
 import ComputerLayout from "./views/layout/computerLayout";
@@ -13,7 +12,6 @@ import 'semantic-ui-css/semantic.min.css';
 const store = initStore();
 
 class App extends React.Component {
-
     render() {
         return (
             <Provider store={store}>
@@ -40,5 +38,4 @@ class App extends React.Component {
     };
 }
 
-
-ReactDOM.render( <App/>, document.getElementById( "application" ) );
+export default App;
