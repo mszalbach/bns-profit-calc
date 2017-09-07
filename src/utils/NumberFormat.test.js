@@ -1,4 +1,4 @@
-import {formatNumberToBnSCurrency} from "../../../main/js/utils/NumberFormat";
+import {formatNumberToBnSCurrency} from "./NumberFormat";
 describe( 'formatNumberToBnSCurrency', () => {
     it( 'should format <100 to copper', () => {
         expect( formatNumberToBnSCurrency( 50 ) ).toEqual( "00g 00s 50c" );
