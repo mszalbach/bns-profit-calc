@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "bns-profit-calc",
+  "name": "Blade and Soul Profit Calculator",
   "icons": [
     {
       "src": "favicon.ico",
