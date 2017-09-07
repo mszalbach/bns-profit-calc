@@ -12,6 +12,9 @@
 # maven
 /target
 
+# intelliJ
+/.idea
+
 # misc
 .DS_Store
 .env.local
