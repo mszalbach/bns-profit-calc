@@ -30,7 +30,7 @@ export default class LoadingComponent extends React.Component {
                 </Message>;
             } else if ( pastDelay ) {
                 // Display a loading screen after a set delay.
-                return <Loader active/>
+                return <Loader active inline='centered'/>
                     ;
             } else {
                 // Don't flash "Loading..." when we don't need to.
