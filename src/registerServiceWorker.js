@@ -1,4 +1,7 @@
-import {notification} from 'antd';
+import toastr from "toastr";
+
+toastr.options.closeButton = true;
+toastr.options.positionClass = "toast-bottom-right";
 
 // In production, we register a service worker to serve assets from local cache.
 
@@ -59,12 +62,7 @@ function registerValidSW( swUrl ) {
                             // It's the perfect time to display a "New content is
                             // available; please refresh." message in your web app.
                             console.log( 'New content is available; please refresh.' );
-                            notification.info( {
-                                                   message: 'New Update',
-                                                   description: 'New update is available. Please refresh.',
-                                                   placement: 'bottomRight',
-                                                   duration: 0
-                                               } );
+                            toastr.info( 'New Update', 'New update is available. Please refresh.' );
                         } else {
                             // At this point, everything has been precached.
                             // It's the perfect time to display a
@@ -77,12 +75,7 @@ function registerValidSW( swUrl ) {
         } )
         .catch( error => {
             console.error( 'Error during service worker registration:', error );
-            notification.error( {
-                                   message: 'Service Worker Error',
-                                   description: 'Error during service worker registration.',
-                                   placement: 'bottomRight',
-                                   duration: 0
-                               } );
+            toastr.error( 'Service Worker Error', 'Error during service worker registration.' );
         } );
 }
 

@@ -6,8 +6,9 @@ import {Grid} from "semantic-ui-react";
 import ComputerLayout from "./views/layout/computerLayout";
 import HandyLayout from "./views/layout/handyLayout";
 
+
 import 'semantic-ui-css/semantic.min.css';
-import 'antd/lib/notification/style/css';
+import "toastr/build/toastr.min.css"
 
 const store = initStore();
 
