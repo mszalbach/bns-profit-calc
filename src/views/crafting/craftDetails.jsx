@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {Header, Item, Label, List, Table, TableCell, TableRow} from "semantic-ui-react";
+import {Header, Item, Label, List, Tab} from "semantic-ui-react";
 import ItemImage from "../../components/itemImage/itemImageContainer";
-import PriceText from "../../components/priceText/priceText";
 import PriceTextContainer from "../../components/priceText/priceTextContainer";
+import OrderOverview from "./orderOverview";
 
 
 export default class CraftDetails extends React.Component {
@@ -17,52 +17,35 @@ export default class CraftDetails extends React.Component {
             {component}
         </List.Content></List.Item>;
 
-
     render() {
-        let {item} = this.props;
 
-        return (
-            <Item.Group>
-                <Item>
-                    <Item.Image>
-                        <ItemImage name={item.item} count={item.output}/>
-                    </Item.Image>
-                    <Item.Content>
-                        <Item.Header as="a">{item.item}</Item.Header>
-                        <Item.Meta>{item.createdBy}</Item.Meta>
-                        <Item.Description>
-                            <List divided>
-                                {this.createListItem( 'Crafting Cost', <PriceText price={item.cost}/> )}
-                                {this.createListItem( 'AH Price', <PriceTextContainer name={item.item}/> )}
-                                {this.createListItem( 'Total Crafting Cost', <PriceText
-                                    price={item.totalCraftingCost}/> )}
-                                {this.createListItem( 'Profit', <PriceText shouldHighlight={true}
-                                                                           price={item.profit}/> )}
-                            </List>
-                            <Header as='h4'>Ingredients</Header>
-                            <Table celled>
-                                <Table.Header>
-                                    <Table.Row>
-                                        <Table.HeaderCell>#</Table.HeaderCell>
-                                        <Table.HeaderCell>Name</Table.HeaderCell>
-                                        <Table.HeaderCell>Price</Table.HeaderCell>
-                                    </Table.Row>
-                                </Table.Header>
-                                <Table.Body>
-                                    {item.ingredients.map( ingredient => <TableRow key={ingredient.name}>
-                                        <TableCell>
-                                            <ItemImage name={ingredient.name}
-                                                       count={ingredient.quantity}/>
-                                        </TableCell>
-                                        <TableCell>{ingredient.name}</TableCell>
-                                        <TableCell><PriceTextContainer name={ingredient.name}/></TableCell>
-                                    </TableRow> )}
-                                </Table.Body>
-                            </Table>
-                        </Item.Description>
-                    </Item.Content>
-                </Item>
-            </Item.Group>
-        )
+        const {item} = this.props;
+
+        const panes = item.orders.map( order => {
+                                           return {
+                                               menuItem: order.output + ' / ' + order.duration,
+                                               render: () => <Tab.Pane> <OrderOverview order={order}/></Tab.Pane>
+                                           }
+                                       }
+        );
+
+        return <Item.Group>
+            <Item>
+                <Item.Image>
+                    <ItemImage name={item.item}/>
+                </Item.Image>
+                <Item.Content>
+                    <Item.Header as="a">{item.item}</Item.Header>
+                    <Item.Meta>{item.createdBy}</Item.Meta>
+                    <Item.Description>
+                        <List divided>
+                            {this.createListItem( 'AH Price', <PriceTextContainer name={item.item}/> )}
+                        </List>
+                        <Header as='h4'>Orders</Header>
+                        <Tab panes={panes}/>
+                    </Item.Description>
+                </Item.Content>
+            </Item>
+        </Item.Group>
     }
 }

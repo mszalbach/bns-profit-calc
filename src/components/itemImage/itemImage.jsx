@@ -22,6 +22,6 @@ export default class ItemImage extends React.Component {
         return image ? <div className="iconCell">
             <Image src={image.replace( 'http:', 'https:' )} alt={name}/>
             <span className="num">{shownCount}</span>
-        </div> : <div className="noImage">{shownCount}</div>
+        </div> : <div className="noImage">{shownCount} {name}</div>
     }
 }
