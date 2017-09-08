@@ -5,30 +5,8 @@ import {Button, Label, Popup} from "semantic-ui-react";
 
 export default class ServerStatus extends React.Component {
     static propTypes = {
-        status: PropTypes.object.isRequired,
-        loadPrices: PropTypes.func.isRequired,
-        loadItems: PropTypes.func.isRequired
+        status: PropTypes.object.isRequired
     };
-
-    state = {
-        timer: null,
-    };
-
-    loadDataFromServer = () => {
-        this.props.loadItems();
-        this.props.loadPrices();
-    };
-
-    componentDidMount() {
-        this.loadDataFromServer();
-        let timer = setInterval( this.loadDataFromServer, 60 * 1000 );
-
-        this.setState( {timer: timer} );
-    }
-
-    componentWillUnmount() {
-        this.clearInterval( this.state.timer );
-    }
 
 
     render() {
