@@ -1,4 +1,4 @@
-import serverStatusReducer from "../../../../main/js/modules/serverStatus/serverStatusReducer";
+import serverStatusReducer from "./serverStatusReducer";
 
 describe( 'Server Status Reducer', () => {
     it( 'should load single item to empty state', () => {
