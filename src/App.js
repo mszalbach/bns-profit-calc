@@ -3,7 +3,6 @@ import {Provider} from "react-redux";
 import initStore from "./config/store";
 import {HashRouter} from "react-router-dom";
 import {Grid} from "semantic-ui-react";
-import ReduxToastr from "react-redux-toastr";
 import ComputerLayout from "./views/layout/computerLayout";
 import HandyLayout from "./views/layout/handyLayout";
 
@@ -34,7 +33,6 @@ class App extends React.Component {
                             </Grid>
                         </div>
                     </HashRouter>
-                    <ReduxToastr position="bottom-right"/>
                 </div>
             </Provider>
         )
