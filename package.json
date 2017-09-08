@@ -16,7 +16,6 @@
     "axios": "0.16.2",
     "deepmerge": "1.5.1",
     "history": "4.7.2",
-    "jquery": "3.2.1",
     "prop-types": "15.5.10",
     "react": "15.6.1",
     "react-dom": "15.6.1",
