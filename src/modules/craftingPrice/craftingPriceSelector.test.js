@@ -2,7 +2,7 @@ import {
     getCraftingWithBestProfitSelector,
     getCraftingWithProfitSelector,
     getCraftingWithTotalCraftingCostSelector
-} from "../../../../main/js/modules/craftingPrice/craftingPriceSelector";
+} from "./craftingPriceSelector";
 
 const testState = [{
     "item": "Silverfrost Transformation Stone",
