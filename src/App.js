@@ -7,8 +7,7 @@ import ComputerLayout from "./views/layout/computerLayout";
 import HandyLayout from "./views/layout/handyLayout";
 
 import 'semantic-ui-css/semantic.min.css';
-
-
+import 'antd/lib/notification/style/css';
 
 const store = initStore();
 

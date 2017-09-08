@@ -70,12 +70,6 @@ function registerValidSW( swUrl ) {
                             // It's the perfect time to display a
                             // "Content is cached for offline use." message.
                             console.log( 'Content is cached for offline use.' );
-                            notification.info( {
-                                                   message: 'Content cached',
-                                                   description: 'Content is cached for offline use.',
-                                                   placement: 'bottomRight',
-                                                   duration: 0
-                                               } );
                         }
                     }
                 };
@@ -83,6 +77,12 @@ function registerValidSW( swUrl ) {
         } )
         .catch( error => {
             console.error( 'Error during service worker registration:', error );
+            notification.error( {
+                                   message: 'Service Worker Error',
+                                   description: 'Error during service worker registration.',
+                                   placement: 'bottomRight',
+                                   duration: 0
+                               } );
         } );
 }
 
@@ -108,12 +108,6 @@ function checkValidServiceWorker( swUrl ) {
         } )
         .catch( () => {
             console.log( 'No internet connection found. App is running in offline mode.' );
-            notification.info( {
-                                   message: 'Offline Mode',
-                                   description: 'No internet connection found. App is running in offline mode.',
-                                   placement: 'bottomRight',
-                                   duration: 0
-                               } );
         } );
 }
 
