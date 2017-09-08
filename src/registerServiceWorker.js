@@ -62,7 +62,7 @@ function registerValidSW( swUrl ) {
                             // It's the perfect time to display a "New content is
                             // available; please refresh." message in your web app.
                             console.log( 'New content is available; please refresh.' );
-                            toastr.info( 'New Update', 'New update is available. Please refresh.' );
+                            toastr.info( 'New update is available. Please refresh.', 'New Update'  );
                         } else {
                             // At this point, everything has been precached.
                             // It's the perfect time to display a
@@ -75,7 +75,7 @@ function registerValidSW( swUrl ) {
         } )
         .catch( error => {
             console.error( 'Error during service worker registration:', error );
-            toastr.error( 'Service Worker Error', 'Error during service worker registration.' );
+            toastr.error( 'Error during service worker registration.', 'Service Worker Error' );
         } );
 }
 
