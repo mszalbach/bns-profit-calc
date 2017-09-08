@@ -15,7 +15,7 @@ export default class HandyLayout extends React.Component {
             <div>
                 <Menu>
                     <Menu.Item>
-                        <Button basic onClick={this.toggleVisibility} icon="content"/>
+                        <Button basic onClick={this.toggleVisibility} icon="content" aria-label="Menu"/>
                     </Menu.Item>
                     <Menu.Item header as={Link} to='/'>BnS Profit Calculator</Menu.Item>
                 </Menu>
