@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import {Image} from "semantic-ui-react";
 
 import "./itemImage.css";
-import {Image} from "semantic-ui-react";
 
 
 export default class ItemImage extends React.Component {
