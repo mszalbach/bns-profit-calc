@@ -1,3 +1,5 @@
+import {toastr} from "react-redux-toastr";
+
 // In production, we register a service worker to serve assets from local cache.
 
 // This lets the app load faster on subsequent visits in production, and gives
@@ -57,11 +59,13 @@ function registerValidSW(swUrl) {
               // It's the perfect time to display a "New content is
               // available; please refresh." message in your web app.
               console.log('New content is available; please refresh.');
+              toastr.warning("New content is available", "Please refresh.");
             } else {
               // At this point, everything has been precached.
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
               console.log('Content is cached for offline use.');
+                toastr.warning("Content is cached for offline use.", "Please refresh.");
             }
           }
         };
@@ -69,6 +73,7 @@ function registerValidSW(swUrl) {
     })
     .catch(error => {
       console.error('Error during service worker registration:', error);
+        toastr.warning("Error during service worker registration", error);
     });
 }
 
@@ -96,6 +101,7 @@ function checkValidServiceWorker(swUrl) {
       console.log(
         'No internet connection found. App is running in offline mode.'
       );
+        toastr.warning("No internet connection found. App is running in offline mode.", "Offline");
     });
 }
 
