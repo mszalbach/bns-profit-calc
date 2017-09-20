@@ -1,6 +1,6 @@
 export const acquiredtaste = [
     {
-        "item": "Sweet Dumpling Box",
+        "item": "Mild Dumpling Food Chest",
         "createdBy": "Acquired Taste",
         "orders": [
             {
@@ -49,7 +49,7 @@ export const acquiredtaste = [
         ]
     },
     {
-        "item": "Spicy Dumpling Box",
+        "item": "Spicy Dumpling Food Chest",
         "createdBy": "Acquired Taste",
         "orders": [
             {
@@ -98,7 +98,7 @@ export const acquiredtaste = [
         ]
     },
     {
-        "item": "Dragon Soup Box",
+        "item": "Dragon Soup Food Chest",
         "createdBy": "Acquired Taste",
         "orders": [
             {
