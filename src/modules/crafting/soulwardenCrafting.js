@@ -60,7 +60,7 @@ export const soulwarden = [
         ]
     },
     {
-        "item": "Artisan Shield Base Pack",
+        "item": "Artisanal Shield Base Bundle",
         "createdBy": "Soul Warden",
         "orders": [
             {
@@ -108,7 +108,7 @@ export const soulwarden = [
         ]
     },
     {
-        "item": "Masterwork Shield Base Pack",
+        "item": "Masterwork Shield Base Bundle",
         "createdBy": "Soul Warden",
         "orders": [
             {
@@ -151,40 +151,6 @@ export const soulwarden = [
                     {"name": "Moonstone", "quantity": 160},
                     {"name": "Sacred Orb", "quantity": 700},
                     {"name": "Elysian Orb", "quantity": 160}
-                ]
-            }
-        ]
-    },
-    {
-        "item": "Magic Bone",
-        "createdBy": "Soul Warden",
-        "orders": [
-            {
-                "duration": "6h",
-                "cost": 10000,
-                "output": 4,
-                "ingredients": [
-                    {"name": "Common Plank", "quantity": 4},
-                    {"name": "Advanced Plank", "quantity": 5},
-                    {"name": "Rare Material", "quantity": 3},
-                    {"name": "Soulstone", "quantity": 12},
-                    {"name": "Moonstone", "quantity": 2},
-                    {"name": "Sacred Orb", "quantity": 12},
-                    {"name": "Elysian Orb", "quantity": 2}
-                ]
-            },
-            {
-                "duration": "12h",
-                "cost": 20000,
-                "output": 9,
-                "ingredients": [
-                    {"name": "Common Plank", "quantity": 8},
-                    {"name": "Advanced Plank", "quantity": 10},
-                    {"name": "Rare Material", "quantity": 5},
-                    {"name": "Soulstone", "quantity": 24},
-                    {"name": "Moonstone", "quantity": 4},
-                    {"name": "Sacred Orb", "quantity": 24},
-                    {"name": "Elysian Orb", "quantity": 4}
                 ]
             }
         ]
