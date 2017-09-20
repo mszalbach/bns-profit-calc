@@ -20,7 +20,7 @@ export const transmute = [
         ],
     },
     {
-        "item": "Silverfrost Premium Transformation Stone",
+        "item": "Premium Transformation Stone",
         "createdBy": "Transmute",
 
         "orders": [
