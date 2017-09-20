@@ -10,7 +10,7 @@ export const transmute = [
                 "ingredients": [
                     {"name": "Demon Spirit Stone", "quantity": 1},
                     {"name": "Evolved Stone", "quantity": 10},
-                    {"name": "Silverfrost Transformation Stone", "quantity": 10},
+                    {"name": "Transformation Stone", "quantity": 10},
                     {"name": "Soulstone", "quantity": 45},
                     {"name": "Moonstone", "quantity": 10},
                     {"name": "Sacred Orb", "quantity": 45},
@@ -33,7 +33,7 @@ export const transmute = [
                     {"name": "Soulstone", "quantity": 30},
                     {"name": "Sacred Orb", "quantity": 30},
                     {"name": "Elysian Orb", "quantity": 8},
-                    {"name": "Silverfrost Transformation Stone", "quantity": 4}
+                    {"name": "Transformation Stone", "quantity": 4}
                 ]
             }
         ]
