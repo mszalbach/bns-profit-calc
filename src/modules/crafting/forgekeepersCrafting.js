@@ -12,7 +12,7 @@ export const forgekeepers = [
                     {"name": "Advanced Bar", "quantity": 3},
                     {"name": "Rare Material", "quantity": 2},
                     {"name": "Soulstone", "quantity": 40},
-                    {"name": "Moonstone", "quantity": 40}
+                    {"name": "Sacred Orb", "quantity": 40}
                 ]
             },
             {
@@ -24,7 +24,7 @@ export const forgekeepers = [
                     {"name": "Advanced Bar", "quantity": 5},
                     {"name": "Rare Material", "quantity": 3},
                     {"name": "Soulstone", "quantity": 80},
-                    {"name": "Moonstone", "quantity": 80}
+                    {"name": "Sacred Orb", "quantity": 80}
                 ]
             },
             {
@@ -36,7 +36,7 @@ export const forgekeepers = [
                     {"name": "Advanced Bar", "quantity": 55},
                     {"name": "Rare Material", "quantity": 30},
                     {"name": "Soulstone", "quantity": 250},
-                    {"name": "Moonstone", "quantity": 60}
+                    {"name": "Sacred Orb", "quantity": 60}
                 ]
             }
         ]
