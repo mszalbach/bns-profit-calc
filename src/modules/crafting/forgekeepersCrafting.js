@@ -1,6 +1,6 @@
 export const forgekeepers = [
     {
-        "item": "Field Repair Tools Box",
+        "item": "Master Field Repair Tool",
         "createdBy": "Forgekeepers",
         "orders": [
             {
@@ -42,55 +42,7 @@ export const forgekeepers = [
         ]
     },
     {
-        "item": "Gold Dragon Stone",
-        "createdBy": "Forgekeepers",
-        "orders": [
-            {
-                "duration": "1d",
-                "cost": 300000,
-                "output": 1,
-                "ingredients": [
-                    {"name": "Common Bar", "quantity": 15},
-                    {"name": "Advanced Bar", "quantity": 20},
-                    {"name": "Rare Material", "quantity": 10},
-                    {"name": "Soulstone", "quantity": 70},
-                    {"name": "Moonstone", "quantity": 15},
-                    {"name": "Sacred Orb", "quantity": 70},
-                    {"name": "Elysian Orb", "quantity": 15}
-                ]
-            },
-            {
-                "duration": "3d",
-                "cost": 300000,
-                "output": 2,
-                "ingredients": [
-                    {"name": "Common Bar", "quantity": 45},
-                    {"name": "Advanced Bar", "quantity": 55},
-                    {"name": "Rare Material", "quantity": 30},
-                    {"name": "Soulstone", "quantity": 120},
-                    {"name": "Moonstone", "quantity": 25},
-                    {"name": "Sacred Orb", "quantity": 120},
-                    {"name": "Elysian Orb", "quantity": 25}
-                ]
-            },
-            {
-                "duration": "5d",
-                "cost": 600000,
-                "output": 5,
-                "ingredients": [
-                    {"name": "Common Bar", "quantity": 70},
-                    {"name": "Advanced Bar", "quantity": 95},
-                    {"name": "Rare Material", "quantity": 50},
-                    {"name": "Soulstone", "quantity": 250},
-                    {"name": "Moonstone", "quantity": 50},
-                    {"name": "Sacred Orb", "quantity": 250},
-                    {"name": "Elysian Orb", "quantity": 50}
-                ]
-            },
-        ]
-    },
-    {
-        "item": "Empyrean Spirit Charm",
+        "item": "Empyrean Spirit Stone",
         "createdBy": "Forgekeepers",
         "orders": [
             {
@@ -138,7 +90,7 @@ export const forgekeepers = [
         ]
     },
     {
-        "item": "Silverfrost Transformation Stone",
+        "item": "Transformation Stone",
         "createdBy": "Forgekeepers",
         "orders": [
             {
