@@ -1,6 +1,6 @@
 export const radiantring = [
     {
-        "item": "Brilliant Silverfrost Key",
+        "item": "Brilliant Key",
         "createdBy": "Radiant Ring",
         "orders": [
             {
