@@ -1,6 +1,6 @@
 export const silvercauldron = [
     {
-        "item": "Lesser Potions Box",
+        "item": "Cactus Potion Chest",
         "createdBy": "Silver Cauldron",
         "orders": [
             {
@@ -49,7 +49,7 @@ export const silvercauldron = [
         ]
     },
     {
-        "item": "Better Potions Box",
+        "item": "Prickly Potion Chest",
         "createdBy": "Silver Cauldron",
         "orders": [
             {
@@ -98,7 +98,7 @@ export const silvercauldron = [
         ]
     },
     {
-        "item": "Defensive Pellets Box",
+        "item": "Persistence Potion Chest",
         "createdBy": "Silver Cauldron",
         "orders": [
             {
@@ -147,7 +147,7 @@ export const silvercauldron = [
         ]
     },
     {
-        "item": "Ofensive Pellets Box",
+        "item": "Awakened Potion Chest",
         "createdBy": "Silver Cauldron",
         "orders": [
             {
@@ -191,58 +191,8 @@ export const silvercauldron = [
                     {"name": "Moonstone", "quantity": 30},
                     {"name": "Sacred Orb", "quantity": 110},
                     {"name": "Elysian Orb", "quantity": 30}
-                ]
-            }
-        ]
-    },
-    {
-        "item": "Turtle Stone",
-        "createdBy": "Silver Cauldron",
-        "orders": [
-            {
-                "duration": "1d",
-                "cost": 300000,
-                "output": 1,
-                "ingredients": [
-                    {"name": "Common Root", "quantity": 15},
-                    {"name": "Advanced Root", "quantity": 20},
-                    {"name": "Rare Material", "quantity": 10},
-                    {"name": "Soulstone", "quantity": 70},
-                    {"name": "Moonstone", "quantity": 15},
-                    {"name": "Sacred Orb", "quantity": 70},
-                    {"name": "Elysian Orb", "quantity": 15}
-
-                ]
-            },
-            {
-                "duration": "3d",
-                "cost": 300000,
-                "output": 2,
-                "ingredients": [
-                    {"name": "Common Root", "quantity": 45},
-                    {"name": "Advanced Root", "quantity": 55},
-                    {"name": "Rare Material", "quantity": 30},
-                    {"name": "Soulstone", "quantity": 120},
-                    {"name": "Moonstone", "quantity": 25},
-                    {"name": "Sacred Orb", "quantity": 120},
-                    {"name": "Elysian Orb", "quantity": 25}
-                ]
-            },
-            {
-                "duration": "5d",
-                "cost": 600000,
-                "output": 5,
-                "ingredients": [
-                    {"name": "Common Root", "quantity": 70},
-                    {"name": "Advanced Root", "quantity": 95},
-                    {"name": "Rare Material", "quantity": 50},
-                    {"name": "Soulstone", "quantity": 250},
-                    {"name": "Moonstone", "quantity": 50},
-                    {"name": "Sacred Orb", "quantity": 250},
-                    {"name": "Elysian Orb", "quantity": 50}
                 ]
             }
         ]
     }
-
 ];
