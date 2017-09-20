@@ -1,6 +1,6 @@
 export const earthseer = [
     {
-        "item": "Revival Charm Pack",
+        "item": "Revival Charm Bundle",
         "createdBy": "Earthseer",
         "orders": [
             {
@@ -49,7 +49,7 @@ export const earthseer = [
         ]
     },
     {
-        "item": "Mass Revival Charm Pack",
+        "item": "Resuscitation Charm Bundle",
         "createdBy": "Earthseer",
         "orders": [
             {
@@ -93,55 +93,6 @@ export const earthseer = [
                     {"name": "Moonstone", "quantity": 30},
                     {"name": "Sacred Orb", "quantity": 110},
                     {"name": "Elysian Orb", "quantity": 30}
-                ]
-            }
-        ]
-    },
-    {
-        "item": "Funghuang Stone",
-        "createdBy": "Earthseer",
-        "orders": [
-            {
-                "duration": "1d",
-                "cost": 300000,
-                "output": 6,
-                "ingredients": [
-                    {"name": "Common Paper", "quantity": 15},
-                    {"name": "Advanced Paper", "quantity": 20},
-                    {"name": "Rare Material", "quantity": 10},
-                    {"name": "Soulstone", "quantity": 70},
-                    {"name": "Moonstone", "quantity": 15},
-                    {"name": "Sacred Orb", "quantity": 70},
-                    {"name": "Elysian Orb", "quantity": 15}
-
-                ]
-            },
-            {
-                "duration": "3d",
-                "cost": 300000,
-                "output": 12,
-                "ingredients": [
-                    {"name": "Common Paper", "quantity": 45},
-                    {"name": "Advanced Paper", "quantity": 55},
-                    {"name": "Rare Material", "quantity": 30},
-                    {"name": "Soulstone", "quantity": 120},
-                    {"name": "Moonstone", "quantity": 25},
-                    {"name": "Sacred Orb", "quantity": 120},
-                    {"name": "Elysian Orb", "quantity": 25}
-                ]
-            },
-            {
-                "duration": "5d",
-                "cost": 600000,
-                "output": 25,
-                "ingredients": [
-                    {"name": "Common Paper", "quantity": 70},
-                    {"name": "Advanced Paper", "quantity": 95},
-                    {"name": "Rare Material", "quantity": 50},
-                    {"name": "Soulstone", "quantity": 250},
-                    {"name": "Moonstone", "quantity": 50},
-                    {"name": "Sacred Orb", "quantity": 250},
-                    {"name": "Elysian Orb", "quantity": 50}
                 ]
             }
         ]
