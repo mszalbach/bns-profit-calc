@@ -49,7 +49,7 @@ export const silvercauldron = [
         ]
     },
     {
-        "item": "Prickly Potion Chest",
+        "item": "Prickly Pear Potion Chest",
         "createdBy": "Silver Cauldron",
         "orders": [
             {
