@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "axios": "0.16.2",
-    "deepmerge": "1.5.1",
+    "deepmerge": "1.5.2",
     "history": "4.7.2",
     "prop-types": "15.5.10",
     "react": "15.6.1",
@@ -30,7 +30,7 @@
     "redux-thunk": "2.2.0",
     "reselect": "3.0.1",
     "semantic-ui-css": "2.2.12",
-    "semantic-ui-react": "0.72.0",
+    "semantic-ui-react": "0.74.1",
     "toastr": "2.1.2"
   },
   "scripts": {
