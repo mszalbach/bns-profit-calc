@@ -29,6 +29,8 @@ export default class OrderOverview extends React.Component {
                     price={order.totalCraftingCost}/> )}
                 {this.createListItem( 'Profit', <PriceText shouldHighlight={true}
                                                            price={order.profit}/> )}
+                {this.createListItem( 'Profit per Item', <PriceText shouldHighlight={true}
+                                                                    price={order.profitPerItem}/> )}
             </List>
 
             <Header as='h4'>Order Materials</Header>

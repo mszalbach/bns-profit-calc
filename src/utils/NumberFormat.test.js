@@ -23,5 +23,9 @@ describe( 'formatNumberToBnSCurrency', () => {
         expect( formatNumberToBnSCurrency( -400 ) ).toEqual( "-00g 04s 00c" );
     } );
 
+    it( 'should be able to convert floating-point number', () => {
+        expect( formatNumberToBnSCurrency( 400.2344 ) ).toEqual( "00g 04s 00c" );
+    } );
+
 } );
 

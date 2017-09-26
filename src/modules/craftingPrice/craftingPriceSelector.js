@@ -22,6 +22,7 @@ export const getCraftingWithProfitSelector = createSelector(
     ( crafts, prices ) => {
         crafts.forEach( craft => craft.orders.forEach( order => {
             order.profit = (order.output * getPriceForItem( craft.item, prices ) - order.totalCraftingCost);
+            order.profitPerItem = order.profit / order.output;
         } ) );
         return crafts;
     } );

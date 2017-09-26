@@ -3,6 +3,8 @@ export function formatNumberToBnSCurrency( number ) {
         return "00g 00s 00c";
     }
 
+    number = Math.round(number);
+
     let sign = Math.sign( number );
     let absnumber = Math.abs( number );
 

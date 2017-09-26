@@ -87,8 +87,11 @@ describe
 
 
         expect( craftingsWithProfit[0].orders[0].profit ).toEqual( 20 );
+        expect( craftingsWithProfit[0].orders[0].profitPerItem ).toBeCloseTo( 3.33 );
         expect( craftingsWithProfit[0].orders[1].profit ).toEqual( 55 );
+        expect( craftingsWithProfit[0].orders[1].profitPerItem ).toBeCloseTo( 3.67 );
         expect( craftingsWithProfit[0].orders[2].profit ).toEqual( 145 );
+        expect( craftingsWithProfit[0].orders[2].profitPerItem ).toBeCloseTo( 4.14 );
     } );
 
     it( 'should calculate best profit for each order', () => {
