@@ -5,7 +5,14 @@ import {Button, Label, Popup} from "semantic-ui-react";
 
 export default class ServerStatus extends React.Component {
     static propTypes = {
-        status: PropTypes.object.isRequired
+        status: PropTypes.object.isRequired,
+        loadPrices: PropTypes.func.isRequired,		
+        loadItems: PropTypes.func.isRequired
+    };
+
+    loadDataFromServer = () => {		
+        this.props.loadItems();		
+        this.props.loadPrices();		
     };
 
 
