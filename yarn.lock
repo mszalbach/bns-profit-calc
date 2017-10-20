@@ -5202,9 +5202,9 @@ react-error-overlay@^2.0.2:
     settle-promise "1.0.0"
     source-map "0.5.6"
 
-react-loadable@5.2.4:
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/react-loadable/-/react-loadable-5.2.4.tgz#e2ed2228ea5d3ad3bad51c1e1632a2f0864cdcae"
+react-loadable@5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/react-loadable/-/react-loadable-5.3.0.tgz#ee082ea7c40f0de4cfab5895cbf3c1594efee4e2"
 
 react-redux@5.0.6:
   version "5.0.6"
@@ -5690,9 +5690,9 @@ semantic-ui-css@2.2.12:
   dependencies:
     jquery x.*
 
-semantic-ui-react@0.75.0:
-  version "0.75.0"
-  resolved "https://registry.yarnpkg.com/semantic-ui-react/-/semantic-ui-react-0.75.0.tgz#4e27404391c1ddc01a6128512079e89ab9e41645"
+semantic-ui-react@0.75.1:
+  version "0.75.1"
+  resolved "https://registry.yarnpkg.com/semantic-ui-react/-/semantic-ui-react-0.75.1.tgz#81c2ed7ed45562f89e5049c5a64195b9638d8daf"
   dependencies:
     babel-runtime "^6.25.0"
     classnames "^2.2.5"
