@@ -29,14 +29,14 @@ export const forgekeepers = [
             },
             {
                 "duration": "12h",
-                "cost": 1200000,
+                "cost": 300000,
                 "output": 90,
                 "ingredients": [
-                    {"name": "Common Bar", "quantity": 45},
-                    {"name": "Advanced Bar", "quantity": 55},
-                    {"name": "Rare Material", "quantity": 30},
-                    {"name": "Soulstone", "quantity": 250},
-                    {"name": "Sacred Orb", "quantity": 60}
+                    {"name": "Common Bar", "quantity": 8},
+                    {"name": "Advanced Bar", "quantity": 10},
+                    {"name": "Rare Material", "quantity": 5},
+                    {"name": "Soulstone", "quantity": 130},
+                    {"name": "Sacred Orb", "quantity": 130}
                 ]
             }
         ]

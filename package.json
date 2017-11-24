@@ -10,7 +10,7 @@
     "url": "git+https://github.com/mszalbach/bns-profit-calc.git"
   },
   "devDependencies": {
-    "gh-pages": "1.0.0"
+    "gh-pages": "1.1.0"
   },
   "dependencies": {
     "axios": "0.17.1",
